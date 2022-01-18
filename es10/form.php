@@ -30,9 +30,6 @@ receive an email to confirm your registration</p>
 
     <i class="fa fa-unlock-alt" style="font-size:14px;color:rgba(65, 65, 65, 1.0)"></i>
     <input type="password" class="no-outline"  id="confirm" name="confirm" placeholder="Confirm password"><br>
-
-	<i class="fa fa-unlock-alt" style="font-size:14px;color:rgba(65, 65, 65, 1.0)"></i>
-    <input type="text" class="no-outline" name="codice" placeholder="Codice fiscale"><br>
     
 	<input type="submit" value="Submit">
 
