@@ -1,0 +1,8 @@
+nicola@gmail.com $2y$10$RIDQzekqAy7xfQjkGZs.3OSTB/QIJEnkFYpU06ZtxHuVHDbYEVM6q
+marzia@gmail.com $2y$10$5UvBX6rbQ9DmXQpWMQ4XmOrmS8uifENIS/VBIe/32qf6ewyJeUD6G
+pietro@gmail.com $2y$10$qpfFWiVGjQNc9EmtZPDkAu1/EyrQa97ZLXpOH7/Nv.J9Ba2QYP6Qm
+pippo@gmail.com $2y$10$OR9NNdyE3b1ya.tEXZBVIunCbAXTiYA11laJhLYysNo8zyG/KxRtO 
+roma@gmail.com $2y$10$Btjyk/4xJXL7ujb/MqOjS.KBLeTRn7sb.va7fAVMli7nxdULJom3W 
+palo@gmail.com $2y$10$Z4jffgKuxdGEV/lRgzwcduVfag0CoIJwWT6D7TQQwVAKdQuPEsk5. 
+cocco@gmail.com $2y$10$GUBvArMOqSyRcl7pwAjZJOirynUMcqbjbK37Af2KxY5Gfex/UkrA2 
+marco@gmail.com $2y$10$zwU1JxTaJrybrpZ33KvaDuD6zOt2g1TN9uIc14koq5ke34qi.AkbC 
