@@ -43,15 +43,23 @@ function test_input($data) {
 
 // --------------SCRITTURA SU FLIE SE NON HO AVUTO ERRORI -------------
     if($error == false){
-        $passC = password_hash($pass, PASSWORD_BCRYPT);
-        $users = fopen('../Templates/Users.txt', 'a+');
-        fwrite($users,$email.' ');
-        fwrite($users,$passC.' ');
-        fwrite($users,"\n");
-        fclose($users);
-        echo"<div class=\"confirmDiv\"> <p> <b> You have been Registred, congratulation! <b></p> </div>"; 
-        header("refresh:2; url= ../Templates/FirstPage.php ");
+    
+    $passC = password_hash($pass, PASSWORD_BCRYPT);
+    
+    $con = mysqli_connect('localhost','UtenteProva','Prova','utenti');
+    if (mysqli_connect_errno()) {
+        echo "Database connection failed.";
     }
+    $email_escape = mysqli_real_escape_string($con, $email);
+    $query="INSERT INTO utenti (Email, Password)
+            VALUES ('$email_escape', '$passC')";
+    $result = mysqli_query($con, $query);
+
+    echo"<div class=\"confirmDiv\"> <p> <b> you have been Registred, congratulation <b></p> </div>"; 
+    //$row_cnt = mysqli_num_rows($res);
+    $affected_rows = mysqli_affected_rows($con);
+    echo"<div class=\"confirmDiv\"> <p> <b> Number of new utent are $affected_rows <b></p> </div>"; 
+}
 ?>
 </body>
 </html>
