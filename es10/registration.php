@@ -18,16 +18,16 @@
 	$row = mysqli_fetch_assoc($ress);
 	$numi = mysqli_affected_rows($con);
 	$pattern="/^[A-Z]{6,6}+[0-9]{2,2}+[A-Z]{1,1}+[0-9]{2,2}+[A-Z]{1,1}+[0-9]{3,3}+[A-Z]{1,1}$/";
-	if($_POST['pass']==""||$_POST['confirm']==""||$_POST['lastname']==""||$_POST['firstname']==""||$_POST['email']==""||$_POST['codice']=="")
+	if($_POST['pass']==""||$_POST['confirm']==""||$_POST['lastname']==""||$_POST['firstname']==""||$_POST['email']=="")
 		echo"<h1>mancano dati</h1>";
 	else if($_POST['pass']!=$_POST['confirm'])
 		echo"<h1>PASSWORD SABGLIATA</h1>";
 	else if(!preg_match($pattern,$_POST['codice']))
 		echo "<h1>Codice fiscale errato</h1>";
 	else if($num==1)
-		echo "<h1> email già usata</h1>";
+		echo "<h1> email giï¿½ usata</h1>";
 	else if($numi==1)
-		echo "<h1> CF già usata</h1>";
+		echo "<h1> CF giï¿½ usata</h1>";
 	else{
 	$pass=trim($_POST['pass']);
 	$lastname=htmlspecialchars($_POST['lastname']);
