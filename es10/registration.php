@@ -14,7 +14,6 @@
 	$num = mysqli_affected_rows($con);
 	mysqli_free_result($re);
 	$numi = mysqli_affected_rows($con);
-	$pattern="/^[A-Z]{6,6}+[0-9]{2,2}+[A-Z]{1,1}+[0-9]{2,2}+[A-Z]{1,1}+[0-9]{3,3}+[A-Z]{1,1}$/";
 	if($_POST['pass']==""||$_POST['confirm']==""||$_POST['lastname']==""||$_POST['firstname']==""||$_POST['email']=="")
 		echo"<h1>mancano dati</h1>";
 	else if($_POST['pass']!=$_POST['confirm'])
