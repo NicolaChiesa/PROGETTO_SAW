@@ -13,13 +13,14 @@ session_start();
 if (!isset($_SESSION['key'])){
 	header("Location: esercizio4.php");
 }
-else
-	echo "Benvenuto nella pagina di modifica ".$_SESSION['nome'];
+else{
+    $nome=$_SESSION['nome'];
+	echo "<h1>Benvenuto nella pagina di modifica $nome</h1>";
+    }
 $nome=$_SESSION['nome'];
 $cognome=$_SESSION['cognome'];
 $mail=$_SESSION['email'];
 ?>
-<p><a href="esci.php">logout</a></p>
 <?php
 $form='<div class="mydiv"> 
 
@@ -40,5 +41,6 @@ $form='<div class="mydiv">
     ?>
 </div>
 <p><a href="es4.php">Pagina principale</a></p>
+<p><a href="esci.php">logout</a></p>
 </body>
 </html>
