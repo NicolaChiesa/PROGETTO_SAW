@@ -9,8 +9,8 @@
 
 
 <body>
-<p><a href="form.php">Vai al menu' di registrazione</a></p>
-<p><a href="entra.php">Vai al login</a></p>
+<p><a href="Registrazione/Registrazioneform.php">Vai al menu' di registrazione</a></p>
+<p><a href="Login/FormLogin.php">Vai al login</a></p>
   <div><img src="books.jpg" alt="libri" width="500" height="500"/></div>
 
   <div>
