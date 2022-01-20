@@ -1,6 +1,5 @@
 <?php
 include('../Templates/Header.php');
-session_start();
 if (!($_SESSION['Registrated'] == "true")){
 	header("Location: PaginaPrincipale.php");
 }
