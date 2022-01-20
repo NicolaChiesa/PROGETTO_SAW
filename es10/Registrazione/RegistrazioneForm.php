@@ -29,5 +29,6 @@ receive an email to confirm your registration</p>
    </form>
   </div>
   </div>
-</body>
-</html>
+<?php
+  include('../Templates/Footer.php');
+?>
