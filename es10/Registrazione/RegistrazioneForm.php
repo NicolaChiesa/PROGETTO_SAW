@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <title>REGISTRATI</title>
-    <link rel="stylesheet" type="text/css" href="../esercizio4.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="myscript.js"></script>
-</head>
+<?php
+    include('../Templates/Header.php');
+?>
 
-
-<body>
 <p class="title">Fill the form below to register to the Universal Digital Library</p><p class="title">After submitting your data you will 
 receive an email to confirm your registration</p>
 
