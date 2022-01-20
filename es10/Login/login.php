@@ -7,7 +7,7 @@
 <body>
 
 <?php
-	include('connessione.php');
+	include('../connessione.php');
 	session_start();
 	$pass=trim($_POST['pass']);
 	$email=mysqli_real_escape_string($con, $_POST['email']);
@@ -20,7 +20,7 @@
 		$_SESSION['id']=$row['ID'];
 		$_SESSION['email']=$_POST['email'];
 		$_SESSION['key']=$_POST['email'];
-		header("Location: es4.php");
+		header("Location: ../es4.php");
 		}
 		else
 			echo"ERRORE";
