@@ -31,5 +31,6 @@ $form='<div class="mydiv">
     mysqli_close($con);
     ?>
 </div>
-</body>
-</html>
+<?php
+  include('../Templates/Footer.php');
+?>
