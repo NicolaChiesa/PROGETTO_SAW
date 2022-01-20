@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <title>Sign-up</title>
-</head>
-
-<body>
-
 <?php
-	include('connessione.php');
+	include('../Templates/Header.php');
+	include('../connessione.php');
 	session_start();
 	$email=mysqli_real_escape_string($con, $_POST['email']);
 	$nome=mysqli_real_escape_string($con, $_POST['firstname']);

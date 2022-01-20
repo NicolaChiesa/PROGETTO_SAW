@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <title>Modifica</title>
-    <link rel="stylesheet" type="text/css" href="esercizio4.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="myscript.js"></script>
-</head>
-<body>
 <?php
-include('connessione.php');
-session_start();
+include('../connessione.php');
+include('../Templates/Header.php');
 if (!isset($_SESSION['key'])){
-	header("Location: esercizio4.php");
+	header("Location: Core/PaginaPrincipale.php");
 }
 else{
     $nome=$_SESSION['nome'];
@@ -40,7 +31,5 @@ $form='<div class="mydiv">
     mysqli_close($con);
     ?>
 </div>
-<p><a href="es4.php">Pagina principale</a></p>
-<p><a href="esci.php">logout</a></p>
 </body>
 </html>
