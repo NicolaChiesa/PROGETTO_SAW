@@ -1,18 +1,23 @@
 div {
     width: 90%;
-    background-color: indianred;
+    background-color: ivory;
     margin-right: 5%;
     margin-left: 5%;
 }
 
 li {
-    padding: 8px;
+    width: 90%;
+    padding: 4px;
     margin: 2px;
-    color: white;
-    background-color: rgba(192,65,56,1.0);
+    color: black;
+    background-color: lightsteelblue;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 body {
     background-image: url("../Immagini/fulmine.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #footer {
     text-align:center;
