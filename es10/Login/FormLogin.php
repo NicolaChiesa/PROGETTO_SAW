@@ -9,5 +9,6 @@
     <input type="password" class="no-outline" id="pass" name="pass" placeholder="Password"><br>
 	<input type="submit" value="LOGIN">
 </form>
-</body>
-</html>
+<?php
+  include('../Templates/Footer.php');
+?>
