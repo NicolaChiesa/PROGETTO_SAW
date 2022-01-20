@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <title>Sign-up</title>
-</head>
-
-<body>
-
 <?php
+	include('../Templates/Header.php');
 	include('../connessione.php');
 	session_start();
 	$pass=trim($_POST['pass']);
@@ -20,7 +13,8 @@
 		$_SESSION['id']=$row['ID'];
 		$_SESSION['email']=$_POST['email'];
 		$_SESSION['key']=$_POST['email'];
-		header("Location: ../es4.php");
+		$_SESSION['Registrated'] = "true";
+		header("Location: ../Core/PaginaPrincipale.php");
 		}
 		else
 			echo"ERRORE";
