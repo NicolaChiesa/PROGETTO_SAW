@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <title>Sign-up</title>
-</head>
-
-<body>
-
 <?php
+	include('../Templates/Header.php');
 	include('../connessione.php');
 	$quer="SELECT* FROM utenti WHERE Mail='".$_POST['email']."'";
 	$re = mysqli_query($con,$quer);
@@ -33,7 +26,9 @@
 	$query ="INSERT INTO utenti (Nome, Cognome, Password, Mail) VALUES ('".$firstname."', '".$lastname."', '".$pass."', '".$email."')";
 	$res = mysqli_query($con,$query);
 	mysqli_close($con);
-	echo "Utente inserito con successo";
+	$_SESSION['Registrated'] = "true";
+	echo "Utente inserito con successo, premi su home per tornare alla pagina principale, avendo però adesso anche
+			l' accesso all' area privata e la possibilità di modificare i dati utente";
 	}
 
 	/****************************************************************************/
@@ -45,7 +40,5 @@
         /* If something goes wrong send back appropriate messages                   */
 	/****************************************************************************/
 ?>
-<p><a href="../esercizio4.php">Pagina principale</a></p>
-
 </body>
 </html>
