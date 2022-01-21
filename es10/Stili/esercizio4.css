@@ -40,8 +40,8 @@ nav ul{
 
 nav li a{
     text-decoration: none;  /*toglie la sottolineatura dei link*/
-    color: white;           /*colore delle scritte*/   
-    padding: 10px;  /*modifica lo spazio tra le parole nel nav*/
+    color: white;           /*colore delle scritte*/ 
+    padding: 2px;  /*modifica lo spazio tra le parole nel nav*/
 }
 
 nav li:hover{

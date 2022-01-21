@@ -11,30 +11,47 @@ session_start();
     <title>User Registration</title>
     <link rel="stylesheet" type="text/css" href="../Stili/esercizio4.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> /*qua inizia il codice del menù*/
+    <script>
+    $(document).ready(function(){
+        $("#menuButton").hover(function(){
+        $("#menu").slideToggle();
+        }); 
+     });
+
+</script>
 
 </head>
 <body>
     <?php    
         if(isset($_SESSION['Registrated']) && $_SESSION['Registrated'] == "true"){
-            echo"
-            <header class=\"logo\"> LOGO/TITOLO </header>
+            echo'
+            <header class="logo"> LOGO/TITOLO </header>
                 <nav>
                     <ul>
-                        <li> <a href=\"../esci.php\"> Logout</a></li>   
-                        <li> <a href=\"../Core/PaginaPrincipale.php\"> Home</a></li>
-                        <li> <a href=\"../ModificaUtente/modifica.php\"> Modifica Dati Utente</a></li>
+                        <li> <a href="../Core/PaginaPrincipale.php"><i class="fa fa-home"></i></a></li>
+                        <li> <a href="../esci.php"> <i class="fa fa-sign-out"></i></a></li>   
+                        <li> <a href="../ModificaUtente/modifica.php"> <i class="fa fa-pencil"></i></a></li>
                     </ul>
-                </nav>";
+                </nav>';
         }
         else{
-            echo"
-            <header class=\"logo\"> LOGO/TITOLO </header>  
+            echo'
+            <header class="logo"> LOGO/TITOLO </header>  
             <nav>
+            <button id="menuButton">Menu</button>
+            <div id="menu" style="display:none;">
+                <p>Home</p>
+                <p>Dove siamo</p>
+                <p>Chi siamo</p>
+                <p>Contatti</p>
+                <p>Social</p>
+            </div>
             <ul> 
-                <li> <a href=\"../Core/PaginaPrincipale.php\"> Home</a></li>   
-                <li> <a href=\"../Login/FormLogin.php\"> Accedi </a></li>
-                <li> <a href=\"../Registrazione/RegistrazioneForm.php\"> Registrati </a></li>
+                <li> <a href="../Core/PaginaPrincipale.php"><i class="fa fa-home"></i> </a></li>   
+                <li> <a href="../Login/FormLogin.php"> <i class="fa fa-sign-in"></i> </a></li>
+                <li> <a href="../Registrazione/RegistrazioneForm.php"> <i class="fa fa-registered"></i></i> </a></li>
             </ul>
-            </nav>";
+            </nav>';
         }
     ?> 
