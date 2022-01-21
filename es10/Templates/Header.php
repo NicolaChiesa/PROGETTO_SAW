@@ -11,7 +11,7 @@ session_start();
     <title>User Registration</title>
     <link rel="stylesheet" type="text/css" href="../Stili/esercizio4.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> /*qua inizia il codice del menù*/
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
     $(document).ready(function(){
         $("#menuButton").hover(function(){
@@ -39,19 +39,24 @@ session_start();
             echo'
             <header class="logo"> LOGO/TITOLO </header>  
             <nav>
-            <button id="menuButton">Menu</button>
+                <ul>
+                    <li><a href="#"> HOME </a></li>
+                    <li><a href="#"> NEWS </a></li>
+                    <li><a href="#"> CHI SIAMO </a></li> 
+                    <li><a href="#"> CONTATTI </a></li>
+                    <li> <a href="../Core/PaginaPrincipale.php"><i class="fa fa-home"></i> </a></li>   
+                    <li> <a href="../Login/FormLogin.php"> <i class="fa fa-sign-in"></i> </a></li>
+                    <li> <a href="../Registrazione/RegistrazioneForm.php"> <i class="fa fa-registered"></i></i> </a></li>
+                </ul>
+            </nav>';
+        }
+    ?> 
+
+<!-- <button id="menuButton">Menu</button>
             <div id="menu" style="display:none;">
                 <p>Home</p>
                 <p>Dove siamo</p>
                 <p>Chi siamo</p>
                 <p>Contatti</p>
                 <p>Social</p>
-            </div>
-            <ul> 
-                <li> <a href="../Core/PaginaPrincipale.php"><i class="fa fa-home"></i> </a></li>   
-                <li> <a href="../Login/FormLogin.php"> <i class="fa fa-sign-in"></i> </a></li>
-                <li> <a href="../Registrazione/RegistrazioneForm.php"> <i class="fa fa-registered"></i></i> </a></li>
-            </ul>
-            </nav>';
-        }
-    ?> 
+            </div> -->
