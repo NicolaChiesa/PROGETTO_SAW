@@ -7,7 +7,7 @@
    <p><a href="reserved.php">Vai alla pagina riservata</a></p>
 </div>
   <div>
-  <p>QUA CI VA LA PRESENTAZIONE DEL SITO E SU COSA FA
+  <p>QUA CI VA LA PRESENTAZIONE DEL SITO E SU COSA FA</p>
   <p>ff</p>
   <p>FA</p>
   <p>FA</p>
@@ -22,7 +22,6 @@
   <p>ff</p>
   <p>FA</p>
   <p>FA</p>
-  </p>
   </div>
 
   <div>

@@ -3,7 +3,7 @@ session_start();
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,26 +17,24 @@ session_start();
     <?php    
         if(isset($_SESSION['Registrated']) && $_SESSION['Registrated'] == "true"){
             echo"
-                <div>
+            <header class=\"logo\"> LOGO/TITOLO </header>
                 <nav>
                     <ul>
                         <li> <a href=\"../esci.php\"> Logout</a></li>   
                         <li> <a href=\"../Core/PaginaPrincipale.php\"> Home</a></li>
                         <li> <a href=\"../ModificaUtente/modifica.php\"> Modifica Dati Utente</a></li>
                     </ul>
-                </nav>
-                </div>";
+                </nav>";
         }
         else{
             echo"
-            <div>
+            <header class=\"logo\"> LOGO/TITOLO </header>  
             <nav>
-            <ul>
+            <ul> 
                 <li> <a href=\"../Core/PaginaPrincipale.php\"> Home</a></li>   
                 <li> <a href=\"../Login/FormLogin.php\"> Accedi </a></li>
                 <li> <a href=\"../Registrazione/RegistrazioneForm.php\"> Registrati </a></li>
             </ul>
-            </nav>
-            </div>";
+            </nav>";
         }
     ?> 
