@@ -15,13 +15,7 @@
   <p>FA</p>
   <p>FA</p>
   <p>FA</p>
-  <p>FA</p>
-  <p>FA</p>
-  <p>FA</p>
-  <p>FA</p>
-  <p>ff</p>
-  <p>FA</p>
-  <p>FA</p>
+
   </div>
 
   <div>
