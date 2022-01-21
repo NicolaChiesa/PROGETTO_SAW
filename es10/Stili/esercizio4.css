@@ -2,7 +2,6 @@ html, body{
     height: 100%;
 }
 
-
 div {
     background-color: rgb(160, 65, 65);
     width: 100%;
@@ -14,14 +13,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;*/
     margin: 0;  /*fa rimpire a tutti i div la pagina in orizzontale*/
-}
-
-footer {
-    width: 100%;
-    background-color: khaki;
-    text-align: center;
-    bottom: 0;
-    position: relative;
 }
 
 header{
@@ -60,4 +51,80 @@ nav li:hover{
 nav li{
     display: inline-block;
     padding: 15px;
+}
+
+
+/*footer {
+    width: 100%;
+    background-color: khaki;
+    text-align: center;
+    bottom: 0;
+    position: relative;
+}*/
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100%;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content p{
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease ;
+}
+
+.socials a:hover i{
+    color: aqua
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-botttom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
 }
