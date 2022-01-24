@@ -1,0 +1,195 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* --------------------  TESTI --------------------------- */
+
+.testoBase {
+  font-family: verdana;
+  color: black;
+  font-size: 16px;
+}
+
+.testoTitolo {
+  font-family: Open, sans-serif;
+  color: rgb(45, 41, 41);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* -------------------------------- DIV ----------------------------------*/
+.DataDiv {
+  background-color: #cda881;
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+  width: 40%;
+  height: auto;
+}
+
+div {
+  background-color: rgb(160, 65, 65);
+  width: 100%;
+  height: 400px;
+}
+
+/* --------------------------- INPUT --------------------------*/
+
+input[type="text"],
+input[type="email"],
+input[type="Password"],
+input[type="submit"] {
+  width: 100%;
+  padding: 15px 15px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #fffafa;
+  font-size: 15px;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="Password"]:hover,
+input[type="submit"]:hover {
+  background-color: #ebdfdf;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: white;
+  color: rgb(112, 111, 111);
+  padding: 8px 8px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  float: right;
+}
+
+/*body{
+    background-image: url("../Immagini/fulmine.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
+
+/* --------------------------- HEADER --------------------------*/
+
+header {
+  width: 100%;
+  height: 100px;
+  color: #fff; /*colora le scritte nell header*/
+  background-color: rgb(45, 41, 41); /*colora lo sfondo dell header*/
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  font-size: 30px;
+}
+
+/* --------------------------- NAVBAR --------------------------*/
+
+nav {
+  background-color: rgb(142, 64, 64);
+  width: 100%;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none; /*leva i pallini della lista*/
+  margin: 0;
+  padding: 0;
+}
+
+nav li a {
+  text-decoration: none; /*toglie la sottolineatura dei link*/
+  color: white; /*colore delle scritte*/
+  padding: 2px; /*modifica lo spazio tra le parole nel nav*/
+}
+
+nav li:hover {
+  background-color: rgb(
+    206,
+    100,
+    100
+  ); /*colore che si accende quando passiamo sopra i link*/
+}
+
+nav li {
+  display: inline-block;
+  padding: 15px;
+}
+
+/* --------------------------- FOOTER --------------------------*/
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(12, 228, 62);
+  height: auto;
+  width: 100%;
+  font-family: Open, sans-serif;
+  color: #fff;
+}
+
+.footer-content {
+  height: 150px;
+  background: rgb(45, 41, 41);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 60px;
+  text-transform: capitalize;
+}
+
+.socials {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials li {
+  margin: 12px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.socials a:hover i {
+  color: rgb(157, 66, 66);
+}
+
+.footer-bottom {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(15, 15, 15);
+  text-align: center;
+}
+
+.footer-botttom p {
+  text-transform: capitalize;
+  margin: 0px;
+}
