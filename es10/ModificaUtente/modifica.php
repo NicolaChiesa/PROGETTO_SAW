@@ -13,7 +13,8 @@ $cognome=$_SESSION['cognome'];
 $mail=$_SESSION['email'];
 ?>
 <?php
-$form='<div class="mydiv"> 
+$form='<center>
+<div class="DataDiv"> 
 
 <form id="myform" action="mod.php" method="POST"> 
     <i class="fa fa-user" style="font-size:13px;color:rgba(65, 65, 65, 1.0)"></i>
@@ -26,7 +27,9 @@ $form='<div class="mydiv">
     <input type="text" id="lastname" class="no-outline"  name="lastname" value='.$cognome.'><br>
 
 	<input type="submit" value="MODIFICA">
-    </form>';
+    <br><br><br>
+    </form>
+    </center>';
     echo $form;
     mysqli_close($con);
     ?>
