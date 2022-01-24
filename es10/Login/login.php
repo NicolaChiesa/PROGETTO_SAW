@@ -1,7 +1,6 @@
 <?php
 	include('../Templates/Header.php');
 	include('../connessione.php');
-	session_start();
 	$pass=trim($_POST['pass']);
 	$email=mysqli_real_escape_string($con, $_POST['email']);
 	$query = "SELECT Password, Nome, Cognome, ID FROM utenti WHERE Mail='".$email."'";
