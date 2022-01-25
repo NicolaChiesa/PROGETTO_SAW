@@ -1,0 +1,1 @@
+Si puó aggiungere tramite ajax o con un event listener uncontrollo sulla mail di un nuovo utente e controllare se c'é giá o meno nel db in automatico ancora prima di premere il pulsante submit
