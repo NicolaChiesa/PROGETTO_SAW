@@ -16,6 +16,7 @@
 
     <i class="fa fa-envelope" style="font-size:9px;color:rgba(65, 65, 65, 1.0)"></i>
     <input type="email" id="email" class="no-outline"  name="email" placeholder="E-mail"><br>
+    <small class="error_email" style="color:red;"></small>
 
     <i class="fa fa-unlock-alt" style="font-size:14px;color:rgba(65, 65, 65, 1.0)"></i>
     <input type="password" class="no-outline" id="pass" name="pass" placeholder="Password"><br>
@@ -23,7 +24,7 @@
     <i class="fa fa-unlock-alt" style="font-size:14px;color:rgba(65, 65, 65, 1.0)"></i>
     <input type="password" class="no-outline"  id="confirm" name="confirm" placeholder="Conferma password">
     
-	  <input type="submit" value="Invia">
+	  <input type="submit" value="Invia" id="submit">
     <br><br><br><br>
   </form>
 </div>
@@ -31,7 +32,28 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script type="text/javascript">
-  console.log('Parte lo scriopt');
+ 
+/*parte Michele indiano che non si sa perchè non va*/
+
+$(document).ready(function(){
+    $('#email').keyup(funciotn(e){
+        var email=$('#email').val();
+        $.ajax({
+        type:"POST",
+        url:"registration.php",
+        data:{"submit":1
+        "email":email,
+        },
+
+        dataType:"",
+        success:function(response){
+            $(".error_email").text(response);
+            }
+        });
+    });
+});
+
+/*  console.log('Parte lo scriopt');
   $(document).ready(setup);
 
   function setup() {
@@ -74,7 +96,29 @@
       console.log('il gestisci mi ha detto che va bene ')
       $("#email").attr("class","form-control is-valid");
     }
-  }
+  }*/
+
+  /*$("#email").keyup(function() {
+  var dati = $('#email').attr('value');
+  var data_send = "username=" + dati;
+
+  $.ajax({
+    type: "POST",
+    url: "newsletter_iscrizione.php",
+    data: data_send,
+    success: function(data) {
+      if (data == '1') {
+        $(".mail").css("border","2px solid red");
+        $('#campo').html('Email Esistente');
+        $("#campo").css("color","red");
+        $('#submit').attr('disabled', true);
+      }
+      else {
+        $('#submit').attr('disabled', false);
+      }
+    }
+  });
+});*/
 </script>
 
 <?php
