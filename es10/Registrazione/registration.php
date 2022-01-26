@@ -1,4 +1,19 @@
 <?php
+
+/*if(isset($_POST['submit']))
+{
+	$email=$_POST['email']
+	$quer="SELECT* FROM utenti WHERE Mail='".$_POST['email']."'";
+	$re = mysqli_query($con,$quer);
+	$row = mysqli_fetch_assoc($re);
+	$num = mysqli_affected_rows($con);
+	if(num==1)
+		echo "<h1>email già usata</h1>";
+	else
+		echo "<h1>email già  non usata</h1>";
+}
+*/
+
 	include('../Templates/Header.php');
 	include('../connessione.php');
 	$quer="SELECT* FROM utenti WHERE Mail='".$_POST['email']."'";
@@ -8,11 +23,11 @@
 	mysqli_free_result($re);
 	$numi = mysqli_affected_rows($con);
 	if($_POST['pass']==""||$_POST['confirm']==""||$_POST['lastname']==""||$_POST['firstname']==""||$_POST['email']=="")
-		echo"<h1>mancano dati</h1>";
+		echo"<h1>Alcuni dati non sno stati inseriti</h1>";
 	else if($_POST['pass']!=$_POST['confirm'])
-		echo"<h1>PASSWORD SABGLIATA</h1>";
+		echo"<h1>Le due password non coincidono</h1>";
 	else if($num==1)
-		echo "<h1> email già usata</h1>";
+		echo "<h1>email già usata</h1>";
 	else{
 	$pass=trim($_POST['pass']);
 	$lastname=htmlspecialchars($_POST['lastname']);
@@ -31,14 +46,6 @@
 			l' accesso all' area privata e la possibilità di modificare i dati utente";
 	}
 
-	/****************************************************************************/
-	/* TO BE DONE                                                               */
-	/*                                                                          */
-	/* This means: reading the data sent in POST, "cleaning" them, verifying    */
-	/* that the user sent what you expect, writing data in the file             */
-	/*                                                                          */
-        /* If something goes wrong send back appropriate messages                   */
-	/****************************************************************************/
 ?>
 </body>
 </html>
