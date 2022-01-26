@@ -1,4 +1,19 @@
 <?php
+
+/*if(isset($_POST['submit']))
+{
+	$email=$_POST['email']
+	$quer="SELECT* FROM utenti WHERE Mail='".$_POST['email']."'";
+	$re = mysqli_query($con,$quer);
+	$row = mysqli_fetch_assoc($re);
+	$num = mysqli_affected_rows($con);
+	if(num==1)
+		echo "<h1>email già usata</h1>";
+	else
+		echo "<h1>email già  non usata</h1>";
+}
+*/
+
 	include('../Templates/Header.php');
 	include('../connessione.php');
 	$quer="SELECT* FROM utenti WHERE Mail='".$_POST['email']."'";
@@ -31,14 +46,6 @@
 			l' accesso all' area privata e la possibilità di modificare i dati utente";
 	}
 
-	/****************************************************************************/
-	/* TO BE DONE                                                               */
-	/*                                                                          */
-	/* This means: reading the data sent in POST, "cleaning" them, verifying    */
-	/* that the user sent what you expect, writing data in the file             */
-	/*                                                                          */
-        /* If something goes wrong send back appropriate messages                   */
-	/****************************************************************************/
 ?>
 </body>
 </html>
