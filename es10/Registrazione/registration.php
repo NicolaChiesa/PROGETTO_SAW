@@ -8,11 +8,11 @@
 	mysqli_free_result($re);
 	$numi = mysqli_affected_rows($con);
 	if($_POST['pass']==""||$_POST['confirm']==""||$_POST['lastname']==""||$_POST['firstname']==""||$_POST['email']=="")
-		echo"<h1>mancano dati</h1>";
+		echo"<h1>Alcuni dati non sno stati inseriti</h1>";
 	else if($_POST['pass']!=$_POST['confirm'])
-		echo"<h1>PASSWORD SABGLIATA</h1>";
+		echo"<h1>Le due password non coincidono</h1>";
 	else if($num==1)
-		echo "<h1> email già usata</h1>";
+		echo "<h1>email già usata</h1>";
 	else{
 	$pass=trim($_POST['pass']);
 	$lastname=htmlspecialchars($_POST['lastname']);

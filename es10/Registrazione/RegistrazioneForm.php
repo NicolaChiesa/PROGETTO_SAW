@@ -1,5 +1,6 @@
 <?php
     include('../Templates/Header.php');
+	  include('../connessione.php');
 ?>
 
 <center>
@@ -28,6 +29,54 @@
   
 </div>
 </center>
+
+<script src= "jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+  console.log('Parte lo scriopt');
+  $(document).ready(setup);
+
+  function setup() {
+    $("#email").on("blur",controlla_doppioni_email )
+  }
+
+  function controlla_doppioni_email(){
+    console.log('sono nel check email');
+    if(!this.checkValidity()){
+      console.log('la mail non era valida'); 
+      invalida_email("Formato mail non valido");
+    }
+      else{
+        let email_inserita = $("#email").val();
+        console.log('Ho assegnato val ad email'); 
+        if(email_inserita==""){
+          invalida_email("Devi inserire una email");
+          console.log('la email era vuota'); 
+        } 
+        else{
+          console.log('ha visto che la email aveva il formato giusto e andiamo a chiamare la funzione che fa il controollo ')
+          $.get("controlloEmail.php", {email: email_inserita}, gestisci_risposta_server);
+          console.log('finito il controlloemailllll');           
+        }
+      }
+  }
+
+  // Ripulisce la mail e mi dice qua é stato il motivo a generare l'errore
+  function invalida_email(messaggio_errore){
+    console.log('ho invalidato la mail')
+    $("#email").val(("")).attr("placeholder",messaggio_errore);
+    $("#email").attr("class","form-control is-invalid");
+  }
+
+  function gestisci_risposta_server(risposta_server){
+    console.log('Sono entrato nel gestiscirisposta')
+    if(risposta_server == "non trovata")
+      invalida_mail("Email giá in uso, cambiala");
+    else{
+      console.log('il gestisci mi ha detto che va bene ')
+      $("#email").attr("class","form-control is-valid");
+    }
+  }
+</script>
 
 <?php
   include('../Templates/Footer.php');
