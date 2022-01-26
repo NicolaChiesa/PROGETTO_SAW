@@ -26,11 +26,10 @@
 	  <input type="submit" value="Invia">
     <br><br><br><br>
   </form>
-  
 </div>
 </center>
 
-<script src= "jquery-3.2.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script type="text/javascript">
   console.log('Parte lo scriopt');
   $(document).ready(setup);
@@ -68,9 +67,9 @@
   }
 
   function gestisci_risposta_server(risposta_server){
-    console.log('Sono entrato nel gestiscirisposta')
-    if(risposta_server == "non trovata")
-      invalida_mail("Email giá in uso, cambiala");
+    console.log(risposta_server)
+    if(risposta_server == "trovata")
+      invalida_email("Email giá in uso, cambiala");
     else{
       console.log('il gestisci mi ha detto che va bene ')
       $("#email").attr("class","form-control is-valid");
