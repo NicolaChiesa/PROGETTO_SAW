@@ -53,7 +53,7 @@ $(document).ready(function(){
     });
 });
 
-/*  console.log('Parte lo scriopt');
+/* parte nicola  console.log('Parte lo scriopt');
   $(document).ready(setup);
 
   function setup() {
