@@ -14,16 +14,20 @@
         </div>
   
         <div class="col-4 offset-1">
-          <form>
+        <?php   
+        if(isset($_SESSION['Registrated']) && $_SESSION['Registrated'] == "true"){
+            echo'<form action="../newsletter.php" method="POST" id="myform">
             <h5 class="text-light">Iscriviti alla nostra newsletter!</h5>
             <p class="text-light">Tutti i mesi fantastiche novità!</p>
             <div class="d-flex w-100 gap-2">
               <label for="newsletter1" class="visually-hidden">Indirizzo e-mail</label>
-              <input id="newsletter1" type="text" class="form-control" placeholder="Indirizzo e-mail">
-              <button class="btn btn-primary" type="button">Iscriviti</button>
+              <submit class="btn btn-primary" type="button">Iscriviti</button>
             </div>
           </form>
-        </div>
+        </div>';
+        }
+
+    ?> 
       </div>
   
       <div class="d-flex justify-content-between py-4 my-4 border-top text-light">
@@ -42,20 +46,3 @@
   
 </body>
 </html>
-
-<!--
-    <footer> 
-        <div class="footer-content">
-            <p>LOGO</p>
-            <ul class="socials">
-                <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
-                <li><a href="#"><i class="fa fa-youtube fa-lg"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram fa-lg"></i></a></li>
-            </ul>
-        </div>  
-        <div class="footer-bottom">
-            <p> Copyright: the Universal Digital Library - Cookie policy - Feedback</p>
-        </div>          
-    </footer>
--->
