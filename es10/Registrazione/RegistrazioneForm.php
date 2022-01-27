@@ -35,9 +35,9 @@
  
 
  console.log('Parte lo scriopt');
-=======
+
  console.log('Parte lo scriopt');
->>>>>>> 9ff32ff7dfd405bd0bbac00ed0b738216224e69c
+
   $(document).ready(setup);
 
   function setup() {
