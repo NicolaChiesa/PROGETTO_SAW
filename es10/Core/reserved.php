@@ -1,7 +1,7 @@
 <?php
 include('../Templates/Header.php');
 if (!($_SESSION['Registrated'] == "true")){
-	header("Location: PaginaPrincipale.php");
+	header("Location: NonAutenticato.php");
 }
 else
 	echo "Benvenuto";
