@@ -82,16 +82,7 @@
     }
   }
 
-/*  function validateMyForm()
-{
-  if($("#email").attr("class","form-control is-valid"))
-  { 
-    returnToPreviousPage();
-    return false;
-  }
-  return true;
-}
-*/
+
 </script>
 
 <?php
