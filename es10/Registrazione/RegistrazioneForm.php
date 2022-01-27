@@ -37,10 +37,7 @@
  console.log('Parte lo scriopt');
 
  console.log('Parte lo scriopt');
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
   $(document).ready(setup);
 
   function setup() {
