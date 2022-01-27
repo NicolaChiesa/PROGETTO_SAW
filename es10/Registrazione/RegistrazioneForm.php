@@ -16,7 +16,7 @@
 
     <i class="fa fa-envelope" style="font-size:9px;color:rgba(65, 65, 65, 1.0)"></i>
     <input type="email" id="email" class="no-outline"  name="email" placeholder="E-mail"><br>
-    <small class="error_email" style="color:red;"></small>
+  
 
     <i class="fa fa-unlock-alt" style="font-size:14px;color:rgba(65, 65, 65, 1.0)"></i>
     <input type="password" class="no-outline" id="pass" name="pass" placeholder="Password"><br>
