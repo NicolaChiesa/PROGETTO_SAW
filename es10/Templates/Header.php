@@ -26,14 +26,25 @@ session_start();
     <?php    
         if(isset($_SESSION['Registrated']) && $_SESSION['Registrated'] == "true"){
             echo'
-            <header class="logo"> LOGO/TITOLO </header>
-                <nav>
-                    <ul>
-                        <li> <a href="../Core/PaginaPrincipale.php"><i class="fa fa-home"></i></a></li>
-                        <li> <a href="../esci.php"> <i class="fa fa-sign-out"></i></a></li>   
-                        <li> <a href="../ModificaUtente/modifica.php"> <i class="fa fa-pencil"></i></a></li>
+            <div class="px-5 py-2 bg-dark">
+                <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+                    <a href="#" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+                    </a>
+
+                    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                        <li><a href="../Core/PaginaPrincipale.php" class="nav-link px-2 link-light">Home</a></li>
+                        <li><a href="#" class="nav-link px-2 link-light">Articoli</a></li>
+                        <li><a href="#" class="nav-link px-2 link-light">Novità</a></li>
+                        <li><a href="#" class="nav-link px-2 link-light">Chi siamo</a></li>
                     </ul>
-                </nav>';
+
+                    <div class="col-md-3 text-end">
+                        <a href="../esci.php" <button type="button" class="btn btn-outline-light me-2">Logout</button> </a>
+                        <a href="../ModificaUtente/modifica.php" <button type="button" class="btn btn-light">Modifica Profilo</button> </a>
+                    </div>
+                </header>
+            </div>';
         }
         else{
             echo'
@@ -44,15 +55,15 @@ session_start();
                     </a>
 
                     <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                        <li><a href="#" class="nav-link px-2 link-light">Home</a></li>
+                        <li><a href="../Core/PaginaPrincipale.php" class="nav-link px-2 link-light">Home</a></li>
                         <li><a href="#" class="nav-link px-2 link-light">Articoli</a></li>
                         <li><a href="#" class="nav-link px-2 link-light">Novità</a></li>
                         <li><a href="#" class="nav-link px-2 link-light">Chi siamo</a></li>
                     </ul>
 
                     <div class="col-md-3 text-end">
-                        <button type="button" class="btn btn-outline-light me-2">Accedi</button>
-                        <button type="button" class="btn btn-light">Registrati</button>
+                        <a href="../Login/FormLogin.php" <button type="button" class="btn btn-outline-light me-2">Accedi</button> </a>
+                        <a href="../Registrazione/RegistrazioneForm.php" <button type="button" class="btn btn-light">Registrati</button> </a>
                     </div>
                 </header>
             </div>';
