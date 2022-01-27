@@ -15,9 +15,9 @@
 		$_SESSION['Registrated'] = "true";
 		header("Location: ../Core/PaginaPrincipale.php");
 		}
-		else
-			echo"ERRORE";
-			mysqli_close($con);
+	else
+		echo"ERRORE";
+	mysqli_close($con);
 ?>
 
 </body>
