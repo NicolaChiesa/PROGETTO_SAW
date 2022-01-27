@@ -33,28 +33,11 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script type="text/javascript">
  
-/*parte Michele indiano che non si sa perchè non va
-
-$(document).ready(function(){
-    $('#email').keyup(funciotn(e){
-        var email=$('#email').val();
-        $.ajax({
-        type:"POST",
-        url:"registration.php",
-        data:{"submit":1
-        "email":email,
-        },
-
-        dataType:"",
-        success:function(response){
-            $(".error_email").text(response);
-            }
-        });
-    });
-});
-*/
 
  console.log('Parte lo scriopt');
+=======
+ console.log('Parte lo scriopt');
+>>>>>>> 9ff32ff7dfd405bd0bbac00ed0b738216224e69c
   $(document).ready(setup);
 
   function setup() {
@@ -99,27 +82,6 @@ $(document).ready(function(){
     }
   }
 
-  /*$("#email").keyup(function() {
-  var dati = $('#email').attr('value');
-  var data_send = "username=" + dati;
-
-  $.ajax({
-    type: "POST",
-    url: "newsletter_iscrizione.php",
-    data: data_send,
-    success: function(data) {
-      if (data == '1') {
-        $(".mail").css("border","2px solid red");
-        $('#campo').html('Email Esistente');
-        $("#campo").css("color","red");
-        $('#submit').attr('disabled', true);
-      }
-      else {
-        $('#submit').attr('disabled', false);
-      }
-    }
-  });
-});*/
 </script>
 
 <?php
