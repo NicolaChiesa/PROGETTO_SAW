@@ -43,8 +43,13 @@
 	$res = mysqli_query($con,$query);
 	mysqli_close($con);
 	$_SESSION['Registrated'] = "true";
-	echo "Utente inserito con successo, premi su home per tornare alla pagina principale, avendo però adesso anche
-			l' accesso all' area privata e la possibilità di modificare i dati utente";
+	$_SESSION['nome']=$row['Nome'];
+	$_SESSION['cognome']=$row['Cognome'];
+	$_SESSION['id']=$row['ID'];
+	$_SESSION['email']=$_POST['email'];
+	$_SESSION['key']=$_POST['email'];
+	$_SESSION['Registrated'] = "true";
+	header("Location: ../Core/PaginaPrincipale.php");
 	}
 
 ?>
