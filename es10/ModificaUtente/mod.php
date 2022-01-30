@@ -1,7 +1,6 @@
 <?php
 	include('../Templates/Header.php');
 	include('../connessione.php');
-	session_start();
 	$email=mysqli_real_escape_string($con, $_POST['email']);
 	$nome=mysqli_real_escape_string($con, $_POST['firstname']);
 	$cognome=mysqli_real_escape_string($con, $_POST['lastname']);
