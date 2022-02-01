@@ -22,62 +22,50 @@
     <input type="password" class="no-outline" id="pass" name="pass" placeholder="Password"><br>
 
     <i class="fa fa-unlock-alt" style="font-size:14px;color:rgba(65, 65, 65, 1.0)"></i>
-    <input type="password" class="no-outline"  id="confirm" name="confirm" placeholder="Conferma password">
+    <input type="password" class="no-outline"  id="confirm" name="confirm" placeholder="Conferma password"><br>
+
+    <input type="checkbox" id="Subscription" name="Sub" value="Bike">
+    <label for="vehicle1"> Iscrivimi alla newsletter</label><br><br>
+
     
 	  <input type="submit" value="Invia" id="submit">
-    <br><br><br><br>
+    <br><br><br>
   </form>
 </div>
 </center>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script type="text/javascript">
- 
-
- console.log('Parte lo scriopt');
-
- console.log('Parte lo scriopt');
-
   $(document).ready(setup);
-
   function setup() {
     $("#email").on("blur",controlla_doppioni_email )
   }
 
   function controlla_doppioni_email(){
-    console.log('sono nel check email');
     if(!this.checkValidity()){
-      console.log('la mail non era valida'); 
       invalida_email("Formato mail non valido");
     }
       else{
         let email_inserita = $("#email").val();
-        console.log('Ho assegnato val ad email'); 
         if(email_inserita==""){
           invalida_email("Devi inserire una email");
-          console.log('la email era vuota'); 
         } 
         else{
-          console.log('ha visto che la email aveva il formato giusto e andiamo a chiamare la funzione che fa il controollo ')
           $.get("controlloEmail.php", {email: email_inserita}, gestisci_risposta_server);
-          console.log('finito il controlloemailllll');           
         }
       }
   }
 
-  // Ripulisce la mail e mi dice qua é stato il motivo a generare l'errore
+  // Ripulisce la mail e mi dice qual é stato il motivo a generare l'errore
   function invalida_email(messaggio_errore){
-    console.log('ho invalidato la mail')
     $("#email").val(("")).attr("placeholder",messaggio_errore);
     $("#email").attr("class","form-control is-invalid");
   }
 
   function gestisci_risposta_server(risposta_server){
-    console.log(risposta_server)
     if(risposta_server == "trovata")
       invalida_email("Email giá in uso, cambiala");
     else{
-      console.log('il gestisci mi ha detto che va bene ')
       $("#email").attr("class","form-control is-valid");
     }
   }
