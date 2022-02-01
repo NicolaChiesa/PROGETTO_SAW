@@ -23,19 +23,25 @@
 
     try {
         //Server settings
-        $mail->SMTPDebug =1;                                       //Enable verbose debug output
-        $mail->isSMTP();                                            //Send using SMTP
-        $mail->Mailer = "smtp";
-        $mail->Host       = 'smtp.gmail.com';                       //Set the SMTP server to send through
-        $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-        $mail->Username   = 'greenkitchenaccessories@gmail.com';    //SMTP username
-        $mail->Password   = 'GreenGreenRugby9';                           //SMTP password
-        $mail->SMTPSecure = 'tls';            //Enable implicit TLS encryption
+        $mail->SMTPOptions = array(
+            'ssl' => array(
+            'verify_peer' => false,
+            'verify_peer_name' => false,
+            'allow_self_signed' => true
+            )
+            );
+        $mail->IsSMTP();                                            //Send using SMTP
+        $mail->SMTPDebug =0;                                        //Enable verbose debug output
+        $mail->Host       = "smtp.gmail.com";                       //Set the SMTP server to send through
         $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+        $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+        $mail->Username   = "greenkitchenaccessories@gmail.com";    //SMTP username
+        $mail->Password   = "GreenGreenRugby9";                     //SMTP password
+        $mail->SMTPSecure = 'tls';                                  //Enable implicit TLS encryption
 
-        //Recipients
+        //Destinatario
         $mail->setFrom('greenkitchenaccessories@gmail.com', 'Nicola');
-        $mail->addAddress($row->Mail);               //Name is optional
+        $mail->addCC($row->Mail);               //Name is optional
         $mail->addReplyTo('greenkitchenaccessories@gmail.com', 'Nicola');
 
 
@@ -43,14 +49,12 @@
         $mail->isHTML(true);                                  //Set email format to HTML
         $mail->Subject = 'Benvenuto tra gli iscritti';
         $mail->Body    = 'Congratulazioni sei diventato uno dei nostri! non ti perderai più nessuna news 
-                            riguardante la mitologia!  </b>';
-        $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
-
+                          riguardante la mitologia!  </b>';
         $mail->Send();
+
         echo '<p>Message has been sent</p>';
         } catch (Exception $e) {
             echo "<p>Message could not be sent. Mailer Error: {$mail->ErrorInfo}</p>";
         }
     }
-
 ?>
