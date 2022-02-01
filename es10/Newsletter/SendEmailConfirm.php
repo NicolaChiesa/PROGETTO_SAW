@@ -52,9 +52,11 @@
                           riguardante la mitologia!  </b>';
         $mail->Send();
 
-        echo '<p>Message has been sent</p>';
+        echo '<p>Sei stato iscritto alla nostra newsletter, ti abbiamo appena inviato una mail di conferma !</p>';
         } catch (Exception $e) {
             echo "<p>Message could not be sent. Mailer Error: {$mail->ErrorInfo}</p>";
         }
     }
+	header("refresh:4; url=../Core/PaginaPrincipale.php");
+
 ?>
