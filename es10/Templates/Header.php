@@ -32,15 +32,15 @@ session_start();
                     </a>
 
                     <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                        <li><a href="../Core/PaginaPrincipale.php" class="nav-link px-2 link-light">Home</a></li>
-                        <li><a href="../Prodotti/prod.php" class="nav-link px-2 link-light">Articoli</a></li>
-                        <li><a href="#" class="nav-link px-2 link-light">Novità</a></li>
-                        <li><a href="#" class="nav-link px-2 link-light">Chi siamo</a></li>
+                        <li><a class="nav-link px-2 link-light" href="../Core/PaginaPrincipale.php">Home</a></li>
+                        <li><a class="nav-link px-2 link-light" href="../Prodotti/prod.php">Articoli</a></li>
+                        <li><a class="nav-link px-2 link-light" href="#">Novità</a></li>
+                        <li><a class="nav-link px-2 link-light" href="#">Chi siamo</a></li>
                     </ul>
 
                     <div class="col-md-3 text-end">
-                        <a href="../esci.php" <button type="button" class="btn btn-outline-light me-2">Esci</button> </a>
-                        <a href="../ModificaUtente/modifica.php" <button type="button" class="btn btn-light">Modifica Profilo</button> </a>
+                        <a href="../esci.php" <button type="button" class="btn btn-outline-light me-2">Esci</button></a>
+                        <a href="../ModificaUtente/modifica.php" <button type="button" class="btn btn-light">Modifica Profilo</button></a>
                     </div>
                 </header>
             </div>';
@@ -54,10 +54,10 @@ session_start();
                     </a>
 
                     <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                        <li><a href="../Core/PaginaPrincipale.php" class="nav-link px-2 link-light">Home</a></li>
-                        <li><a href="../Prodotti/prod.php" class="nav-link px-2 link-light">Articoli</a></li>
-                        <li><a href="#" class="nav-link px-2 link-light">Novità</a></li>
-                        <li><a href="#" class="nav-link px-2 link-light">Chi siamo</a></li>
+                        <li><a class="nav-link px-2 link-light" href="../Core/PaginaPrincipale.php" >Home</a></li>
+                        <li><a class="nav-link px-2 link-light" href="../Prodotti/prod.php" >Articoli</a></li>
+                        <li><a class="nav-link px-2 link-light" href="#">Novità</a></li>
+                        <li><a class="nav-link px-2 link-light" href="#">Chi siamo</a></li>
                     </ul>
 
                     <div class="col-md-3 text-end">
@@ -68,3 +68,18 @@ session_start();
             </div>';
         }
     ?> 
+
+<!--    QUESTO E' IL CODICE PER FAR DIVENTARE IL PULSANTE ARTICOLI UN MENU' A TENDINA CON 
+        I CAMPI EPICI, MITOLOGICI E FANTASY
+        NON SO SE LO VOGLIAMO METTERE, DIPENDE DA COME STRUTTURIAMO LE PAGINE DEI PRODOTTI
+        NEL CASO PERò LO LASCIO QUI COSI' E' GIA' PRONTO
+
+<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle px-2 link-light" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Articoli</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Epici</a></li>
+            <li><a class="dropdown-item" href="#">Mitologici</a></li>
+            <li><a class="dropdown-item" href="#">Fantasy</a></li>
+          </ul>
+        </li>
+-->
