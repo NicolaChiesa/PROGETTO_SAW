@@ -1,3 +1,7 @@
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"> </script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
 <?php
 	include('../Templates/Header.php');
 	include('../connessione.php');
@@ -30,29 +34,30 @@
 		$res = mysqli_query($con,$query);
 		mysqli_close($con);
 		$_SESSION['Registrated'] = "true";
-		$_SESSION['nome']=$row['Nome'];
-		$_SESSION['cognome']=$row['Cognome'];
-		$_SESSION['id']=$row['ID'];
+		//$_SESSION['nome']=$row['Nome'];
+		//$_SESSION['cognome']=$row['Cognome'];
+		//$_SESSION['id']=$row['ID'];
 		$_SESSION['email']=$_POST['email'];
 		$_SESSION['key']=$_POST['email'];
 		$_SESSION['Registrated'] = "true";
-		header("Location: ../Core/PaginaPrincipale.php");
+		echo "tutto bene";
+		//header("Location: ../Core/PaginaPrincipale.php");
 
 		
-		$iscritto = $_POST['Subscription']; 
-		if ($iscritto == 'on') 
-			header("refresh:4; url=../Newsletter/IscrivitiNewsletter.php");
+	
 	}
 
 	
 ?>
-<!--<script type="text/javascript">
-        cbObj = document.getElementById('Subscription');
-        if (cbObj.checked)
-        	console.log('CheckBox spuntato');
-        else
-            alert("CheckBox non spuntato");
-</script> -->
 
-</body>
-</html>
+<script type="text/javascript">
+		function func(){
+			var chb = document.getElementByClassName("prova");
+			if(chb.checked){
+			
+        	 	console.log('CheckBox spuntato');
+				 alert("CheckBox non spuntato");
+			}
+		}
+</script>
+

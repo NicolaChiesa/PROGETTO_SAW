@@ -18,7 +18,11 @@ session_start();
         $("#menuButton").hover(function(){
         $("#menu").slideToggle();
         }); 
+        
      });
+
+
+
     </script>
 </head>
 <body>

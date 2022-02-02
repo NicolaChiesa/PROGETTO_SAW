@@ -24,7 +24,7 @@
     <i class="fa fa-unlock-alt" style="font-size:14px;color:rgba(65, 65, 65, 1.0)"></i>
     <input type="password" class="no-outline"  id="confirm" name="confirm" placeholder="Conferma password"><br>
 
-    <input type="checkbox" id="Subscription" name="Subscription" value="si">
+    <input type="checkbox" id="Subscription" name="Subscription" value="si" class="prova">
     <label for="Subscription"> Iscrivimi alla newsletter</label><br><br>
 
     
