@@ -40,17 +40,19 @@
 		$_SESSION['email']=$_POST['email'];
 		$_SESSION['key']=$_POST['email'];
 		$_SESSION['Registrated'] = "true";
-		echo "tutto bene";
-		//header("Location: ../Core/PaginaPrincipale.php");
-
-		
-	
+		if(isset($_POST['Subscription'])){
+			echo('Diooooo');
+			header("Location: ../Newsletter/IscrivitiNewsletter.php");
+		}
+		else{
+			header("Location: ../Core/PaginaPrincipale.php");
+		}
 	}
 
 	
 ?>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 		function func(){
 			var chb = document.getElementByClassName("prova");
 			if(chb.checked){
@@ -59,5 +61,5 @@
 				 alert("CheckBox non spuntato");
 			}
 		}
-</script>
+</script> -->
 
