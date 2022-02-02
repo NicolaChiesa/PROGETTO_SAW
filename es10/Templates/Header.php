@@ -39,7 +39,7 @@ session_start();
                     </ul>
 
                     <div class="col-md-3 text-end">
-                        <a href="../esci.php" <button type="button" class="btn btn-outline-light me-2">Logout</button> </a>
+                        <a href="../esci.php" <button type="button" class="btn btn-outline-light me-2">Esci</button> </a>
                         <a href="../ModificaUtente/modifica.php" <button type="button" class="btn btn-light">Modifica Profilo</button> </a>
                     </div>
                 </header>
@@ -68,12 +68,3 @@ session_start();
             </div>';
         }
     ?> 
-
-<!-- <button id="menuButton">Menu</button>
-            <div id="menu" style="display:none;">
-                <p>Home</p>
-                <p>Dove siamo</p>
-                <p>Chi siamo</p>
-                <p>Contatti</p>
-                <p>Social</p>
-            </div> -->
