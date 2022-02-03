@@ -40,7 +40,6 @@
 		$_SESSION['email']=$_POST['email'];
 		$_SESSION['Registrated'] = "true";
 		if(isset($_POST['Subscription'])){
-			echo('Diooooo');
 			header("Location: ../Newsletter/IscrivitiNewsletter.php");
 		}
 		else{

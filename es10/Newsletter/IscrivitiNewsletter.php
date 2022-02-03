@@ -5,6 +5,7 @@
 	$query = "INSERT INTO newsletters(email, news) VALUES ('".$email."',1)";
 	$res=mysqli_query($con,$query);
 	mysqli_close($con);
+	$_SESSION['email']=$_POST['email'];
 	header("Location: SendEmailConfirm.php");
 ?>
 

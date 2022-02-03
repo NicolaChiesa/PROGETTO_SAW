@@ -13,7 +13,12 @@
 
     //Load Composer's autoloader
     require '../vendor/autoload.php';
-    //Create an instance; passing `true` enables exceptions
+	
+    $query = "SELECT * FROM newsletters WHERE news=1";
+	$res=mysqli_query($con,$query);
+    while($row = mysqli_fetch_object($res)){
+
+        //Create an instance; passing `true` enables exceptions
     $mail = new PHPMailer(true);
 
     try {
@@ -23,7 +28,8 @@
             'verify_peer' => false,
             'verify_peer_name' => false,
             'allow_self_signed' => true
-            ));
+            )
+            );
         $mail->IsSMTP();                                            //Send using SMTP
         $mail->SMTPDebug =0;                                        //Enable verbose debug output
         $mail->Host       = "smtp.gmail.com";                       //Set the SMTP server to send through
@@ -35,7 +41,7 @@
 
         //Destinatario
         $mail->setFrom('greenkitchenaccessories@gmail.com', 'Nicola');
-        $mail->addCC($_SESSION['email']);               //Name is optional
+        $mail->addCC($row->email);               //Name is optional
         $mail->addReplyTo('greenkitchenaccessories@gmail.com', 'Nicola');
 
 
@@ -50,6 +56,7 @@
         } catch (Exception $e) {
             echo "<p>Message could not be sent. Mailer Error: {$mail->ErrorInfo}</p>";
         }
+    }
 	header("refresh:4; url=../Core/PaginaPrincipale.php");
 
 ?>
