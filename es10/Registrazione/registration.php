@@ -51,14 +51,5 @@
 	
 ?>
 
-<!-- <script type="text/javascript">
-		function func(){
-			var chb = document.getElementByClassName("prova");
-			if(chb.checked){
-			
-        	 	console.log('CheckBox spuntato');
-				 alert("CheckBox non spuntato");
-			}
-		}
-</script> -->
+
 
