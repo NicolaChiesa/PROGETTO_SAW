@@ -85,5 +85,20 @@ input[type="submit"] {
 /* --------------------------- ICONE --------------------------*/
 .icone {
   font-size: 40px;
+<<<<<<< HEAD
   color: whitesmoke;
 }
+||||||| f0c72d5
+  color: whitesmoke
+}
+=======
+  color: whitesmoke
+}
+
+/* --------------------------- IMMAGINI PRODOTTI --------------------------*/
+.immagini{
+  width: auto;
+  height: 50px;
+}
+
+>>>>>>> 58b811880aa47cad2126f3647f3e99ee659754cf
