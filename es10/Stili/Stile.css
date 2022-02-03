@@ -4,6 +4,10 @@
   color: black;
   font-size: 16px;
 }
+.descrizione {
+  width: 75%;
+  padding: 2%;
+}
 
 .testoTitolo {
   font-family: Open, sans-serif;
@@ -16,6 +20,16 @@
   font-family: Open, sans-serif;
   color: rgb(56, 56, 56);
   font-size: 18px;
+}
+
+.scritta {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  color: rgb(56, 56, 56);
+  margin-block-start: 0.7em;
+  margin-block-end: 0.7em;
 }
 
 /* --------------------------- DIV --------------------------*/
@@ -85,20 +99,11 @@ input[type="submit"] {
 /* --------------------------- ICONE --------------------------*/
 .icone {
   font-size: 40px;
-<<<<<<< HEAD
   color: whitesmoke;
-}
-||||||| f0c72d5
-  color: whitesmoke
-}
-=======
-  color: whitesmoke
 }
 
 /* --------------------------- IMMAGINI PRODOTTI --------------------------*/
-.immagini{
+.immagini {
   width: auto;
   height: 50px;
 }
-
->>>>>>> 58b811880aa47cad2126f3647f3e99ee659754cf

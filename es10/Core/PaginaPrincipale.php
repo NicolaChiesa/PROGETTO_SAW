@@ -7,17 +7,9 @@
    <p><a href="reserved.php">Vai alla pagina riservata</a></p>
 </div>
 <div>
-  <p>QUA CI VA LA PRESENTAZIONE DEL SITO E SU COSA FA</p>
-  <p>ff</p>
-  <p>FA</p>
-  <p>FA</p>
-  <p>FA</p>
-  <p>FA</p>
-  <p>FA</p>
-  <p>FA</p>
-</div>
+ 
 <div class="mydiv2">
-<div class="mydiv2">
+
 
 <div class="mydiv1">
     <p class="scritta">L'agenda che permette <br> di sincronizzarsi <br>con i propri amici</p>
@@ -25,7 +17,7 @@
 </div>
 
 <div class = "mydiv1">
-    <img src="svg/Organizza.svg" alt="Organizza online" height="370" />
+    <img src="../Immagini/Sfondo.jpg" alt="Organizza online" height="370" />
     <p class="scritta">Con un semplice click <br> si avrà una pianificazione <br> perfetta degli impegni</p>
 </div>
 
@@ -38,30 +30,21 @@
     <legend class="scritta">About Us</legend>
 
     <p class="about">
-            PlanIt vuole offrire la possibilità di sincronizzare i propri impegni con quelli 
-        degli amici o anche colleghi. Inizialmente era stata pensata principalmente per migliorare 
-        la convivenza tra coinquilini, dato che c'è la possibilità di segnare un possibile evento
-        e in questo modo avvisare anche i diretti interessati.<br><br>
-            Ci si potrebbe però chiedere che cosa abbia di diverso dalle altre agende che permettono ad esempio 
-        già di condividere eventi con determinate persone...<br><br>
-            PlanIt è stata ideata pensando a uno sviluppo futuro nel campo IoT. Infatti quello che si vuole 
-        raggiungere è un connubio tra organizzazione del tempo e dello spazio.<br><br>
-            Questo sarebbe permesso, ad esempio, tramite l'acquisti dell'upgrade "Casa" che oltre ad attivare 
-        le funzioni non presenti nella versione base (Prenotazione di uno spazio, turni cucina, etc) può spedire, se 
-        richiesto dall'utente, un set base IoT con una serratura intelligente che garantisce la propria privacy
+            Eccoci giunti a noi, ti starai chiedendo chi siamo, e qual é il nostro obbiettivo, beh siamo qui per dar
+            ti una risposta! Siamo una Start Up nata a Genova nel 2021 con l obbiettivo di portare le reraviglie 
+            mitologiche a casa di tutti! Purtoppo in poche persone colgono la bellezza di questi oggetti... <br><br>
+            La loro storia, come il loro utilizzo sono un'esperienza unica, la bellezza che possono portare nelle 
+            nostre case é fantastica. Danno quel tocco di stile antico ma allo stesso tempo moderno, perché 
+            come vediamo anche nella moda le fantasie a tema mitologico stanno nascendo sempre di piú <br><br>
+            Per cui se vuoi stupire i tuoi ospiti e mostrarti come una persona che ha occhio per la bellezza e il design
+            sei nel posto giusto, non ti resta che tovare il prodotto che piú si addice al tuo salotto! Che aspetti!<br><br>
+            Se vuoi rimanere sempre aggiornato sullà aggiunta di nuovi prodotti non devi far altro che 
+            iscriverti alla nostra newsletter qua sotto !
     </p>
     
 </fieldset>  
 
 </div>
-
-<div>
-     <ul> 
-	<li>Cerca ogge</li>
-	<li>Compra un oggetto</li>
-     </ul>
-</div>
-
 <?php
   include('../Templates/Footer.php');
 ?>
