@@ -5,7 +5,7 @@
 	$query = "INSERT INTO newsletters(email, news) VALUES ('".$email."',1)";
 	$res=mysqli_query($con,$query);
 	mysqli_close($con);
-	//header("Location: SendEmailConfirm.php");
+	header("Location: SendEmailConfirm.php");
 ?>
 
 </body>
