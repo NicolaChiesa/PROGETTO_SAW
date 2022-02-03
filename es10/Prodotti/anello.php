@@ -4,7 +4,7 @@
 ?>
 <div>
   <p>QUESTA E' LA PAGINA PRINCIPALE</p>
-  
+  <div class="quantity-widget">  <button class="less">-</button> <input type="text" value="1" /> <button class="more">+</button>  </div>
 
   <a href="carrello.php"<button id="pulsante"><i class="icon-shopping-cart"></i> Vai al carrello</button></a>
 
