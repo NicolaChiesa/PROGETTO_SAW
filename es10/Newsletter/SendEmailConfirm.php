@@ -41,7 +41,7 @@
 
         //Destinatario
         $mail->setFrom('greenkitchenaccessories@gmail.com', 'Nicola');
-        $mail->addCC($row->Mail);               //Name is optional
+        $mail->addCC($row->email);               //Name is optional
         $mail->addReplyTo('greenkitchenaccessories@gmail.com', 'Nicola');
 
 
