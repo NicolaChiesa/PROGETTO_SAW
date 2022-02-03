@@ -34,11 +34,10 @@
 		$res = mysqli_query($con,$query);
 		mysqli_close($con);
 		$_SESSION['Registrated'] = "true";
-		//$_SESSION['nome']=$row['Nome'];
-		//$_SESSION['cognome']=$row['Cognome'];
-		//$_SESSION['id']=$row['ID'];
+		$_SESSION['nome']=$row['Nome'];
+		$_SESSION['cognome']=$row['Cognome'];
+		$_SESSION['id']=$row['ID'];
 		$_SESSION['email']=$_POST['email'];
-		$_SESSION['key']=$_POST['email'];
 		$_SESSION['Registrated'] = "true";
 		if(isset($_POST['Subscription'])){
 			echo('Diooooo');
@@ -52,14 +51,5 @@
 	
 ?>
 
-<!-- <script type="text/javascript">
-		function func(){
-			var chb = document.getElementByClassName("prova");
-			if(chb.checked){
-			
-        	 	console.log('CheckBox spuntato');
-				 alert("CheckBox non spuntato");
-			}
-		}
-</script> -->
+
 

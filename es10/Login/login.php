@@ -10,8 +10,6 @@
 		$_SESSION['nome']=$row['Nome'];
 		$_SESSION['cognome']=$row['Cognome'];
 		$_SESSION['id']=$row['ID'];
-		$_SESSION['email']=$_POST['email'];
-		$_SESSION['key']=$_POST['email'];
 		$_SESSION['Registrated'] = "true";
 		header("Location: ../Core/PaginaPrincipale.php");
 		}
