@@ -14,19 +14,15 @@
       </div>
   
       <div class="col-4 offset-1">
-        <?php   
-        if(isset($_SESSION['Registrated']) && $_SESSION['Registrated'] == "true"){
-            echo'<form id="myform">
+            <form id="myform" action="../Newsletter/IscrivitiNewsletter.php" method="POST" >
             <h5 class="text-light">Iscriviti alla nostra newsletter!</h5>
             <p class="text-light">Tutti i mesi fantastiche novità!</p>
             <div class="d-flex w-100 gap-2">
-              <label for="newsletter1" class="visually-hidden">Indirizzo e-mail</label>
-              <a href="../Newsletter/IscrivitiNewsletter.php" <button type="button" class="btn btn-primary">Iscriviti</button> </a>
+            <input type="email" id="email" class="no-outline"  name="email" placeholder="E-mail"><br>
+             <label for="newsletter1" class="visually-hidden">Indirizzo e-mail</label>
+            <input type="submit">Iscriviti</button>
             </div>
           </form>
-        </div>';
-        }
-        ?> 
       </div>
     </div>
   

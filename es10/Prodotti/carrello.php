@@ -5,19 +5,18 @@
 	$res=mysqli_query($con,$query);
 	$row = mysqli_fetch_assoc($res);
 	if($row['quantita']>0)
-	{
-	$quer="UPDATE `prodotti` SET `quantita` = '".$row['quantita']."' WHERE `Nome` = '".$_SESSION['prodotto']."'";
-	$re = mysqli_query($con,$quer);
-	$num = mysqli_affected_rows($con);
-	echo $num;
-	$_SESSION['prezzo']+=$row['prezzo'];
-	$_SESSION['prodotto']=1;
-	}
+		{
+		$quer="UPDATE `prodotti` SET `quantita` = '".$row['quantita']."' WHERE `Nome` = '".$_SESSION['prodotto']."'";
+		$re = mysqli_query($con,$quer);
+		echo 'Stai acquistando un: '.$_SESSION['prodotto'].' alla modica cifra di: '.$row['prezzo'];
+		header("Location: prod.php");
+		}
 	else
+		{
+		header("Location: prod.php");
 		echo 'Non disponibile in magazzino';
-	mysqli_close($con);
-	header("Refresh:10","Location: prod.php");
-	/*secondo me bisogna fare una nuova colonna in utenti con id acquisto per poi fare il join e così poi da li accedere al prodotto*/
+		}
+	mysqli_close($con);	
 ?>
 
 </body>

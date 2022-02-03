@@ -14,7 +14,7 @@
     //Load Composer's autoloader
     require '../vendor/autoload.php';
 	
-    $query = "SELECT * FROM utenti WHERE news=1";
+    $query = "SELECT * FROM newsletters WHERE news=1";
 	$res=mysqli_query($con,$query);
     while($row = mysqli_fetch_object($res)){
 
