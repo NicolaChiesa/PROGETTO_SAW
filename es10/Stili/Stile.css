@@ -34,6 +34,20 @@
   padding: 40px;
 }
 
+.titoloCard{
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  color: rgb(56, 56, 56);
+}
+
+.testoCard{
+  font-family: "Century Gothic";
+  color: black;
+  font-size: 18px;
+}
+
 /* --------------------------- DIV --------------------------*/
 .DataDiv {
   background-color: #cda881;
@@ -107,8 +121,17 @@ input[type="submit"] {
   color: whitesmoke;
 }
 
+.icone:hover{
+  color: #daa520;
+}
+
 /* --------------------------- IMMAGINI PRODOTTI --------------------------*/
 .immagini {
   width: auto;
-  height: 300px;
+  height: 280px;
+}
+
+/* --------------------------- BOTTONI --------------------------*/
+button:hover{
+  color: #eccb37;
 }
