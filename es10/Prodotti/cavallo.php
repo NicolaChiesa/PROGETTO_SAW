@@ -7,6 +7,7 @@
   <p>QUESTA E' LA PAGINA PRINCIPALE</p>
 
   <a href="carrello.php"<button id="pulsante"><i class="icon-shopping-cart"></i> Vai al carrello</button></a>
+  <a href="finisci.php"<button id="pulsante"><i class="icon-shopping-cart"></i> Vai al carrello</button></a>
 
 </div>
   <div>
