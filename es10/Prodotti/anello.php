@@ -1,6 +1,9 @@
 <?php
   include('../Templates/Header.php');
-  $_SESSION['prodotto']='Anello del Potere';
+  global $prodotto;
+  $prodotto='Anello del Potere';
+  global $IDprodotto;
+  $IDprodotto=1;
 ?>
 <div>
   <p>QUESTA E' LA PAGINA PRINCIPALE</p>
