@@ -12,6 +12,12 @@
   font-weight: bold;
 }
 
+.testoMessage {
+  font-family: Open, sans-serif;
+  color: rgb(56, 56, 56);
+  font-size: 18px;
+}
+
 /* --------------------------- DIV --------------------------*/
 .DataDiv {
   background-color: #cda881;
@@ -21,6 +27,23 @@
   border-radius: 10px;
   width: 40%;
   height: auto;
+}
+
+.mydiv2 {
+  display: flex;
+  padding: 1%;
+  height: 350vh;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+}
+
+.mydiv1 {
+  display: flex;
+  padding: 1%;
+  width: auto;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* --------------------------- INPUT --------------------------*/
@@ -60,7 +83,7 @@ input[type="submit"] {
 }
 
 /* --------------------------- ICONE --------------------------*/
-.icone{
+.icone {
   font-size: 40px;
-  color: whitesmoke
+  color: whitesmoke;
 }
