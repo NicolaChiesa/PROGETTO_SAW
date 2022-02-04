@@ -10,15 +10,13 @@
 		$row['quantita']-=1;
 		$quer="UPDATE `prodotti` SET `quantita` = '".$row['quantita']."' WHERE `Nome` = '".$_SESSION['prodotto']."'";
 		$re = mysqli_query($con,$quer);
-		if(isset($_SESSION['Registrated']) && $_SESSION['Registrated'] == "true"){
+		if(isset($_SESSION['Registrated']) && $_SESSION['Registrated'] == "true")
+			{
 			$querys="INSERT INTO acquisto (NomeProdotto, NumSessione, Quantita, Prezzo, IDutente, IDprodotto) VALUES ('".$_SESSION['prodotto']."', '".$session_id."', 1,'".$row['prezzo']."','".$_SESSION['id']."', '".$_SESSION['IDprodotto']."')";
 			echo'1';
 			}
 		else
-			{
-			$querys="INSERT INTO acquisto (NomeProdotto, NumSessione, Quantita, Prezzo, IDutente, IDprodotto) VALUES ('".$_SESSION['prodotto']."', '".$session_id."', 1,'".$row['prezzo']."',, '".$_SESSION['IDprodotto']."')";
-			echo'0';
-			}
+			$querys="INSERT INTO acquisto (NomeProdotto, NumSessione, Quantita, Prezzo, IDprodotto ) VALUES ('".$_SESSION['prodotto']."', '".$session_id."', 1,'".$row['prezzo']."','".$_SESSION['IDprodotto']."')";
 		$ress = mysqli_query($con,$querys);
 		$num = mysqli_affected_rows($con);
 		echo $num;
@@ -27,7 +25,6 @@
 	else
 		{
 		header("Location: prod.php");
-		echo 'Non disponibile in magazzino';
 		}
 	mysqli_close($con);	
 ?>
