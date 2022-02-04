@@ -3,7 +3,7 @@
 	include('../connessione.php');
 	
 	if(isset($_SESSION['Registrated'])){
-		//$email = $_SESSION['email'];
+		//
 	}
 	else{
 		$_SESSION['email']=mysqli_real_escape_string($con, $_POST['email']);
