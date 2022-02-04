@@ -37,10 +37,10 @@ session_start();
                         </a>
 
                         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                            <li><a href="../Core/PaginaPrincipale.php" class="nav-link px-2 text-white">Home</a></li>
-                            <li><a href="../Prodotti/prod.php" class="nav-link px-2 text-white">Articoli</a></li>
-                            <li><a href="#" class="nav-link px-2 text-white">Novità</a></li>
-                            <li><a href="#" class="nav-link px-2 text-white">Chi siamo</a></li>
+                            <li><a class="nav-link px-2 text-white" href="../Core/PaginaPrincipale.php">Home</a></li>
+                            <li><a class="nav-link px-2 text-white" href="../Prodotti/prod.php">Articoli</a></li>
+                            <li><a class="nav-link px-2 text-white" href="#">Novità</a></li>
+                            <li><a class="nav-link px-2 text-white" href="#">Chi siamo</a></li>
                         </ul>
 
                         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
@@ -48,8 +48,8 @@ session_start();
                         </form>
 
                         <div class="text-end">
-                            <button href="../esci.php" type="button" class="btn btn-outline-light me-2">Esci</button>
-                            <button href="../ModificaUtente/modifica.php" type="button" class="btn btn-outline-light">Profilo</button>
+                            <button type="button" href="../esci.php" class="btn btn-outline-light me-2" >Esci</button>
+                            <button type="button" href="../ModificaUtente/modifica.php" class="btn btn-outline-light">Profilo</button>
                         </div>
                     </div>
                 </div>
@@ -65,10 +65,10 @@ session_start();
                         </a>
 
                         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                            <li><a href="../Core/PaginaPrincipale.php" class="nav-link px-2 text-white">Home</a></li>
-                            <li><a href="../Prodotti/prod.php" class="nav-link px-2 text-white">Articoli</a></li>
-                            <li><a href="#" class="nav-link px-2 text-white">Novità</a></li>
-                            <li><a href="#" class="nav-link px-2 text-white">Chi siamo</a></li>
+                            <li><a class="nav-link px-2 text-white" href="../Core/PaginaPrincipale.php" >Home</a></li>
+                            <li><a class="nav-link px-2 text-white" href="../Prodotti/prod.php">Articoli</a></li>
+                            <li><a class="nav-link px-2 text-white" href="#">Novità</a></li>
+                            <li><a class="nav-link px-2 text-white" href="#">Chi siamo</a></li>
                         </ul>
 
                         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
@@ -76,8 +76,8 @@ session_start();
                         </form>
 
                         <div class="text-end">
-                            <button hrer="../Login/FormLogin.php" type="button" class="btn btn-outline-light me-2">Accedi</button>
-                            <button href="../Registrazione/RegistrazioneForm.php" type="button" class="btn btn-outline-light">Registrati</button>
+                            <button type="button" href="../Login/FormLogin.php" class="btn btn-outline-light me-2">Accedi</button>
+                            <button type="button" href="../Registrazione/RegistrazioneForm.php" class="btn btn-outline-light">Registrati</button>
                         </div>
                     </div>
                 </div>
