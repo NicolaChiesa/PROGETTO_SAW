@@ -7,7 +7,7 @@
 		$email=mysqli_real_escape_string($con, $_POST['email']);
 	}
 	$query = "INSERT INTO newsletters(email, news) VALUES ('".$email."',1)";
-	$_SESSION['email'] = $email;
+	$_SESSION['email']=$email;
 	$res=mysqli_query($con,$query);
 	mysqli_close($con);
 	
