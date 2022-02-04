@@ -15,6 +15,7 @@
 		$prezzo+=$row['Prezzo'];
 		}
 		echo ' per una spesa totale di: '.$prezzo;
+		echo'<a href="concludi.php"<button id="pulsante"><i class="icon-shopping-cart"></i> Vai al pagamento</button></a>';
 		}
 	else 
 		echo 'Carello vuoto';
