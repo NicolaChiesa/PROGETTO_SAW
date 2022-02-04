@@ -6,8 +6,8 @@
 }
 
 .descrizione {
-  width: 75%;
-  padding: 2%;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 .testoTitolo {
@@ -31,7 +31,33 @@
   color: rgb(56, 56, 56);
   margin-block-start: 0.7em;
   margin-block-end: 0.7em;
-  padding: 40px;
+  padding-right: 80px;
+  padding-left: 80px;
+  padding-top: 50px;
+}
+
+.titoloCard{
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  color: rgb(56, 56, 56);
+}
+
+.testoCard{
+  font-family: "Century Gothic";
+  color: black;
+  font-size: 18px;
+}
+
+.titolo{
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  color: rgb(56, 56, 56);
+  text-align: center;
+  padding-bottom: 50px;
 }
 
 /* --------------------------- DIV --------------------------*/
@@ -43,15 +69,6 @@
   border-radius: 10px;
   width: 40%;
   height: auto;
-}
-
-.mydiv2 {
-  display: flex;
-  padding: 1%;
-  height: 350vh;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-content: space-evenly;
 }
 
 .mydiv1 {
@@ -107,8 +124,17 @@ input[type="submit"] {
   color: whitesmoke;
 }
 
+.icone:hover{
+  color: #daa520;
+}
+
 /* --------------------------- IMMAGINI PRODOTTI --------------------------*/
 .immagini {
   width: auto;
-  height: 50px;
+  height: 280px;
+}
+
+/* --------------------------- BOTTONI --------------------------*/
+button:hover{
+  color: goldenrod;
 }

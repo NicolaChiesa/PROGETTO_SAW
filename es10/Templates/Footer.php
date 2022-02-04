@@ -19,7 +19,7 @@
             <p class="text-light">Tutti i mesi fantastiche novità!</p>
             <div class="d-flex w-100 gap-2">
             <input type="email" id="email" class="no-outline"  name="email" placeholder="E-mail"><br>
-             <label for="newsletter1" class="visually-hidden">Indirizzo e-mail</label>
+              <label for="newsletter1" class="visually-hidden">Indirizzo e-mail</label>
             <input type="submit">Iscriviti</button>
             </div>
           </form>
