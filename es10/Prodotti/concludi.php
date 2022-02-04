@@ -14,7 +14,7 @@
 		while($row=mysqli_fetch_assoc($res))
 			{
 			$querys="INSERT INTO acquistato (NomeProdotto, NumSessione, Quantita, Prezzo, IDutente, IDprodotto) VALUES ('".$row['NomeProdotto']."', '".$row['NumSessione']."', '".$row['Quantita']."','".$row['Prezzo']."','".$row['IDutente']."', '".$row['IDprodotto']."')";
-			$res=mysqli_query($con,$query);
+			$ress=mysqli_query($con,$querys);
 			}
 		if($rowcount>0)
 			{
@@ -24,9 +24,9 @@
 			}
 		else 
 			$reg='Il carrello è vuoto!!!!';
-			}
+		}
 	echo "<script type='text/javascript'>alert('$reg');</script>";
-	//header("refresh:0; url=prod.php");	
+	header("refresh:0; url=prod.php");	
 	mysqli_close($con);	
 	include('../Templates/Footer.php');
 ?>
