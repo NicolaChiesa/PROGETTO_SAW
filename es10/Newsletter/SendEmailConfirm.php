@@ -8,9 +8,6 @@
     use PHPMailer\PHPMailer\SMTP;
     use PHPMailer\PHPMailer\Exception;
 
-   
-
-
     //Load Composer's autoloader
     require '../vendor/autoload.php';
     //Create an instance; passing `true` enables exceptions
@@ -29,14 +26,14 @@
         $mail->Host       = "smtp.gmail.com";                       //Set the SMTP server to send through
         $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
         $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-        $mail->Username   = "greenkitchenaccessories@gmail.com";    //SMTP username
-        $mail->Password   = "GreenGreenRugby9";                     //SMTP password
+        $mail->Username   = "onlymythmyth@gmail.com";    //SMTP username
+        $mail->Password   = "Celafaremo1";                     //SMTP password
         $mail->SMTPSecure = 'tls';                                  //Enable implicit TLS encryption
 
         //Destinatario
-        $mail->setFrom('greenkitchenaccessories@gmail.com', 'Nicola');
-        $mail->addCC($_SESSION['email']);               //Name is optional
-        $mail->addReplyTo('greenkitchenaccessories@gmail.com', 'Nicola');
+        $mail->setFrom('onlymythmyth@gmail.com', 'Nicola');
+        $mail->addCC('chiesanicola54@gmail.com');               //Name is optional
+        $mail->addReplyTo('onlymythmyth@gmail.com', 'Nicola');
 
 
         //Content
