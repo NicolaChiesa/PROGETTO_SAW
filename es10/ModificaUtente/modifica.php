@@ -1,8 +1,8 @@
 <?php
 include('../connessione.php');
 include('../Templates/Header.php');
-if (!isset($_SESSION['key'])){
-	header("Location: Core/PaginaPrincipale.php");
+if (!isset($_SESSION['Registrated'])){
+	header("Location: ../Core/PaginaPrincipale.php");
 }
 else{
     $nome=$_SESSION['nome'];
