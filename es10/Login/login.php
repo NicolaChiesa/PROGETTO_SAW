@@ -11,6 +11,7 @@
 		$_SESSION['cognome']=$row['Cognome'];
 		$_SESSION['id']=$row['ID'];
 		$_SESSION['Registrated'] = "true";
+		$_SESSION['email']= $_POST['email'];
 		header("Location: ../Core/PaginaPrincipale.php");
 		}
 	else
