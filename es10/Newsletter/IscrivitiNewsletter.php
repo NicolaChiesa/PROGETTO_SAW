@@ -1,13 +1,12 @@
 <?php
 	include('../Templates/Header.php');
 	include('../connessione.php');
-	if(isset($_SESSION['nome'])){
-		$email=$_SESSION['email'];
-	} else{
+	
+	if(!isset($_SESSION['nome'])){
 		$email=mysqli_real_escape_string($con, $_POST['email']);
+		$_SESSION['email']=$email;
 	}
 	$query = "INSERT INTO newsletters(email, news) VALUES ('".$email."',1)";
-	$_SESSION['email']=$email;
 	$res=mysqli_query($con,$query);
 	mysqli_close($con);
 	
