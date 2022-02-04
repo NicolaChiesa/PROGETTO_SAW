@@ -7,7 +7,7 @@
 	if($row['quantita']>0)
 		{
 		$session_id=session_id();
-		//$row['quantita']-=1;
+		$row['quantita']-=1;
 		$quer="UPDATE `prodotti` SET `quantita` = '".$row['quantita']."' WHERE `Nome` = '".$_SESSION['prodotto']."'";
 		$re = mysqli_query($con,$quer);
 		if(isset($_SESSION['Registrated']) && $_SESSION['Registrated'] == "true"){
