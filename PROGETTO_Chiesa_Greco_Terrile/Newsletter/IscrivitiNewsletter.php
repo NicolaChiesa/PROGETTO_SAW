@@ -2,11 +2,14 @@
 	include('../Templates/Header.php');
 	include('../connessione.php');
 	
-	if(!isset($_SESSION['nome'])){
-		$email=mysqli_real_escape_string($con, $_POST['email']);
-		$_SESSION['email']=$email;
+	if(isset($_SESSION['Registrated'])){
+		//
 	}
-	$query = "INSERT INTO newsletters(email, news) VALUES ('".$email."',1)";
+	else{
+		$_SESSION['email']=mysqli_real_escape_string($con, $_POST['email']);
+	}
+	
+	$query = "INSERT INTO newsletters(email, news) VALUES ('".$_SESSION['email']."',1)";
 	$res=mysqli_query($con,$query);
 	mysqli_close($con);
 	
@@ -15,9 +18,3 @@
 
 </body>
 </html>
-
-Notice: Undefined index: email in /chroot/home/S4825218/public_html/es10/Newsletter/SendEmailConfirm.php on line 35
-Message could not be sent. Mailer Error: Invalid address: (cc):
-
-Notice: Undefined index: email in /chroot/home/S4825218/public_html/es10/Newsletter/SendEmailConfirm.php on line 35
-Message could not be sent. Mailer Error: Invalid address: (cc):
