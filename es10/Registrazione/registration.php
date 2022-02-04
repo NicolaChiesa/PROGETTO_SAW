@@ -10,7 +10,6 @@
 	$row = mysqli_fetch_assoc($re);
 	$num = mysqli_affected_rows($con);
 	mysqli_free_result($re);
-	$numi = mysqli_affected_rows($con);
 	
 	if($_POST['pass']==""||$_POST['confirm']==""||$_POST['lastname']==""||$_POST['firstname']=="")
 		echo"<h1>Alcuni dati non sno stati inseriti</h1>";
