@@ -33,7 +33,7 @@ session_start();
                 <div class="container">
                     <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                         <a href="#" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none logo">
-                            <img src="./logo2.svg" alt="logo con elmo romano e spada" class="logo">
+                            <img src="" alt="" class="logo">
                         </a>
 
                         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
@@ -61,7 +61,7 @@ session_start();
                 <div class="container">
                     <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                         <a href="#" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none logo">
-                            <img src="./logo2.svg" alt="logo con elmo romano e spada" class="logo">
+                            <img src="" alt="" class="logo">
                         </a>
 
                         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
