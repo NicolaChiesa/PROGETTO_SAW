@@ -20,6 +20,10 @@
 	
 	// se tutto è andato a buon fine 
 	else{
+		$_SESSION['Registrated'] = "true";
+		$_SESSION['nome']=$_POST['firstname'];
+		$_SESSION['cognome']=$_POST['lastname'];
+		$_SESSION['email']=$_POST['email'];
 		$pass=trim($_POST['pass']);
 		$lastname=htmlspecialchars($_POST['lastname']);
 		$firstname=htmlspecialchars($_POST['firstname']);
@@ -31,13 +35,9 @@
 		$pass=password_hash($pass,PASSWORD_BCRYPT);
 		$query ="INSERT INTO utenti (Nome, Cognome, Password, Mail) VALUES ('".$firstname."', '".$lastname."', '".$pass."', '".$email."')";
 		$res = mysqli_query($con,$query);
-		mysqli_close($con);
-		$_SESSION['Registrated'] = "true";
-		$_SESSION['nome']=$row['Nome'];
-		$_SESSION['cognome']=$row['Cognome'];
+		$row = mysqli_fetch_assoc($res);
 		$_SESSION['id']=$row['ID'];
-		$_SESSION['email']=$_POST['email'];
-		$_SESSION['Registrated'] = "true";
+		mysqli_close($con);
 		if(isset($_POST['Subscription'])){
 			header("Location: ../Newsletter/IscrivitiNewsletter.php");
 		}
