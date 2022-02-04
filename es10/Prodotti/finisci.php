@@ -9,13 +9,15 @@
 		{
 		echo 'Stai acquistando dal nostro sito: '.$row['NomeProdotto'].' alla modica cifra di: '.$row['Prezzo'];
 		$prezzo=$row['Prezzo'];
-		}
 	while($row=mysqli_fetch_assoc($res))
 		{
 		echo' acquisti anche: '.$row['NomeProdotto'].' alla modica cifra di: '.$row['Prezzo'];
 		$prezzo+=$row['Prezzo'];
 		}
 		echo ' per una spesa totale di: '.$prezzo;
+		}
+	else 
+		echo 'Carello vuoto';
 	mysqli_close($con);	
 	include('../Templates/Footer.php');
 ?>
