@@ -11,6 +11,11 @@
 		$res=mysqli_query($con,$query);
 		$row = mysqli_fetch_assoc($res);
 		$rowcount=mysqli_num_rows($res);
+		while($row=mysqli_fetch_assoc($res))
+			{
+			$querys="INSERT INTO acquistato (NomeProdotto, NumSessione, Quantita, Prezzo, IDutente, IDprodotto) VALUES ('".$row['NomeProdotto']."', '".$row['NumSessione']."', '".$row['Quantita']."','".$row['Prezzo']."','".$row['IDutente']."', '".$row['IDprodotto']."')";
+			$res=mysqli_query($con,$query);
+			}
 		if($rowcount>0)
 			{
 			$query="DELETE FROM `acquisto` WHERE `acquisto`.`NumSessione` = '".session_id()."'";
@@ -21,7 +26,7 @@
 			$reg='Il carrello è vuoto!!!!';
 			}
 	echo "<script type='text/javascript'>alert('$reg');</script>";
-	header("refresh:0; url=prod.php");	
+	//header("refresh:0; url=prod.php");	
 	mysqli_close($con);	
 	include('../Templates/Footer.php');
 ?>
