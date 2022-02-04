@@ -33,9 +33,9 @@
 		$res = mysqli_query($con,$query);
 		mysqli_close($con);
 		$_SESSION['Registrated'] = "true";
-		$_SESSION['nome']=$row['Nome'];
-		$_SESSION['cognome']=$row['Cognome'];
-		$_SESSION['id']=$row['ID'];
+		//$_SESSION['nome']=$row['Nome'];
+		//$_SESSION['cognome']=$row['Cognome'];
+		//$_SESSION['id']=$row['ID'];
 		$_SESSION['email']=$_POST['email'];
 		$_SESSION['Registrated'] = "true";
 		if(isset($_POST['Subscription'])){
