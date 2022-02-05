@@ -7,7 +7,7 @@
 
   <div class="mydiv1">
     <div class="polaroid">
-      <img src="../Immagini/durlindana.jpg"  alt="Durlindana" height="400"/>
+      <img src="../Immagini/durlindana.jpg"  alt="Durlindana"/>
     </div>
     <div>
       <h1 class="titoloCard"> Durlindana </h1>
