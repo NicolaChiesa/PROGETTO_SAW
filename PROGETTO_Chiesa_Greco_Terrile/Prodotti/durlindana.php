@@ -32,7 +32,7 @@
   <a href="finisci.php"<button id="pulsante"><i class="icon-shopping-cart"></i> Vai al carrello</button></a>-->
     <div id="votazione">
     <form name="sent-rating" id="sent-rating">
-    <input type="radio" value="10" name="star"  id="stella1" title="eccellente" class="costellazione">
+    <input type="radio" value="10" name="star" id="stella1" title="eccellente" class="costellazione">
     <input type="radio" value="8" name="star"  id="stella2" title="ottimo" class="costellazione">
     <input type="radio" value="6" name="star"  id="stella3" title="discreto" class="costellazione">
     <input type="radio" value="4" name="star"  id="stella4" title="male" class="costellazione">
