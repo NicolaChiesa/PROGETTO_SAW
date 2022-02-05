@@ -5,6 +5,9 @@
 ?>
 <div class="container py-5">
   <div class="mydiv1">
+  <br>
+  <br>
+  <br>
     <div class="polaroid">
       <img src="../Immagini/excalibur.png"  alt="..." height="350"/>
     </div>
