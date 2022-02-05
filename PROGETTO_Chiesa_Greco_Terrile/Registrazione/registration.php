@@ -39,6 +39,11 @@
 		$res=mysqli_query($con,$query);
 		$row = mysqli_fetch_assoc($res);
 		$_SESSION['id']=$row['ID'];
+		if(isset($_SESSION['carrello']))
+			{
+			$quer="UPDATE `acquisto` SET `IDutente` = '".$_SESSION['id']."' WHERE `NumSessione` = '".session_id()."'";
+			$re = mysqli_query($con,$quer);
+			}
 		mysqli_close($con);
 		if(isset($_POST['Subscription'])){
 			header("Location: ../Newsletter/IscrivitiNewsletter.php");

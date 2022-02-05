@@ -14,7 +14,7 @@
 		$_SESSION['email']= $_POST['email'];
 		if(isset($_SESSION['carrello']))
 			{
-			$quer="UPDATE `prodotti` SET `quantita` = '".$row['quantita']."' WHERE `Nome` = '".$_SESSION['prodotto']."'";
+			$quer="UPDATE `acquisto` SET `IDutente` = '".$_SESSION['id']."' WHERE `NumSessione` = '".session_id()."'";
 			$re = mysqli_query($con,$quer);
 			}
 		header("Location: ../Core/PaginaPrincipale.php");
