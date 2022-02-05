@@ -10,6 +10,15 @@
     <div class="row align-items-start ">
       <div class="col mt-5 pt-4">
         <img src="../Immagini/durlindana.jpg"  alt="Durlindana"/>
+        <div id="votazione text-start">
+          <form name="sent-rating" id="sent-rating">
+            <input type="radio" value="10" name="star" id="stella1" title="eccellente" class="costellazione">
+            <input type="radio" value="8" name="star"  id="stella2" title="ottimo" class="costellazione">
+            <input type="radio" value="6" name="star"  id="stella3" title="discreto" class="costellazione">
+            <input type="radio" value="4" name="star"  id="stella4" title="basso" class="costellazione">
+            <input type="radio" value="2" name="star"  id="stella5" title="pessimo" class="costellazione">
+          </form>
+        </div>
       </div>
       <div class="col">
         <h1 class="titoloCard"> Durlindana </h1>
@@ -30,16 +39,7 @@
         </div>
       </div>
     </div>
-  </div>
 
-  <div id="votazione">
-    <form name="sent-rating" id="sent-rating">
-      <input type="radio" value="10" name="star" id="stella1" title="eccellente" class="costellazione">
-      <input type="radio" value="8" name="star"  id="stella2" title="ottimo" class="costellazione">
-      <input type="radio" value="6" name="star"  id="stella3" title="discreto" class="costellazione">
-      <input type="radio" value="4" name="star"  id="stella4" title="basso" class="costellazione">
-      <input type="radio" value="2" name="star"  id="stella5" title="pessimo" class="costellazione">
-    </form>
   </div>
 
 </div>
