@@ -36,20 +36,6 @@
   padding-top: 50px;
 }
 
-.titoloCard{
-  font-family: "Century Gothic";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 50px;
-  color: rgb(56, 56, 56);
-}
-
-.testoCard{
-  font-family: "Century Gothic";
-  color: black;
-  font-size: 18px;
-}
-
 .titolo{
   font-family: "Century Gothic";
   font-style: normal;
@@ -128,11 +114,15 @@ input[type="submit"] {
   color: #daa520;
 }
 
-/* --------------------------- ICONE --------------------------*/
+/* --------------------------- NAVBAR --------------------------*/
 .logo{
   width: 100px;
   height: 100px;
   margin-right: 20rem;
+}
+
+.linkNavbar{
+  margin-right: 9rem;
 }
 
 /* --------------------------- IMMAGINI PRODOTTI --------------------------*/
@@ -144,4 +134,19 @@ input[type="submit"] {
 /* --------------------------- BOTTONI --------------------------*/
 button:hover{
   color: goldenrod;
+}
+
+/* --------------------------- CARD PRODOTTI --------------------------*/
+.titoloCard{
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  color: rgb(56, 56, 56);
+}
+
+.testoCard{
+  font-family: "Century Gothic";
+  color: black;
+  font-size: 18px;
 }
