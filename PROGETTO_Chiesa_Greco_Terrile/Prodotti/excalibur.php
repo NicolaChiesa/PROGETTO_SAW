@@ -11,16 +11,18 @@
     <div>
       <p class="titoloCard"> Excalibur </p>
       <p class="testoBase">Il nome Excalibur vuol dire Colei che taglia l'acciaio,<br>
-        ma il nome deriva dal gallese Caledfwlch, una frase composta da "duro" (Caled) e "breccia, <br>
-        spaccatura". Caledfwlch appare per la prima volta in diverse opere gallesi, tra cui <br>
-        il racconto in prosa Culhwch e Olwen (11-12 ° secolo circa), per poi essere latinizzata in Caliburn <br>
-        da Goffredo di Monmouth nella Historia Regum Britanniae. Ma La spada Caledfwlch potrebbe <br>
-        essere ispirata alla famosa Caladbolg ovvero la mitica spada di Fergus mac Róich nel Ciclo <br>
-        dell'Ulster della Mitologia irlandese. Infatti il nome di questa spada è foneticamente <br>
-        simile al nome Caledfwlch, due studiosi Rachel Bromwich e D. Simon Evans, Suggeriscono invece<br>
-        che entrambi i nomi "potrebbero essere sorti in modo simile in una data molto precoce come <br>
-        nomi generici per una spada". La spada Caledfwlch (e quindi Excalibur) divenne quindi proprietà <br>
-        esclusiva di Artù nella tradizione britannica.<br>
+        ma il nome deriva dal gallese Caledfwlch, una frase composta da "duro" <br>
+        (Caled) e "breccia, spaccatura". Caledfwlch appare per la prima volta in <br>
+        diverse opere gallesi, tra cui il racconto in prosa Culhwch e Olwen <br>
+        (11-12 ° secolo circa), per poi essere latinizzata in Caliburn da Goffredo di<br>
+         Monmouth nella Historia Regum Britanniae. Ma La spada Caledfwlch potrebbe <br>
+        essere ispirata alla famosa Caladbolg ovvero la mitica spada di Fergus mac <br>
+        Róich nel Ciclodell'Ulster della Mitologia irlandese. Infatti il nome di questa <br>
+        spada è foneticamentesimile al nome Caledfwlch, due studiosi Rachel Bromwich<br>
+        e D. Simon Evans, Suggeriscono inveceche entrambi i nomi "potrebbero <br>
+        essere sorti in modo simile in una data molto precoce come <br>
+        nomi generici per una spada". La spada Caledfwlch (e quindi Excalibur)  <br>
+        divenne quindi proprietàesclusiva di Artù nella tradizione britannica.<br>
       </p>
     </div>
   </div>
