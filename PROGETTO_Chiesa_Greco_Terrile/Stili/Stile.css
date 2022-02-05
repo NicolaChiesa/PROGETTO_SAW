@@ -38,6 +38,7 @@
   padding-top: 50px;
 }
 
+<<<<<<< HEAD
 .titoloCard {
   font-family: "Century Gothic";
   font-style: normal;
@@ -54,6 +55,25 @@
 }
 
 .titolo {
+||||||| aacb18f
+.titoloCard{
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  color: rgb(56, 56, 56);
+}
+
+.testoCard{
+  font-family: "Century Gothic";
+  color: black;
+  font-size: 18px;
+}
+
+.titolo{
+=======
+.titolo{
+>>>>>>> 109d4faadb50e77232b84be4ef7f2524be2fb64d
   font-family: "Century Gothic";
   font-style: normal;
   font-weight: bold;
@@ -131,11 +151,23 @@ input[type="submit"] {
   color: #daa520;
 }
 
+<<<<<<< HEAD
 /* --------------------------- ICONE --------------------------*/
 .logo {
+||||||| aacb18f
+/* --------------------------- ICONE --------------------------*/
+.logo{
+=======
+/* --------------------------- NAVBAR --------------------------*/
+.logo{
+>>>>>>> 109d4faadb50e77232b84be4ef7f2524be2fb64d
   width: 100px;
   height: 100px;
   margin-right: 20rem;
+}
+
+.linkNavbar{
+  margin-right: 9rem;
 }
 
 /* --------------------------- IMMAGINI PRODOTTI --------------------------*/
@@ -147,4 +179,25 @@ input[type="submit"] {
 /* --------------------------- BOTTONI --------------------------*/
 button:hover {
   color: goldenrod;
+<<<<<<< HEAD
 }
+||||||| aacb18f
+}
+=======
+}
+
+/* --------------------------- CARD PRODOTTI --------------------------*/
+.titoloCard{
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  color: rgb(56, 56, 56);
+}
+
+.testoCard{
+  font-family: "Century Gothic";
+  color: black;
+  font-size: 18px;
+}
+>>>>>>> 109d4faadb50e77232b84be4ef7f2524be2fb64d

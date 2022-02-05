@@ -35,6 +35,8 @@
 		$pass=password_hash($pass,PASSWORD_BCRYPT);
 		$query ="INSERT INTO utenti (Nome, Cognome, Password, Mail) VALUES ('".$firstname."', '".$lastname."', '".$pass."', '".$email."')";
 		$res = mysqli_query($con,$query);
+		$query = "SELECT ID FROM utenti WHERE Mail='".$email."'";
+		$res=mysqli_query($con,$query);
 		$row = mysqli_fetch_assoc($res);
 		$_SESSION['id']=$row['ID'];
 		mysqli_close($con);
