@@ -43,13 +43,15 @@
 			{
 			$quer="UPDATE `acquisto` SET `IDutente` = '".$_SESSION['id']."' WHERE `NumSessione` = '".session_id()."'";
 			$re = mysqli_query($con,$quer);
+			$num = mysqli_affected_rows($con);
+			echo $num;
 			}
 		mysqli_close($con);
 		if(isset($_POST['Subscription'])){
 			header("Location: ../Newsletter/IscrivitiNewsletter.php");
 		}
 		else{
-			header("Location: ../Core/PaginaPrincipale.php");
+			//header("Location: ../Core/PaginaPrincipale.php");
 		}
 	}
 
