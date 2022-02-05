@@ -3,6 +3,8 @@
   font-family: "Century Gothic";
   color: black;
   font-size: 18px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .descrizione {
@@ -36,21 +38,22 @@
   padding-top: 50px;
 }
 
-.titoloCard{
+.titoloCard {
   font-family: "Century Gothic";
   font-style: normal;
   font-weight: bold;
   font-size: 50px;
   color: rgb(56, 56, 56);
+  padding-left: 10px;
 }
 
-.testoCard{
+.testoCard {
   font-family: "Century Gothic";
   color: black;
   font-size: 18px;
 }
 
-.titolo{
+.titolo {
   font-family: "Century Gothic";
   font-style: normal;
   font-weight: bold;
@@ -124,12 +127,12 @@ input[type="submit"] {
   color: whitesmoke;
 }
 
-.icone:hover{
+.icone:hover {
   color: #daa520;
 }
 
 /* --------------------------- ICONE --------------------------*/
-.logo{
+.logo {
   width: 100px;
   height: 100px;
   margin-right: 20rem;
@@ -142,6 +145,6 @@ input[type="submit"] {
 }
 
 /* --------------------------- BOTTONI --------------------------*/
-button:hover{
+button:hover {
   color: goldenrod;
 }
