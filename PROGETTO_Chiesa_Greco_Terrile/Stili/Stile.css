@@ -201,3 +201,8 @@ button:hover {
 .costellazione:hover:before, .costellazione:hover~.costellazione:before{
   color:coral;
 }
+
+/* --------------------------- VALUTAZIONI --------------------------*/
+.testoProdotto{
+  display: inline-block;
+}

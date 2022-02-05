@@ -11,7 +11,7 @@
     </div>
     <div>
       <p class="titoloCard"> Durlindana </p>
-      <p class="testoBase">Le origini dell'arma non sono chiare, visto che il ciclo <br> 
+      <p class="testoBase testoProdotto">Le origini dell'arma non sono chiare, visto che il ciclo <br> 
         carolingio propone diverse tesi contrastanti,<br>
         anche se la più conosciuta è <br> 
         che a forgiare la spada sia stato Weland il fabbro.<br> 
