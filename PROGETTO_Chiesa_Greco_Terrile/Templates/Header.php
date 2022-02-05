@@ -46,15 +46,9 @@ session_start();
                         </form>
                 
                         <div class="text-end">
-<<<<<<< Updated upstream
-                            <a href="../ModificaUtente/modifica.php" <button type="button" class="btn btn-outline-light">Modifica Profilo</button></a>
-                            <a href="../Prodotti/carrello.php" <button type="button" class="btn btn-outline-light">Carrello</button></a>
-                            <a href="../esci.php" <button type="button" class="btn btn-outline-light me-2">Esci</button></a>
-=======
-                        <a href="../Prodotti/finisci.php" <button type="button" class="btn btn-outline-light me-2 ms-5">Carrello</button></a>
+                            <a href="../Prodotti/finisci.php" <button type="button" class="btn btn-outline-light me-2 ms-5">Carrello</button></a>
                             <a href="../ModificaUtente/modifica.php" <button type="button" class="btn btn-outline-light me-2">Modifica Profilo</button></a>
                             <a href="../esci.php" <button type="button" class="btn btn-outline-light">Esci</button></a>
->>>>>>> Stashed changes
                         </div>
                     </div>
                 </div>
@@ -81,12 +75,8 @@ session_start();
                         </form>
                 
                         <div class="text-end">
-<<<<<<< Updated upstream
-=======
-                        <a href="../Prodotti/finisci.php" <button type="button" class="btn btn-outline-light me-2 ms-5">Carrello</button></a>
->>>>>>> Stashed changes
-                            <a href="../Login/FormLogin.php" <button type="button" class="btn btn-outline-light me-2">Accedi</button> </a>
                             <a href="../Prodotti/carrello.php" <button type="button" class="btn btn-outline-light">Carrello</button></a>
+                            <a href="../Login/FormLogin.php" <button type="button" class="btn btn-outline-light me-2">Accedi</button> </a>
                             <a href="../Registrazione/RegistrazioneForm.php" <button type="button" class="btn btn-outline-light">Registrati</button> </a>
                         </div>
                     </div>
