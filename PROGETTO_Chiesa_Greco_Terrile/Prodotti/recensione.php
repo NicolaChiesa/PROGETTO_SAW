@@ -19,7 +19,8 @@
 			$row = mysqli_fetch_assoc($result);
 			$voto=($row['Voto']*$row['NumVoti']+$rate)/($row['NumVoti+1']);
 			$reg= 'Recensione Ok!';
-			$query="UPDATE `prodotti` SET `Voto` = '".$rate."'";
+			$row['NumVoti']+=1;
+			$query="UPDATE `prodotti` SET `Voto` = '".$rate."', NumVoti='".$row['NumVoti']."'";
 			$res = mysqli_query($con,$query);
 			}
 		else 
