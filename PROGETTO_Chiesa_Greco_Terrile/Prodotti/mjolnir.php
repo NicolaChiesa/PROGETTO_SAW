@@ -6,8 +6,8 @@
 
 <div class="container py-5">
   <div class="container">
-    <div class="row align-items-start ">
-      <div class="col mt-5 pt-4">
+    <div class="row align-items-start">
+      <div class="col mt-5 pt-4 dimensioniImmagineProdotti">
         <img src="../Immagini/mjolnir.png"  alt="Mjolnir"/>
       </div>
       <div class="col">
