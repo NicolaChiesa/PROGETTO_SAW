@@ -40,6 +40,21 @@
     </form>
   </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+     $(document).ready(function(){
+        $(".costellazione").click(function(){
+            alert('hhhhhhhhhhh');
+            var vot=(this).val();
+            $.ajax({
+                type:"POST";
+                url"../Prodotti/recensione.php",
+                data:{voto:voto},
+                dataType:"html"
+            });
+        });       
+     });
+    </script>
 <?php
   include('../Templates/Footer.php');
 ?>
