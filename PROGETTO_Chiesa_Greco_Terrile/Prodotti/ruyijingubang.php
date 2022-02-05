@@ -8,7 +8,7 @@
   <div class="container">
     <div class="row align-items-start ">
       <div class="col mt-5 pt-4">
-        <img src="../Immagini/RuyiJiunguBang2.jpg"  alt="RuyiJiunguBang" class="dimensioni"/>
+        <img src="../Immagini/RuyiJinguBang2.jpg"  alt="RuyiJinguBang" class="dimensioni"/>
       </div>
       <div class="col">
         <h1 class="titoloCard"> RuyiJinguBang </h1>
