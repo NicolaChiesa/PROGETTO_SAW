@@ -3,10 +3,12 @@
 	include('../connessione.php');
 	if(!isset($_SESSION['Registrated']))
 		{
+			echo" ciaooooooo";
 			$reg='Devi accedere prima di potere acquistare!!';
 		}
 	else
 		{
+			echo" vediamo se va";
 		$query = "SELECT IDutente FROM acquistato WHERE IDprodotto='".$_SESSION['IDprodotto']."'";
 		$res = mysqli_query($con,$query);
 		$row = mysqli_fetch_assoc($res);
@@ -26,8 +28,8 @@
 		else 
 			$reg= 'Non hai acquistato questo prodotto, quindi non puoi recensirlo!';
 		}
-	echo "<script type='text/javascript'>alert('$reg');</script>";
-	header("refresh:0; url=prod.php");
+	//echo "<script type='text/javascript'>alert('$reg');</script>";
+	//header("refresh:0; url=prod.php");
 	mysqli_close($con);	
 	include('../Templates/Footer.php');
 ?>
