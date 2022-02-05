@@ -3,14 +3,14 @@
 	include('../connessione.php');
 	if(!isset($_SESSION['Registrated']))
 		{
-		$reg='Devi accedere prima di potere acquistare!!';
+			$reg='Devi accedere prima di potere acquistare!!';
 		}
 	else
 		{
 		$query = "SELECT IDutente FROM acquistato WHERE IDprodotto='".$_SESSION['IDprodotto']."'";
-		$res=mysqli_query($con,$query);
+		$res = mysqli_query($con,$query);
 		$row = mysqli_fetch_assoc($res);
-		$rowcount=mysqli_num_rows($res);
+		$rowcount = mysqli_num_rows($res);
 		if($rowcount>0)
 			{
 			$rate=$_POST['voto'];
