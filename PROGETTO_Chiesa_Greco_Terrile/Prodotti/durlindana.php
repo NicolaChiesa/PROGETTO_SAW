@@ -67,23 +67,6 @@
         });       
      });
     </script>
-
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $(".costellazione").click(function(){
-          alert('hhhhhhhhhhh');
-          var vot=(this).val();
-          $.ajax({
-              type:"POST";
-              url"../Prodotti/recensione.php",
-              data: {voto: voto},
-              dataType:"html"
-          });
-      });       
-    });
-  </script>
-
-
 <?php
   include('../Templates/Footer.php');
 ?>
