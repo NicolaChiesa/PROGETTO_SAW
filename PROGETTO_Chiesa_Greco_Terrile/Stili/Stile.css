@@ -83,15 +83,14 @@
   justify-content: center;
 }
 
-.dimensioniImmagineProdotti{
-  width: 750px;
-  height: 417px;
-  background-color: #efefef;
-}
-
 /* --------------------------- IMAGE --------------------------*/
 div.polaroid {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.dimensioni{
+  width: 750px;
+  height: 417px;
 }
 /* --------------------------- INPUT --------------------------*/
 input[type="text"],

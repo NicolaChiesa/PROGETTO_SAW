@@ -5,9 +5,9 @@
 ?>
 <div class="container py-5">
   <div class="container">
-    <div class="row align-items-start ">
-      <div class="col mt-5 pt-4 dimensioniImmagineProdotti">
-        <img src="../Immagini/durlindana.jpg"  alt="Durlindana"/>
+    <div class="row align-items-start">
+      <div class="col mt-5 pt-4">
+        <img src="../Immagini/durlindana.jpg"  alt="Durlindana" class="dimensioni"/>
       </div>
       <div class="col">
         <h1 class="titoloCard"> Durlindana </h1>
