@@ -15,14 +15,9 @@
         cristiano il corno fu un materiale usato per realizzare oggetti di<br>
         pregio tra cui persino calici, anche se quest'ultimo uso fu presto<br>
         proibito. Durevole invece fu la consuetudine medievale di adoperare<br>
-        ogni sorta di corni di ruminanti per farne vasi potori (vasi usati<br>
-        nell'antichità per contenere bevande; dal latino potorius, "che <br>
-        serve per bere", dalla stessa radice di potare, "bere"): molti di <br>
+        ogni sorta di corni di ruminanti per farne vasi potori  molti di <br>
         essi finirono nei tesori delle chiese e divennero reliquiari o vasi <br>
-        per l'olio santo; negli inventari del Quattrocento e Cinquecento sono <br>
-        descritti come zampe di grifo e si attribuivano loro poteri amuletici <br>
-        contro il male e il veleno, come per i corni di unicorno comuni nei <br>
-        tesori principeschi del Rinascimento.<br>
+        per l'olio santo.
       </p>
     </div>
   </div>
