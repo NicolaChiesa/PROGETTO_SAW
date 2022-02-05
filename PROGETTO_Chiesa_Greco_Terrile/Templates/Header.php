@@ -23,7 +23,7 @@ session_start();
                 <div class="container">
                     <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                         <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                            <img src="" alt="" class="">                
+                            <img src="../Immagini/OnlyMytich.png" alt="Logo del sito Only Mytich" class="">                
                         </a>
                 
                         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
@@ -52,7 +52,7 @@ session_start();
                 <div class="container">
                     <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                         <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                            <img src="" alt="" class="">                
+                            <img src="../Immagini/OnlyMytich.png" alt="Logo del sito Only Mytich" class="">               
                         </a>
                 
                         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
