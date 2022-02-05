@@ -1,5 +1,5 @@
 <div>
-  <footer class="py-3 px-5 bg-dark position-relative" >
+  <footer class="py-1 px-5 bg-dark position-relative" >
     <div class="row">
       <div class="col-7">
         <h5 class="text-light">Sezioni</h5>
