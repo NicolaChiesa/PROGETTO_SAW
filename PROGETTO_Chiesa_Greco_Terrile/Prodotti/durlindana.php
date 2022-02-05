@@ -4,9 +4,10 @@
   $_SESSION['IDprodotto']=1;
 ?>
 <div class="container py-5">
+
   <div class="mydiv1">
     <div class="polaroid">
-      <img src="../Immagini/durlindana.jpg"  alt="..." height="350"/>
+      <img src="../Immagini/durlindana.jpg"  alt="Durlindana" height="400"/>
     </div>
     <div>
       <p class="titoloCard"> Durlindana </p>
@@ -40,7 +41,9 @@
       <input type="radio" value="2" name="star"  id="stella5" title="pessimo" class="costellazione">
     </form>
   </div>
+
 </div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function(){
