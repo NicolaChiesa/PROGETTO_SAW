@@ -10,14 +10,16 @@
     <div class="row align-items-start ">
       <div class="col mt-5 pt-4">
         <img src="../Immagini/durlindana.jpg"  alt="Durlindana"/>
-        <div id="votazione text-start mt-5">
-          <form name="sent-rating" id="sent-rating">
-            <input type="radio" value="10" name="star" id="stella1" title="eccellente" class="costellazione">
-            <input type="radio" value="8" name="star"  id="stella2" title="ottimo" class="costellazione">
-            <input type="radio" value="6" name="star"  id="stella3" title="discreto" class="costellazione">
-            <input type="radio" value="4" name="star"  id="stella4" title="basso" class="costellazione">
-            <input type="radio" value="2" name="star"  id="stella5" title="pessimo" class="costellazione">
-          </form>
+        <div class="mt-5 text-center">
+          <div id="votazione">
+            <form name="sent-rating" id="sent-rating">
+              <input type="radio" value="10" name="star" id="stella1" title="eccellente" class="costellazione">
+              <input type="radio" value="8" name="star"  id="stella2" title="ottimo" class="costellazione">
+              <input type="radio" value="6" name="star"  id="stella3" title="discreto" class="costellazione">
+              <input type="radio" value="4" name="star"  id="stella4" title="basso" class="costellazione">
+              <input type="radio" value="2" name="star"  id="stella5" title="pessimo" class="costellazione">
+            </form>
+          </div>
         </div>
       </div>
       <div class="col">
@@ -45,7 +47,6 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<<<<<<< HEAD
     <script type="text/javascript">
      $(document).ready(function(){
         $(".costellazione").click(function(){
@@ -66,6 +67,7 @@
         });       
      });
     </script>
+<<<<<<< HEAD
   <script type="text/javascript">
     $(document).ready(function(){
       $(".costellazione").click(function(){
@@ -81,6 +83,8 @@
     });
   </script>
 
+=======
+>>>>>>> 4f2ac713de3d9fbd5a768156757fe38a7097680f
 <?php
   include('../Templates/Footer.php');
 ?>
