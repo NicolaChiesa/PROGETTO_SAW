@@ -41,14 +41,14 @@ session_start();
                             <li><a class="nav-link px-2 link-light" href="#">Chi siamo</a></li>
                         </ul>
                 
-                        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-5">
                             <input type="search" class="form-control form-control-dark" placeholder="Cerca..." aria-label="Search">
                         </form>
                 
                         <div class="text-end">
-                            <a href="../ModificaUtente/modifica.php" <button type="button" class="btn btn-outline-light">Modifica Profilo</button></a>
-                            <a href="../Prodotti/finisci.php" <button type="button" class="btn btn-outline-light">Carrello</button></a>
-                            <a href="../esci.php" <button type="button" class="btn btn-outline-light me-2">Esci</button></a>
+                        <a href="../Prodotti/finisci.php" <button type="button" class="btn btn-outline-light me-2">Carrello</button></a>
+                            <a href="../ModificaUtente/modifica.php" <button type="button" class="btn btn-outline-light me-2 ms-2">Modifica Profilo</button></a>
+                            <a href="../esci.php" <button type="button" class="btn btn-outline-light">Esci</button></a>
                         </div>
                     </div>
                 </div>
@@ -70,13 +70,13 @@ session_start();
                             <li><a class="nav-link px-2 link-light" href="#">Chi siamo</a></li>
                         </ul>
                 
-                        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-5">
                             <input type="search" class="form-control form-control-dark" placeholder="Cerca..." aria-label="Search">
                         </form>
                 
                         <div class="text-end">
-                            <a href="../Login/FormLogin.php" <button type="button" class="btn btn-outline-light me-2">Accedi</button> </a>
-                            <a href="../Prodotti/finisci.php" <button type="button" class="btn btn-outline-light">Carrello</button></a>
+                        <a href="../Prodotti/finisci.php" <button type="button" class="btn btn-outline-light me-2">Carrello</button></a>
+                            <a href="../Login/FormLogin.php" <button type="button" class="btn btn-outline-light me-2 ms-2">Accedi</button> </a>
                             <a href="../Registrazione/RegistrazioneForm.php" <button type="button" class="btn btn-outline-light">Registrati</button> </a>
                         </div>
                     </div>
