@@ -5,7 +5,20 @@
 ?>
 <div class="container py-5">
 
-  <div class="container-fluid">
+  <div class="container">
+
+    <div class="row align-items-start">
+      <div class="col">
+        One of three columns
+      </div>
+      <div class="col">
+        One of three columns
+      </div>
+      <div class="col">
+        One of three columns
+      </div>
+    </div>
+
     <div>
       <img src="../Immagini/durlindana.jpg"  alt="Durlindana"/>
     </div>
