@@ -5,7 +5,7 @@
 ?>
 <div class="container py-5">
 
-  <div class="mydiv1">
+  <div class="container-fluid">
     <div class="polaroid">
       <img src="../Immagini/durlindana.jpg"  alt="Durlindana"/>
     </div>
