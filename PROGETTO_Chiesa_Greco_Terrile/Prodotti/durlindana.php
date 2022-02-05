@@ -24,16 +24,16 @@
       </div>
       <div class="col">
         <h1 class="titoloCard"> Durlindana </h1>
-        <p class="testoBase">Le origini dell'arma non sono chiare, visto che il ciclo <br> 
-          carolingio propone diverse tesi contrastanti,<br>
-          anche se la più conosciuta è <br> 
-          che a forgiare la spada sia stato Weland il fabbro.<br> 
-          La Chanson de Roland vuole invece che la spada fosse stata <br> 
-          donata a Orlando proprio da Carlo Magno, <br> 
-          che l'avrebbe a sua volta ricevuta in dono da un angelo; <br>
-          nel famoso poema Orlando Furioso di Ludovico Ariosto, si dice invece <br> 
-          che la spada sarebbe stata donata al cavaliere da Malagigi e <br> 
-          che sarebbe un tempo appartenuta a Ettore di Troia <br> 
+        <p class="testoBase">Le origini dell'arma non sono chiare, visto che il ciclo  
+          carolingio propone diverse tesi contrastanti,
+          anche se la più conosciuta è 
+          che a forgiare la spada sia stato Weland il fabbro 
+          La Chanson de Roland vuole invece che la spada fosse stata 
+          donata a Orlando proprio da Carlo Magno, 
+          che l'avrebbe a sua volta ricevuta in dono da un angelo;
+          nel famoso poema Orlando Furioso di Ludovico Ariosto, si dice invece 
+          che la spada sarebbe stata donata al cavaliere da Malagigi e 
+          che sarebbe un tempo appartenuta a Ettore di Troia 
           tuttavia non c'è nessuna menzione della spada nella Iliade.
         </p>
         <div class="text-end mt-5">
