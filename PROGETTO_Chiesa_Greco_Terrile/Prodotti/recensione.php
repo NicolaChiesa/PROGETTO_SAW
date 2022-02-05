@@ -13,7 +13,14 @@
 		$rowcount=mysqli_num_rows($res);
 		if($rowcount>0)
 			{
-			$_SESSION['recensione']='true';
+			$rate=$_POST['voto'];
+			$select = "SELECT Voto, NumVoti FROM prodotti WHERE IDprodotto='".$_SESSION['IDprodotto']."'";
+			$result=mysqli_query($con,$select);
+			$row = mysqli_fetch_assoc($result);
+			$voto=($row['Voto']*$row['NumVoti']+$rate)/($row['NumVoti+1']);
+			$reg= 'Recensione Ok!';
+			$query="UPDATE `prodotti` SET `Voto` = '".$rate."'";
+			$res = mysqli_query($con,$query);
 			}
 		else 
 			$reg= 'Non hai acquistato questo prodotto, quindi non puoi recensirlo!';
