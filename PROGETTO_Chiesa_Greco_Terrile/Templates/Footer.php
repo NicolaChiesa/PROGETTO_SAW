@@ -25,7 +25,7 @@
       </div>
     </div>
   
-    <div class="d-flex justify-content-between py-4 border-top text-light">
+    <div class="d-flex justify-content-between py-2 border-top text-light">
       <p>&copy; 2021 Company, Only Mytich, tutti i diritti sono riesrvati</p>
       <ul class="list-unstyled d-flex">
         <li class="ms-3"><a class="icone" href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a></li>
