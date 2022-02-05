@@ -4,9 +4,7 @@
   $_SESSION['IDprodotto']=1;
 ?>
 <div class="container py-5">
-
   <div class="container">
-
     <div class="row align-items-start ">
       <div class="col mt-5 pt-4">
         <img src="../Immagini/durlindana.jpg"  alt="Durlindana"/>
@@ -45,7 +43,6 @@
       </div>
     </div>
   </div>
-
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

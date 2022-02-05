@@ -3,28 +3,48 @@
   $_SESSION['prodotto']='Mjolnir';
   $_SESSION['IDprodotto']=3;
 ?>
+
 <div class="container py-5">
-  <div class="mydiv1">
-    <div class="polaroid">
-      <img src="../Immagini/mjolnir.png"  alt="..." height="350"/>
+  <div class="container">
+    <div class="row align-items-start ">
+      <div class="col mt-5 pt-4">
+        <img src="../Immagini/mjolnir.png"  alt="Mjolnir"/>
+      </div>
+      <div class="col">
+        <h1 class="titoloCard"> Mjolnir </h1>
+        <p class="testoBase">Il Mjöllnir, sovente semplificato in Mjolnir chiamato anche Martello di Thor,
+        è l'arma di Thor (lett. "Fulmine"), il dio personificante il fulmine
+          e il tuono nella mitologia norrena. È in genere rappresentato originariamente
+          come un martello. È realizzato dai nani, o, secondo l'Edda in prosa
+          di Snorri Sturluson del XIII secolo, dal nano Sindri per una disputa con 
+          il dio Loki su chi avesse potuto creare l'arma più meravigliosa per gli dèi.
+          Il suo significato simbolico, teologico, è comparabile a quello del Vajra
+          (il "fulmine" o "diamante", arma di Indra), e simboli simili, tra cui la svastica,
+          vedico come testimoniato dal fatto che in Scandinavia  
+          e Inghilterra venisse rappresentato anche come croce uncinata
+        </p>
+      </div>
     </div>
-    <div>
-      <p class="titoloCard"> Mjolnir </p>
-      <p class="testoBase">Il Mjöllnir, sovente semplificato in Mjolnir chiamato anche Martello di Thor,<br> 
-         è l'arma di Thor (lett. "Fulmine"), il dio personificante il fulmine<br> 
-         e il tuono nella mitologia norrena. È in genere rappresentato originariamente<br> 
-         come un martello. È realizzato dai nani, o, secondo l'Edda in prosa<br>  
-         di Snorri Sturluson del XIII secolo, dal nano Sindri per una disputa con <br> 
-         il dio Loki su chi avesse potuto creare l'arma più meravigliosa per gli dèi.<br> 
-         Il suo significato simbolico, teologico, è comparabile a quello del Vajra<br>
-         (il "fulmine" o "diamante", arma di Indra), e simboli simili, tra cui la svastica,<br> 
-         vedico come testimoniato dal fatto che in Scandinavia  <br>
-         e Inghilterra venisse rappresentato anche come croce uncinata<br>
-      </p>
+    
+    <div class="row align-items-end ">
+      <div id="votazione">
+        <form name="sent-rating" id="sent-rating">
+          <input type="radio" value="10" name="star" id="stella1" title="eccellente" class="costellazione">
+          <input type="radio" value="8" name="star"  id="stella2" title="ottimo" class="costellazione">
+          <input type="radio" value="6" name="star"  id="stella3" title="discreto" class="costellazione">
+          <input type="radio" value="4" name="star"  id="stella4" title="basso" class="costellazione">
+          <input type="radio" value="2" name="star"  id="stella5" title="pessimo" class="costellazione">
+        </form>
+      </div>
+      
+
+      <div class="text-end">
+        <a href="carrello.php" <button type="button" class="btn btn-outline-dark me-2">Aggiungi al carrello</button></a>
+      </div>
     </div>
   </div>
-  <a href="carrello.php" <button type="button" class="btn btn-outline-dark me-2">Aggiungi al carrello</button></a>
 </div>
+
 <?php
   include('../Templates/Footer.php');
 ?>

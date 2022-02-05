@@ -3,30 +3,50 @@
   $_SESSION['prodotto']='Ruyi Jingu Bang';
   $_SESSION['IDprodotto']=6;
 ?>
+
 <div class="container py-5">
-  <div class="mydiv1">
-    <div class="polaroid">
-      <img src="../Immagini/RuyiJinguBang2.jpg"  alt="..." height="450"/>
+  <div class="container">
+    <div class="row align-items-start ">
+      <div class="col mt-5 pt-4">
+        <img src="../Immagini/RuyiJiunguBang2.jpg"  alt="RuyiJiunguBang"/>
+      </div>
+      <div class="col">
+        <h1 class="titoloCard"> RuyiJinguBang </h1>
+        <p class="testoBase"><br> 
+        Ruyi Jingu Bang ( cinese :如意金箍棒; pinyin : Rúyì Jīngū Bàng ),
+        o semplicemente Ruyi Bang o Jingu Bang , è il nome poetico di  
+        un bastone magico brandito dalla scimmia immortale Sun Wukong nel  
+        classico romanzo cinese del XVI secolo Journey ad occidente . 
+        Anthony Yu traduce il nome semplicemente come "The Compliant  
+        Golden-Hooped Rod",  mentre WJF Jenner lo traduce 
+        come "As-You-Will Gold-Banded Cudgel".Il bastone appare 
+        per la prima volta nel terzo capitolo quando il Re Scimmia 
+        si reca nel regno sottomarino di Ao Guang, il Re  Drago 
+        del Mare Orientale , alla ricerca di un'arma magica che 
+        corrisponda alla sua forza e abilità.
+        </p>
+      </div>
     </div>
-    <div>
-      <p class="titoloCard"> RuyiJinguBang </p>
-      <p class="testoBase"><br> 
-      Ruyi Jingu Bang ( cinese :如意金箍棒; pinyin : Rúyì Jīngū Bàng ), <br> 
-      o semplicemente Ruyi Bang o Jingu Bang , è il nome poetico di <br> 
-      un bastone magico brandito dalla scimmia immortale Sun Wukong nel <br> 
-      classico romanzo cinese del XVI secolo Journey ad occidente . <br> 
-      Anthony Yu traduce il nome semplicemente come "The Compliant <br> 
-      Golden-Hooped Rod",  mentre WJF Jenner lo traduce <br> 
-      come "As-You-Will Gold-Banded Cudgel".Il bastone appare<br> 
-      per la prima volta nel terzo capitolo quando il Re Scimmia<br> 
-      si reca nel regno sottomarino di Ao Guang, il Re  Drago<br> 
-      del Mare Orientale , alla ricerca di un'arma magica che<br> 
-      corrisponda alla sua forza e abilità.<br> 
-      </p>
+    
+    <div class="row align-items-end ">
+      <div id="votazione">
+        <form name="sent-rating" id="sent-rating">
+          <input type="radio" value="10" name="star" id="stella1" title="eccellente" class="costellazione">
+          <input type="radio" value="8" name="star"  id="stella2" title="ottimo" class="costellazione">
+          <input type="radio" value="6" name="star"  id="stella3" title="discreto" class="costellazione">
+          <input type="radio" value="4" name="star"  id="stella4" title="basso" class="costellazione">
+          <input type="radio" value="2" name="star"  id="stella5" title="pessimo" class="costellazione">
+        </form>
+      </div>
+      
+
+      <div class="text-end">
+        <a href="carrello.php" <button type="button" class="btn btn-outline-dark me-2">Aggiungi al carrello</button></a>
+      </div>
     </div>
   </div>
-  <a href="carrello.php" <button type="button" class="btn btn-outline-dark me-2">Aggiungi al carrello</button></a>
 </div>
+
 <?php
   include('../Templates/Footer.php');
 ?>
