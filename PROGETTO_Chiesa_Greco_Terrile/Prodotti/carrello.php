@@ -1,13 +1,14 @@
 <?php
 	include('../Templates/Header.php');
 	include('../connessione.php');
+	$_SESSSION['carrello']='true';
 	$query = "SELECT prezzo, quantita FROM prodotti WHERE Nome='".$_SESSION['prodotto']."'";
 	$res=mysqli_query($con,$query);
 	$row = mysqli_fetch_assoc($res);
 	if($row['quantita']>0)
 		{
 		$session_id=session_id();
-		//$row['quantita']-=1;
+		$row['quantita']-=1;
 		$quer="UPDATE `prodotti` SET `quantita` = '".$row['quantita']."' WHERE `Nome` = '".$_SESSION['prodotto']."'";
 		$re = mysqli_query($con,$quer);
 		if(isset($_SESSION['Registrated']) && $_SESSION['Registrated'] == "true")
