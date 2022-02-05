@@ -27,10 +27,6 @@
     </div>
   </div>
   <a href="carrello.php" <button type="button" class="btn btn-outline-dark me-2">Aggiungi al carrello</button></a>
-  <!--<a href="finisci.php" <button type="button" class="btn btn-outline-dark me-2">Vai al carrello</button></a>
-  <a href="carrello.php"<button id="pulsante"><i class="icon-shopping-cart"></i> Aggiungi al carrello</button></a>
-  <a href="finisci.php"<button id="pulsante"><i class="icon-shopping-cart"></i> Vai al carrello</button></a>-->
-
 </div>
 <?php
   include('../Templates/Footer.php');
