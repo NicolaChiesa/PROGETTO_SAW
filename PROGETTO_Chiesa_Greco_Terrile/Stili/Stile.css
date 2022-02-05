@@ -142,16 +142,9 @@ input[type="submit"] {
   margin-right: 9rem;
 }
 
-/* --------------------------- IMMAGINI PRODOTTI --------------------------*/
-.immagini {
-  width: auto;
-  height: 280px;
-}
-
 /* --------------------------- BOTTONI --------------------------*/
 button:hover {
   color: goldenrod;
-}
 }
 
 /* --------------------------- CARD PRODOTTI --------------------------*/
@@ -162,12 +155,14 @@ button:hover {
   font-size: 50px;
   color: rgb(56, 56, 56);
 }
-<<<<<<< Updated upstream
-=======
 
 .testoCard{
   font-family: "Century Gothic";
   color: black;
   font-size: 18px;
 }
->>>>>>> Stashed changes
+
+.immagini {
+  width: auto;
+  height: 280px;
+}
