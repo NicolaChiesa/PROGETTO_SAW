@@ -67,7 +67,7 @@ session_start();
                         </form>
                 
                         <div class="text-end">
-                            <a href="../Prodotti/carrello.php" <button type="button" class="btn btn-outline-light me-2 ms-5">Carrello</button></a>
+                            <a href="../Prodotti/finisci.php" <button type="button" class="btn btn-outline-light me-2 ms-5">Carrello</button></a>
                             <a href="../Login/FormLogin.php" <button type="button" class="btn btn-outline-light me-2">Accedi</button> </a>
                             <a href="../Registrazione/RegistrazioneForm.php" <button type="button" class="btn btn-outline-light">Registrati</button> </a>
                         </div>

@@ -1,7 +1,7 @@
 <?php
 	include('../Templates/Header.php');
 	include('../connessione.php');
-	$_SESSSION['carrello']='true';
+	$_SESSION['carrello']='true';
 	$query = "SELECT prezzo, quantita FROM prodotti WHERE Nome='".$_SESSION['prodotto']."'";
 	$res=mysqli_query($con,$query);
 	$row = mysqli_fetch_assoc($res);
