@@ -10,17 +10,6 @@
     <div class="row align-items-start ">
       <div class="col mt-5 pt-4">
         <img src="../Immagini/durlindana.jpg"  alt="Durlindana"/>
-        <div class="mt-5 text-center">
-          <div id="votazione">
-            <form name="sent-rating" id="sent-rating">
-              <input type="radio" value="10" name="star" id="stella1" title="eccellente" class="costellazione">
-              <input type="radio" value="8" name="star"  id="stella2" title="ottimo" class="costellazione">
-              <input type="radio" value="6" name="star"  id="stella3" title="discreto" class="costellazione">
-              <input type="radio" value="4" name="star"  id="stella4" title="basso" class="costellazione">
-              <input type="radio" value="2" name="star"  id="stella5" title="pessimo" class="costellazione">
-            </form>
-          </div>
-        </div>
       </div>
       <div class="col">
         <h1 class="titoloCard"> Durlindana </h1>
@@ -36,12 +25,26 @@
           che sarebbe un tempo appartenuta a Ettore di Troia 
           tuttavia non c'è nessuna menzione della spada nella Iliade.
         </p>
-        <div class="text-end mt-5">
-          <a href="carrello.php" <button type="button" class="btn btn-outline-dark me-2">Aggiungi al carrello</button></a>
-        </div>
       </div>
     </div>
 
+    <div class="row align-items-start ">
+      <div class="mt-5">
+        <div id="votazione">
+          <form name="sent-rating" id="sent-rating">
+            <input type="radio" value="10" name="star" id="stella1" title="eccellente" class="costellazione">
+            <input type="radio" value="8" name="star"  id="stella2" title="ottimo" class="costellazione">
+            <input type="radio" value="6" name="star"  id="stella3" title="discreto" class="costellazione">
+            <input type="radio" value="4" name="star"  id="stella4" title="basso" class="costellazione">
+            <input type="radio" value="2" name="star"  id="stella5" title="pessimo" class="costellazione">
+          </form>
+        </div>
+      </div>
+
+      <div class="text-end">
+        <a href="carrello.php" <button type="button" class="btn btn-outline-dark me-2">Aggiungi al carrello</button></a>
+      </div>
+    </div>
   </div>
 
 </div>
