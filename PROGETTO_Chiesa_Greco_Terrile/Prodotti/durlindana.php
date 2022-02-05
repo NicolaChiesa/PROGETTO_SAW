@@ -57,7 +57,7 @@
             var vot=(this).val();
             var jaqxhr=$.ajax({
                 type:"POST",
-                url"../Prodotti/recensione.php",
+                url"recensione.php",
                 data:{voto:voto},
                 dataType:"html"
             });
