@@ -47,7 +47,6 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<<<<<<< HEAD
     <script type="text/javascript">
      $(document).ready(function(){
         $(".costellazione").click(function(){
@@ -68,23 +67,6 @@
         });       
      });
     </script>
-=======
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $(".costellazione").click(function(){
-          alert('hhhhhhhhhhh');
-          var vot=(this).val();
-          $.ajax({
-              type:"POST";
-              url"../Prodotti/recensione.php",
-              data: {voto: voto},
-              dataType:"html"
-          });
-      });       
-    });
-  </script>
-
->>>>>>> d75daa75446dc296ef30e31db95af2c22a326551
 <?php
   include('../Templates/Footer.php');
 ?>
