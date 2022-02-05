@@ -28,53 +28,7 @@
       </div>
     </div>
 
-<<<<<<< HEAD
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-||||||| daad84e
-    <div class="row align-items-end ">
-      <div id="votazione">
-        <form name="sent-rating" id="sent-rating">
-          <input type="radio" value="10" name="star" id="stella1" title="eccellente" class="costellazione">
-          <input type="radio" value="8" name="star"  id="stella2" title="ottimo" class="costellazione">
-          <input type="radio" value="6" name="star"  id="stella3" title="discreto" class="costellazione">
-          <input type="radio" value="4" name="star"  id="stella4" title="basso" class="costellazione">
-          <input type="radio" value="2" name="star"  id="stella5" title="pessimo" class="costellazione">
-        </form>
-      </div>
-
-      <div class="text-end">
-        <a href="carrello.php" <button type="button" class="btn btn-outline-dark me-2">Aggiungi al carrello</button></a>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-=======
-    <div class="row align-items-end ">
-      <div class="col mt-5">
-        <div id="votazione">
-          <form name="sent-rating" id="sent-rating">
-            <input type="radio" value="10" name="star" id="stella1" title="eccellente" class="costellazione">
-            <input type="radio" value="8" name="star"  id="stella2" title="ottimo" class="costellazione">
-            <input type="radio" value="6" name="star"  id="stella3" title="discreto" class="costellazione">
-            <input type="radio" value="4" name="star"  id="stella4" title="basso" class="costellazione">
-            <input type="radio" value="2" name="star"  id="stella5" title="pessimo" class="costellazione">
-          </form>
-        </div>
-      </div>
-
-      <div class=" col text-end">
-        <a href="carrello.php" <button type="button" class="btn btn-outline-dark me-2">Aggiungi al carrello</button></a>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
->>>>>>> d0f7b3f6be700afcd4b9db9bfbf501f858560837
     <script type="text/javascript">
      $(document).ready(function(){
         $(".costellazione").click(function(){
