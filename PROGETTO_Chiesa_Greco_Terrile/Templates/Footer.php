@@ -2,8 +2,8 @@
   <footer class="py-1 px-5 bg-dark position-relative" >
     <div class="row">
       <div class="col-7">
-        <h5 class="text-light">Sezioni</h5>
-        <ul class="nav flex-column my-1">
+        <h5 class="text-light mt-2">Sezioni</h5>
+        <ul class="nav flex-column">
           <li class="nav-item mb-2"><a href="../Core/PaginaPrincipale.php" class="nav-link p-0 text-muted">Home</a></li>
           <li class="nav-item mb-2"><a href="../Prodotti/prod.php" class="nav-link p-0 text-muted">Articoli</a></li>
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Novità</a></li>
