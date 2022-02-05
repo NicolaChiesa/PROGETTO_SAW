@@ -67,7 +67,7 @@
         });       
      });
     </script>
-<<<<<<< HEAD
+
   <script type="text/javascript">
     $(document).ready(function(){
       $(".costellazione").click(function(){
@@ -83,8 +83,7 @@
     });
   </script>
 
-=======
->>>>>>> 4f2ac713de3d9fbd5a768156757fe38a7097680f
+
 <?php
   include('../Templates/Footer.php');
 ?>
