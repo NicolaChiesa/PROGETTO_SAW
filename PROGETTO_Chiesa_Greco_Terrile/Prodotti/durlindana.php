@@ -10,7 +10,7 @@
     <div class="row align-items-start ">
       <div class="col mt-5 pt-4">
         <img src="../Immagini/durlindana.jpg"  alt="Durlindana"/>
-        <div id="votazione text-start">
+        <div id="votazione text-start mt-5">
           <form name="sent-rating" id="sent-rating">
             <input type="radio" value="10" name="star" id="stella1" title="eccellente" class="costellazione">
             <input type="radio" value="8" name="star"  id="stella2" title="ottimo" class="costellazione">
@@ -34,7 +34,7 @@
           che sarebbe un tempo appartenuta a Ettore di Troia <br> 
           tuttavia non c'è nessuna menzione della spada nella Iliade.
         </p>
-        <div class="text-end">
+        <div class="text-end mt-5">
           <a href="carrello.php" <button type="button" class="btn btn-outline-dark me-2">Aggiungi al carrello</button></a>
         </div>
       </div>
