@@ -141,9 +141,11 @@ input[type="submit"] {
 
 /* --------------------------- NAVBAR --------------------------*/
 .logo{
-  width: 100px;
-  height: 100px;
-  margin-right: 20rem;
+  width: 150px;
+  height: 150px;
+  padding-right: 0;
+  margin-right: 0;
+  border-right: 0;
 }
 
 .linkNavbar{
