@@ -166,3 +166,36 @@ button:hover {
   width: auto;
   height: 280px;
 }
+
+#votazione{
+    float:left;
+    unicode-bidi:bidi-override;
+    direction:rtl;
+}
+
+.costellazione:not(:checked):before{
+    content:"\2605";
+    color:#ddd;
+    text-shadow:2px 2px 1px #bbb;
+}
+
+.costellazione{
+    display:inline-block;
+    margin:15px;
+    position:relative;
+    font-size:0px;
+}
+
+.costellazione:before{
+    content:"\2605";
+    font-size:40px;
+    position:absolute;
+    left:-11px;
+    top:-30px;
+    color:#ddd;
+    text-shadow:2px 2px 1px #bbb;
+}
+
+    .costellazione:hover:before, .costellazione:hover~.costellazione:before{
+        color:coral;
+    }
