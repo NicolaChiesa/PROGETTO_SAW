@@ -6,7 +6,7 @@
 <div class="container py-5">
   <div class="mydiv1">
     <div class="polaroid">
-      <img src="../Immagini/pomo.jpg"  alt="..." height="200"/>
+      <img src="../Immagini/pomo.jpg"  alt="..." height="400"/>
     </div>
     <div>
       <p class="titoloCard"> Pomo d'oro </p>
