@@ -124,11 +124,11 @@ input[type="submit"] {
 /* --------------------------- ICONE --------------------------*/
 .icone {
   font-size: 40px;
-  color: whitesmoke;
+  color: rgba(255, 255, 255, 0.585);
 }
 
 .icone:hover {
-  color: #daa520;
+  color: white;
 }
 
 /* --------------------------- NAVBAR --------------------------*/
