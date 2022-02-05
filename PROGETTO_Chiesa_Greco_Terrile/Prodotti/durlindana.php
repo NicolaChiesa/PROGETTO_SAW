@@ -41,16 +41,22 @@
   </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
+    <script type="text/javascript">
      $(document).ready(function(){
         $(".costellazione").click(function(){
             alert('hhhhhhhhhhh');
             var vot=(this).val();
-            $.ajax({
-                type:"POST";
+            var jaqxhr=$.ajax({
+                type:"POST",
                 url"../Prodotti/recensione.php",
                 data:{voto:voto},
                 dataType:"html"
+            });
+
+            jqxhr.done(function(){
+                alert('hhhhhhhhhhh');
+            }).fail(function(){
+                alert('gggggg');
             });
         });       
      });
