@@ -13,20 +13,7 @@ session_start();
     <link rel="stylesheet" type="text/css" href="../Stili/Stile.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/34d8843aa0.js" crossorigin="anonymous"></script>
-    <script>
-     $(document).ready(function(){
-        $(".costellazione").hover(function(){
-            alert('hhhhhhhhhhh');
-            var vot=(this).val();
-            $.ajax({
-                type:"POST",
-                url"../Prodotti/recensione.php",
-                data:{voto:voto},
-                dataType:"html"
-            });
-        });       
-     });
-    </script>
+
 </head>
 <body>
     <?php    
