@@ -27,55 +27,61 @@ session_start();
     <?php    
         if(isset($_SESSION['Registrated']) && $_SESSION['Registrated'] == "true"){
             echo'
-            <div class="px-5 py-2 bg-dark">
-                <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-                    <a href="#" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none logo">
-                        <img src="" alt="" class="logo">
-                    </a>
-
-                    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 linkNavbar">
-                        <li><a class="nav-link px-2 link-light" href="../Core/PaginaPrincipale.php">Home</a></li>
-                        <li><a class="nav-link px-2 link-light" href="../Prodotti/prod.php">Articoli</a></li>
-                        <li><a class="nav-link px-2 link-light" href="#">Novità</a></li>
-                        <li><a class="nav-link px-2 link-light" href="#">Chi siamo</a></li>
-                    </ul>
-
-                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-                        <input type="search" class="form-control form-control-dark" placeholder="Cerca..." aria-label="Search">
-                    </form>
-
-                    <div class="col-md-3 text-end">
-                        <a href="../esci.php" <button type="button" class="btn btn-outline-light me-2">Esci</button></a>
-                        <a href="../ModificaUtente/modifica.php" <button type="button" class="btn btn-light">Modifica Profilo</button></a>
+            <header class="p-3 bg-dark text-white">
+                <div class="container">
+                    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none logo">
+                            <img src="" alt="" class="logo">                
+                        </a>
+                
+                        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                            <li><a class="nav-link px-2 link-light" href="../Core/PaginaPrincipale.php">Home</a></li>
+                            <li><a class="nav-link px-2 link-light" href="../Prodotti/prod.php">Articoli</a></li>
+                            <li><a class="nav-link px-2 link-light" href="#">Novità</a></li>
+                            <li><a class="nav-link px-2 link-light" href="#">Chi siamo</a></li>
+                        </ul>
+                
+                        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                            <input type="search" class="form-control form-control-dark" placeholder="Cerca..." aria-label="Search">
+                        </form>
+                
+                        <div class="text-end">
+                            <a href="../ModificaUtente/modifica.php" <button type="button" class="btn btn-light">Modifica Profilo</button></a>
+                            <a href="../Prodotti/carrello.php" <button type="button" class="btn btn-light">Carrello</button></a>
+                            <a href="../esci.php" <button type="button" class="btn btn-outline-light me-2">Esci</button></a>
+                        </div>
                     </div>
-                </header>
-            </div>';
+                </div>
+            </header>';
         }
         else{
             echo'
-            <div class="px-5 py-2 bg-dark">
-                <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-                    <a href="#" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none logo">
-                        <img src="" alt="" class="logo">
-                    </a>
-
-                    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 linkNavbar">
-                        <li><a class="nav-link px-2 link-light" href="../Core/PaginaPrincipale.php" >Home</a></li>
-                        <li><a class="nav-link px-2 link-light" href="../Prodotti/prod.php" >Articoli</a></li>
-                        <li><a class="nav-link px-2 link-light" href="#">Novità</a></li>
-                        <li><a class="nav-link px-2 link-light" href="#">Chi siamo</a></li>
-                    </ul>
-
-                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-                         <input type="search" class="form-control form-control-dark" placeholder="Cerca..." aria-label="Search">
-                    </form>
-
-                    <div class="col-md-3 text-end">
-                        <a href="../Login/FormLogin.php" <button type="button" class="btn btn-outline-light me-2">Accedi</button> </a>
-                        <a href="../Registrazione/RegistrazioneForm.php" <button type="button" class="btn btn-outline-light">Registrati</button> </a>
+            <header class="p-3 bg-dark text-white">
+                <div class="container">
+                    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none logo">
+                            <img src="" alt="" class="logo">                
+                        </a>
+                
+                        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                            <li><a class="nav-link px-2 link-light" href="../Core/PaginaPrincipale.php">Home</a></li>
+                            <li><a class="nav-link px-2 link-light" href="../Prodotti/prod.php">Articoli</a></li>
+                            <li><a class="nav-link px-2 link-light" href="#">Novità</a></li>
+                            <li><a class="nav-link px-2 link-light" href="#">Chi siamo</a></li>
+                        </ul>
+                
+                        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                            <input type="search" class="form-control form-control-dark" placeholder="Cerca..." aria-label="Search">
+                        </form>
+                
+                        <div class="text-end">
+                            <a href="../Login/FormLogin.php" <button type="button" class="btn btn-outline-light me-2">Accedi</button> </a>
+                            <a href="../Prodotti/carrello.php" <button type="button" class="btn btn-light">Carrello</button></a>
+                            <a href="../Registrazione/RegistrazioneForm.php" <button type="button" class="btn btn-outline-light">Registrati</button> </a>
+                        </div>
                     </div>
-                </header>
-            </div>';
+                </div>
+            </header>';
         }
     ?> 
 
