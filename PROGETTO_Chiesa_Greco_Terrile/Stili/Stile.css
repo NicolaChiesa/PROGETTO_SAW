@@ -84,7 +84,6 @@
 /* --------------------------- IMAGE --------------------------*/
 div.polaroid {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  display: inline-block;
 }
 /* --------------------------- INPUT --------------------------*/
 input[type="text"],
@@ -200,9 +199,4 @@ button:hover {
 
 .costellazione:hover:before, .costellazione:hover~.costellazione:before{
   color:coral;
-}
-
-/* --------------------------- VALUTAZIONI --------------------------*/
-.testoProdotto{
-  display: inline-block;
 }

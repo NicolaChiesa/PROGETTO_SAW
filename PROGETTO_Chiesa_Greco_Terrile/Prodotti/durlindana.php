@@ -10,8 +10,8 @@
       <img src="../Immagini/durlindana.jpg"  alt="Durlindana" height="400"/>
     </div>
     <div>
-      <p class="titoloCard"> Durlindana </p>
-      <p class="testoBase testoProdotto">Le origini dell'arma non sono chiare, visto che il ciclo <br> 
+      <h1 class="titoloCard"> Durlindana </h1>
+      <p class="testoBase">Le origini dell'arma non sono chiare, visto che il ciclo <br> 
         carolingio propone diverse tesi contrastanti,<br>
         anche se la più conosciuta è <br> 
         che a forgiare la spada sia stato Weland il fabbro.<br> 
@@ -25,7 +25,6 @@
       </p>
     </div>
   </div>
- </div>
 
   <a href="carrello.php" <button type="button" class="btn btn-outline-dark me-2">Aggiungi al carrello</button></a>
   <a href="finisci.php" <button type="button" class="btn btn-outline-dark me-2">Vai al carrello</button></a>
