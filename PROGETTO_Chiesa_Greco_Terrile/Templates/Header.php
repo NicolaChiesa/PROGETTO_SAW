@@ -47,7 +47,7 @@ session_start();
                 
                         <div class="text-end">
                             <a href="../ModificaUtente/modifica.php" <button type="button" class="btn btn-outline-light">Modifica Profilo</button></a>
-                            <a href="../Prodotti/carrello.php" <button type="button" class="btn btn-outline-light">Carrello</button></a>
+                            <a href="../Prodotti/finisci.php" <button type="button" class="btn btn-outline-light">Carrello</button></a>
                             <a href="../esci.php" <button type="button" class="btn btn-outline-light me-2">Esci</button></a>
                         </div>
                     </div>
@@ -76,7 +76,7 @@ session_start();
                 
                         <div class="text-end">
                             <a href="../Login/FormLogin.php" <button type="button" class="btn btn-outline-light me-2">Accedi</button> </a>
-                            <a href="../Prodotti/carrello.php" <button type="button" class="btn btn-outline-light">Carrello</button></a>
+                            <a href="../Prodotti/finisci.php" <button type="button" class="btn btn-outline-light">Carrello</button></a>
                             <a href="../Registrazione/RegistrazioneForm.php" <button type="button" class="btn btn-outline-light">Registrati</button> </a>
                         </div>
                     </div>
