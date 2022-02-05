@@ -20,13 +20,15 @@
         nel famoso poema Orlando Furioso di Ludovico Ariosto, si dice invece <br> 
         che la spada sarebbe stata donata al cavaliere da Malagigi e <br> 
         che sarebbe un tempo appartenuta a Ettore di Troia <br> 
-        (tuttavia non c'è nessuna menzione della spada nella Iliade). <br>
+        tuttavia non c'è nessuna menzione della spada nella Iliade.
       </p>
     </div>
   </div>
+ </div>
+
   <a href="carrello.php" <button type="button" class="btn btn-outline-dark me-2">Aggiungi al carrello</button></a>
-  <!--<a href="finisci.php" <button type="button" class="btn btn-outline-dark me-2">Vai al carrello</button></a>
-  <a href="carrello.php"<button id="pulsante"><i class="icon-shopping-cart"></i> Aggiungi al carrello</button></a>
+  <a href="finisci.php" <button type="button" class="btn btn-outline-dark me-2">Vai al carrello</button></a>
+  <!--<a href="carrello.php"<button id="pulsante"><i class="icon-shopping-cart"></i> Aggiungi al carrello</button></a>
   <a href="finisci.php"<button id="pulsante"><i class="icon-shopping-cart"></i> Vai al carrello</button></a>-->
 
 </div>
