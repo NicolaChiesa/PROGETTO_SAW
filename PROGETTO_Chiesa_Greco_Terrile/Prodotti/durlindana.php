@@ -28,9 +28,11 @@
       </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+    <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
     <script type="text/javascript">
      $(document).ready(function(){
+      echo" ciaooooooo";
         $(".costellazione").click(function(){
             alert('hhhhhhhhhhh');
             var vot=(this).val();
