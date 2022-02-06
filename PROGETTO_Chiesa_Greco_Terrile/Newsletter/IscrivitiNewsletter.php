@@ -6,6 +6,7 @@
 		//
 	}
 	else{
+		$_SESSION['email']=htmlspecialchars($_POST['email']);
 		$_SESSION['email']=mysqli_real_escape_string($con, $_POST['email']);
 	}
 	if($_SESSION['newsletter']==1)
