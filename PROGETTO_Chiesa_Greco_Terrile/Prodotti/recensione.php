@@ -4,7 +4,7 @@
 	if(!isset($_SESSION['Registrated']))
 			$reg='Devi accedere prima di potere fare una recensione!!';
 	else if(!isset($_POST['star']))
-		$reg='Devi dare una valutazione valida!!';
+		$reg='Devi dare una valutazione valida!';
 	else
 		{
 		$query = "SELECT IDutente, Votato FROM acquistato WHERE IDprodotto='".$_SESSION['IDprodotto']."' AND `IDutente` = '".$_SESSION['id']."'";
