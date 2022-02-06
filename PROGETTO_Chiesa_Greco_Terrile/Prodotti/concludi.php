@@ -63,6 +63,3 @@
 	mysqli_close($con);	
 	include('../Templates/Footer.php');
 ?>
-
-</body>
-</html>
