@@ -19,10 +19,6 @@
 	$prezzo=0;
 	if($res!=false)
 		{
-		echo'  
-		<div class="container py-5">
-			<h1 class="titolo"> Ecco gli articoli che hai selezionato: </h1>
-		<div class="row row-cols-1 row-cols-md-3 g-4">';
 		while($row = mysqli_fetch_assoc($res))
 			{
 				$prezzo+=$row['Prezzo'];
@@ -58,6 +54,13 @@
 					$prezzoruy+=$row['Prezzo'];
 					}
 			}
+			if($flag==1)
+			{
+				echo'  
+				<div class="container py-5">
+					<h1 class="titolo"> Ecco gli articoli che hai selezionato: </h1>
+				<div class="row row-cols-1 row-cols-md-3 g-4">';
+				}
 		if($sommadur>0)
 			{
 			echo'
@@ -112,7 +115,7 @@
 						<a href="elimina.php?ID=4&num='.$sommaol.'" class="btn btn-outline-dark">Elimina dal carrello</a>
 					</div>
 				</div>
-		</div>';
+			</div>';
 			}
 		if($sommapom>0)
 			{
@@ -154,15 +157,20 @@
 								<p class="testoBase"> Siamo spiacenti ma la ricerca non ha portato ad alcun risultato!</p>
 							</div>
 						</div>
-					<div class="col"></div>
+					<div class="col">
+					</div>
+					</div>
 				</div>
 			</div>';
 	}
 	else
 		{
-		echo ' per una spesa totale di: '.$prezzo;
+		echo'</div>
+		</div>';
+		echo ' per una spesa totale di: '.$prezzo.' euro';
 		echo'<a href="a href="concludi.php"" <button type="button" class="btn btn-outline-light me-2 ms-5">Vai al pagamento</button></a>';
 		}
+
 
 	mysqli_close($con);	
 	include('../Templates/Footer.php');
