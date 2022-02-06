@@ -5,6 +5,7 @@
 <?php
 	include('../Templates/Header.php');
 	include('../connessione.php');
+	$flag=0;
 	$quer="SELECT* FROM utenti WHERE Mail='".$_POST['email']."'";
 	$re = mysqli_query($con,$quer);
 	if($re!=false)
@@ -13,16 +14,22 @@
 		$num = mysqli_affected_rows($con);
 		mysqli_free_result($re);
 	
-		if($_POST['pass']==""||$_POST['confirm']==""||$_POST['lastname']==""||$_POST['firstname']=="")
-			$reg='Alcuni dati non sno stati inseriti';
-		else if($_POST['pass']!=$_POST['confirm'])
-			$reg='Le due password non coincidono';
-		else if($num==1)
-			$reg= 'Email già usata';
+		if($_POST['pass']==""||$_POST['confirm']==""||$_POST['lastname']==""||$_POST['firstname']==""){
+			$reg='Alcuni dati non sono stati inseriti!';
+			$flag=1;
+		}
+		else if($_POST['pass']!=$_POST['confirm']){
+			$reg='Le due password non coincidono!';
+			$flag=1;
+		}
+		else if($num==1){
+			$reg='Email già usata!';
+			$flag=1
+		}
 	
 	// se tutto è andato a buon fine 
 		else{
-			$reg='Utente inserito con successo';
+			$reg='Utente inserito con successo!';
 			$_SESSION['Registrated'] = "true";
 			$_SESSION['nome']=$_POST['firstname'];
 			$_SESSION['cognome']=$_POST['lastname'];
@@ -53,12 +60,48 @@
 				echo $num;
 				}
 			if(isset($_POST['Subscription'])){
-				echo "<script type='text/javascript'>alert('$reg');</script>";
-				header("refresh:0; url=../Newsletter/IscrivitiNewsletter.php");
+				echo'
+					<div class="container py-5 my-5">
+						<div class="row align-items-md-stretch">
+							<div class="col"></div>
+								<div class="col-md-6">';
+								if($flag==1){
+									echo'<div class="h-100 p-5 bg-light border border-3 border-danger rounded-3">
+										<p class="testoBase text-center"> '.$reg.'</p>';
+								}
+								else{
+									echo'<div class="h-100 p-5 bg-light border border-3 border-success rounded-3">
+										<p class="testoBase text-center"> '.$reg.'</p>';
+								}
+								echo'
+									</div>
+								</div>
+							<div class="col"></div>
+						</div>
+					</div>';
+				header("refresh:3; url=../Newsletter/IscrivitiNewsletter.php");
 			}
 			else{
-			echo "<script type='text/javascript'>alert('$reg');</script>";
-			header("refresh:0; url=../Core/PaginaPrincipale.php");
+				echo'
+					<div class="container py-5 my-5">
+						<div class="row align-items-md-stretch">
+							<div class="col"></div>
+								<div class="col-md-6">';
+								if($flag==1){
+									echo'<div class="h-100 p-5 bg-light border border-3 border-danger rounded-3">
+										<p class="testoBase text-center"> '.$reg.'</p>';
+								}
+								else{
+									echo'<div class="h-100 p-5 bg-light border border-3 border-success rounded-3">
+										<p class="testoBase text-center"> '.$reg.'</p>';
+								}
+								echo'
+									</div>
+								</div>
+							<div class="col"></div>
+						</div>
+					</div>';
+			header("refresh:3; url=../Core/PaginaPrincipale.php");
 			}	
 		}
 		mysqli_close($con);
