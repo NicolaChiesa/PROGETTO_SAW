@@ -33,8 +33,9 @@ session_start();
                             <li><a class="nav-link px-2 link-light" href="#">Chi siamo</a></li>
                         </ul>
                 
-                        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-                            <input type="search" class="form-control form-control-dark" placeholder="Cerca..." aria-label="Search">
+                        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" action="../Cerca/cerca.php" method="POST">
+                            <input type="search" class="form-control form-control-dark" placeholder="Cerca..." aria-label="Search" id="cerca" name="cerca">
+                            <input type="submit" value="Cerca">
                         </form>
                 
                         <div class="text-end">
@@ -62,8 +63,9 @@ session_start();
                             <li><a class="nav-link px-2 link-light" href="#">Chi siamo</a></li>
                         </ul>
                 
-                        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-                            <input type="search" class="form-control form-control-dark" placeholder="Cerca..." aria-label="Search">
+                        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" action="../Cerca/cerca.php" method="POST">
+                            <input type="search" class="form-control form-control-dark" placeholder="Cerca..." aria-label="Search" id="cerca" name="cerca">
+                            <input type="submit" value="Cerca">
                         </form>
                 
                         <div class="text-end">
