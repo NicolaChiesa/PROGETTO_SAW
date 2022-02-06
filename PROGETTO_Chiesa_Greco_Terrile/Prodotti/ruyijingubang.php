@@ -1,7 +1,11 @@
 <?php
   include('../Templates/Header.php');
+  include('../connessione.php');
   $_SESSION['prodotto']='Ruyi Jingu Bang';
   $_SESSION['IDprodotto']=6;
+  $select = "SELECT Voto, NumVoti FROM prodotti WHERE ID='".$_SESSION['IDprodotto']."'";
+  $result=mysqli_query($con,$select);
+  $row = mysqli_fetch_assoc($result);
 ?>
 
 <div class="container py-5">
@@ -31,13 +35,13 @@
     <div class="row align-items-end ">
       <div class="col mt-5">
         <div id="votazione">
-          <form name="sent-rating" id="sent-rating">
+          <form name="sent-rating" id="sent-rating" action="recensione.php" method="POST">
             <input type="radio" value="10" name="star" id="stella1" title="eccellente" class="costellazione">
             <input type="radio" value="8" name="star"  id="stella2" title="ottimo" class="costellazione">
             <input type="radio" value="6" name="star"  id="stella3" title="discreto" class="costellazione">
             <input type="radio" value="4" name="star"  id="stella4" title="basso" class="costellazione">
             <input type="radio" value="2" name="star"  id="stella5" title="pessimo" class="costellazione">
-          </form>
+            <input type="submit" value="Invia recensione">
         </div>
       </div>
 
@@ -51,5 +55,6 @@
 </div>
 
 <?php
+echo'su '.$row['NumVoti'].' la media di voto è: '.$row['Voto'];
   include('../Templates/Footer.php');
 ?>
