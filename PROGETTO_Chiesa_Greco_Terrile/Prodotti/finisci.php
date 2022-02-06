@@ -21,7 +21,7 @@
 		{
 		echo'  
 		<div class="container py-5">
-		<h1 class="titolo"> Ecco Gli articoli che hai selezionato </h1>
+			<h1 class="titolo"> Ecco gli articoli che hai selezionato: </h1>
 		<div class="row row-cols-1 row-cols-md-3 g-4">';
 		while($row = mysqli_fetch_assoc($res))
 			{
@@ -144,7 +144,18 @@
 			}
 		}
 	if($flag==0)
-		echo'Carrello vuoto';
+		echo'
+			<div class="container py-5 my-5">
+				<div class="row align-items-md-stretch">
+					<div class="col"></div>
+					<div class="col-md-6">
+						<div class="h-100 p-5 bg-light border border-3 border-danger rounded-3">
+						<p class="testoBase"> Siamo spiacenti ma la ricerca non ha portato ad alcun risultato!</p>
+						</div>
+					</div>
+					<div class="col"></div>
+				</div>
+			</div>';
 	else
 		{
 		echo'</div>
