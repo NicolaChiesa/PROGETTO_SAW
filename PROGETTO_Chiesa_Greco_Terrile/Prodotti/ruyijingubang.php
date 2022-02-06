@@ -47,7 +47,7 @@
 
       <div class="col mt-5">
         <div class="text-end">
-          <a href="carrello.php" <button type="button" class="btn btn-outline-dark me-2">Aggiungi al carrello</button></a>
+          <a href="carrello.php" <button type="button" class="btn btn-outline-light me-2">Aggiungi al carrello</button></a>
         </div>
       </div>
     </div>

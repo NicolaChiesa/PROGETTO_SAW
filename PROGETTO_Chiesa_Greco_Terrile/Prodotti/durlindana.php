@@ -44,7 +44,7 @@
         </div>
       </div>
 
-      <div class="col">
+      <div class="col mt-5">
           <?php
             echo'su '.$row['NumVoti'].' la media di voto è: '.$row['Voto'];
           ?>
@@ -56,6 +56,7 @@
         </div>
       </div>
     </div>
+    
   </div>
 </div>
 
