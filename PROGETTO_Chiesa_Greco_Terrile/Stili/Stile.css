@@ -225,3 +225,7 @@ input[type="submit"]:hover {
 .costellazione:hover:before, .costellazione:hover~.costellazione:before{
   color:coral;
 }
+
+.costellazione::before{
+  color: coral;
+}
