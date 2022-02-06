@@ -11,6 +11,10 @@
 		if($row['ID']==1)
 			{
 			echo'  
+			<div class="container py-5">
+			<h1 class="titolo">
+			Ecco le i nostri articoli inerenti alla ricerca
+			</h1>
 			<div class="row row-cols-1 row-cols-md-3 g-4">
 				<div class="col">
 					<div class="card border-dark h-100">
@@ -27,6 +31,10 @@
 		else if($row['ID']==2)
 			{
 			echo'
+			<div class="container py-5">
+			<h1 class="titolo">
+			Ecco le i nostri articoli inerenti alla ricerca
+			</h1>
 			<div class="row row-cols-1 row-cols-md-3 g-4">
 				<div class="col">
 					<div class="card border-dark h-100">
@@ -44,6 +52,10 @@
 		else if($row['ID']==3)
 			{
 			echo'
+			<div class="container py-5">
+			<h1 class="titolo">
+			Ecco le i nostri articoli inerenti alla ricerca
+			</h1>
 			<div class="row row-cols-1 row-cols-md-3 g-4">
 				<div class="col">
 					<div class="card border-dark h-100">
@@ -61,6 +73,10 @@
 		else if($row['ID']==4)
 			{
 			echo'
+			<div class="container py-5">
+			<h1 class="titolo">
+			Ecco le i nostri articoli inerenti alla ricerca
+			</h1>
 			<div class="row row-cols-1 row-cols-md-3 g-4">
 				<div class="col">
 					<div class="card border-dark h-100">
@@ -78,6 +94,10 @@
 		else if($row['ID']==5)
 			{
 			echo'
+			<div class="container py-5">
+			<h1 class="titolo">
+			Ecco le i nostri articoli inerenti alla ricerca
+			</h1>
 			<div class="row row-cols-1 row-cols-md-3 g-4">
 				<div class="col">
 					<div class="card border-dark h-100">
@@ -95,6 +115,10 @@
 		else if($row['ID']==6)
 			{
 			echo'
+			<div class="container py-5">
+			<h1 class="titolo">
+			Ecco le i nostri articoli inerenti alla ricerca
+			</h1>
 			<div class="row row-cols-1 row-cols-md-3 g-4">
 				<div class="col">
 					<div class="card border-dark h-100">
@@ -205,7 +229,8 @@
 			}
 		}
 	if($flag==1)
-		echo'</div>';
+		echo'</div>
+		</div>';
 	else {
 		echo'trovato niente';
 }
