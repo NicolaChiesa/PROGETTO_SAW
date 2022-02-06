@@ -18,7 +18,7 @@
 				$querys="INSERT INTO acquisto (NomeProdotto, NumSessione, Quantita, Prezzo, IDutente, IDprodotto) VALUES ('".$_SESSION['prodotto']."', '".$session_id."', 1,'".$row['prezzo']."','".$_SESSION['id']."', '".$_SESSION['IDprodotto']."')";
 				}
 			else{
-				$querys="INSERT INTO acquisto (NomeProdotto, NumSessione, Quantita, Prezzo, IDprodotto ) VALUES ('".$_SESSION['prodotto']."', '".$session_id."', 1,'".$row['prezzo']."','".$_SESSION['IDprodotto']."')";
+				$querys="INSERT INTO acquisto (NomeProdotto, NumSessione, Quantita, Prezzo, IDutente, IDprodotto ) VALUES ('".$_SESSION['prodotto']."', '".$session_id."', 1,'".$row['prezzo']."',0,'".$_SESSION['IDprodotto']."')";
 				}
 			$ress = mysqli_query($con,$querys);
 			$inserimento='Prodotto inserito nel carrello con successo!';
