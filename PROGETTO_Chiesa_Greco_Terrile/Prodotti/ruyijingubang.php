@@ -41,9 +41,9 @@
             <input type="radio" value="6" name="star"  id="stella3" title="discreto" class="costellazione">
             <input type="radio" value="4" name="star"  id="stella4" title="basso" class="costellazione">
             <input type="radio" value="2" name="star"  id="stella5" title="pessimo" class="costellazione">
+            <input type="submit" value="Invia recensione">
           </form>
         </div>
-        <input type="submit" value="Invia recensione">
       </div>
 
       <div class="col mt-5">
