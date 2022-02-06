@@ -51,7 +51,7 @@
 			header("Location: ../Newsletter/IscrivitiNewsletter.php");
 		}
 		else{
-			//header("Location: ../Core/PaginaPrincipale.php");
+			header("Location: ../Core/PaginaPrincipale.php");
 		}
 	}
 
