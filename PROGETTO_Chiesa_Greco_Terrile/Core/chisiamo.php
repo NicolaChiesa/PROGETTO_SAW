@@ -1,8 +1,8 @@
 <?php
     include('../Templates/Header.php');
 ?>
-    <fieldset class="descrizione">
-        <<legend class="scritta text-center">Chi siamo</legend>
+    <fieldset class="descrizione mb-5">
+        <legend class="scritta text-center">Chi siamo</legend>
         <p class="testoBase">
                 Eccoci giunti a noi, ti starai chiedendo chi siamo, e qual é il nostro obbiettivo, beh siamo qui per dar
                 la risposta! Siamo una Start Up nata a Genova nel 2021 con l'obbiettivo di portare le meraviglie 
