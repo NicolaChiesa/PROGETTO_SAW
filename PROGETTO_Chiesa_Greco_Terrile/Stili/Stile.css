@@ -155,8 +155,15 @@ input[type="submit"] {
 }
 
 /* --------------------------- BOTTONI --------------------------*/
-.btn-otline-light{
-  background-color: #e7bd70;
+.btn-outline-light {
+  color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
+.btn-outline-light:hover {
+  color: #000;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
 }
 
 /* --------------------------- CARD PRODOTTI --------------------------*/
