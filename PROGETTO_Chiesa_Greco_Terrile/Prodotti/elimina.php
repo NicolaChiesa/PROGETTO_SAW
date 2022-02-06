@@ -3,7 +3,7 @@
 	include('../connessione.php');
 	$query = "SELECT prezzo, quantita FROM prodotti WHERE ID='".$_GET['ID']."'";
 	$res=mysqli_query($con,$query);
-	if(res!=false)
+	if($res!=false)
 		{
 		$row = mysqli_fetch_assoc($res);
 		$row['quantita']+=$_GET['num'];
