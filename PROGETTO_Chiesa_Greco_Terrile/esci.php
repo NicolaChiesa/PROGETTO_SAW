@@ -16,6 +16,5 @@ session_start();
     <script src="myscript.js"></script>
 </head>
 <body>
-<p> Grazie per aver usufruito del nostro sito</p>
 </body>
 </html>
