@@ -6,7 +6,8 @@
 	$flag=0;
 	$query = "SELECT ID FROM prodotti WHERE Nome LIKE '%".$cerca."%' OR Nome LIKE '".$cerca."%' OR Nome LIKE'".$cerca."_'";
 	$res=mysqli_query($con,$query);
-
+	if($res!=false)
+	{
 	if($row=mysqli_fetch_assoc($res))
 		{
 		if($row['ID']==1)
@@ -225,7 +226,7 @@
 				</div>
 			</div>';
 }
-
+}
  include('../Templates/Footer.php');
 	mysqli_close($con);
 ?>
