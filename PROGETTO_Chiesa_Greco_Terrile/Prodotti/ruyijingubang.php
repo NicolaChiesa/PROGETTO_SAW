@@ -55,6 +55,6 @@
 </div>
 
 <?php
-echo'su '.$row['NumVoti'].' la media di voto è: '.$row['Voto'];
+echo'su '.$row['NumVoti'].' voti la media di voto è: '.$row['Voto'];
   include('../Templates/Footer.php');
 ?>
