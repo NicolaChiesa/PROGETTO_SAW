@@ -226,6 +226,3 @@ input[type="submit"]:hover {
   color:coral;
 }
 
-.costellazione:active:before, .costellazione:active~.costellazione:before{
-  color:yellow;
-}

@@ -42,7 +42,6 @@
             <input type="submit" value="Invia recensione">
           </form>
         </div>
-        
       </div>
 
       <div class="col mt-5">
