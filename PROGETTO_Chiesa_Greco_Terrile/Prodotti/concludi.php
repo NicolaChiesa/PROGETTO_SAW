@@ -1,6 +1,7 @@
 <?php
 	include('../Templates/Header.php');
 	include('../connessione.php');
+	$flag=0;
 	if(!isset($_SESSION['Registrated']))
 		{
 		$reg='Devi accedere prima di potere acquistare!!';
@@ -9,11 +10,21 @@
 		{
 		$query = "SELECT * FROM acquisto WHERE NumSessione='".session_id()."'";
 		$res=mysqli_query($con,$query);
-		$rowcount=mysqli_num_rows($res);
+		if($res!=false)
+			$rowcount=mysqli_num_rows($res);
 		while($row=mysqli_fetch_assoc($res))
 			{
-			$querys="INSERT INTO acquistato (NomeProdotto, NumSessione, Quantita, Prezzo, IDutente, IDprodotto) VALUES ('".$row['NomeProdotto']."', '".$row['NumSessione']."', '".$row['Quantita']."','".$row['Prezzo']."','".$row['IDutente']."', '".$row['IDprodotto']."')";
-			$ress=mysqli_query($con,$querys);
+			$querys = "SELECT * FROM acquistato WHERE IDutente='".$_SESSION['id']."'";
+			$result=mysqli_query($con,$querys);
+			$flag=0;
+			while($riga = mysqli_fetch_assoc($result))
+				if($riga['IDprodotto']==$row['IDprodotto']&& $riga['IDutente']==$row['IDutente'])
+					$flag=1;
+				if($flag==0)
+					{
+					$insert="INSERT INTO acquistato (NomeProdotto, NumSessione, Quantita, Prezzo, IDutente, IDprodotto) VALUES ('".$row['NomeProdotto']."', '".$row['NumSessione']."', '".$row['Quantita']."','".$row['Prezzo']."','".$row['IDutente']."', '".$row['IDprodotto']."')";
+					$ress=mysqli_query($con,$insert);
+					}
 			}
 		if($rowcount>0)
 			{
