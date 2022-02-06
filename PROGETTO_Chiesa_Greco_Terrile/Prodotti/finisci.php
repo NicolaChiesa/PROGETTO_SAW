@@ -65,9 +65,9 @@
 				<div class="card border-dark h-100">
 				<img src="../Immagini/durlindana.jpg" class="card-img-top immagini" alt="Durlindana">
 					<div class="card-body">
-					<h5 class="card-title titoloCard">Durlindana</h5>
-					<p class="card-text testoCard"> Stai acquistando '.$sommadur.' Durlindana alla modica cifra di: '.$prezzodur.' euro</p>
-					<a href="elimina.php?ID=1&num='.$sommadur.'" class="btn btn-outline-dark">Elimina dal carrello</a>
+						<h5 class="card-title titoloCard">Durlindana</h5>
+						<p class="card-text testoCard"> Stai acquistando '.$sommadur.' Durlindana alla modica cifra di: '.$prezzodur.' euro</p>
+						<a href="elimina.php?ID=1&num='.$sommadur.'" class="btn btn-outline-dark">Elimina dal carrello</a>
 					</div>
 				</div>
 			</div>';
@@ -79,9 +79,9 @@
 				<div class="card border-dark h-100">
 				<img src="../Immagini/excalibur.png" class="card-img-top immagini" alt="Excalibur">
 					<div class="card-body">
-					<h5 class="card-title titoloCard">Excalibur</h5>
-					<p class="card-text testoCard">Stai acquistando '.$sommaexc.' Excalibur alla modica cifra di: '.$prezzoexc.' euro</p>
-					<a href="elimina.php?ID=2&num='.$sommaexc.'" class="btn btn-outline-dark">elimina dal carrello</a>
+						<h5 class="card-title titoloCard">Excalibur</h5>
+						<p class="card-text testoCard">Stai acquistando '.$sommaexc.' Excalibur alla modica cifra di: '.$prezzoexc.' euro</p>
+						<a href="elimina.php?ID=2&num='.$sommaexc.'" class="btn btn-outline-dark">elimina dal carrello</a>
 					</div>
 				</div>
 			</div>';
@@ -93,9 +93,9 @@
 				<div class="card border-dark h-100">
 				<img src="../Immagini/mjolnir.png" class="card-img-top immagini" alt="Mjolnir">
 					<div class="card-body">
-					<h5 class="card-title titoloCard">Mjolnir</h5>
-					<p class="card-text testoCard">Stai acquistando '.$sommamart.' Mjolnir alla modica cifra di: '.$prezzomart.' euro</p>
-					<a href="elimina.php?ID=3&num='.$sommamart.'" class="btn btn-outline-dark">Elimina dal carrello</a>
+						<h5 class="card-title titoloCard">Mjolnir</h5>
+						<p class="card-text testoCard">Stai acquistando '.$sommamart.' Mjolnir alla modica cifra di: '.$prezzomart.' euro</p>
+						<a href="elimina.php?ID=3&num='.$sommamart.'" class="btn btn-outline-dark">Elimina dal carrello</a>
 					</div>
 				</div>
 			</div>';
@@ -107,9 +107,9 @@
 				<div class="card border-dark h-100">
 				<img src="../Immagini/olifante.jpg" class="card-img-top immagini" alt="Olifante">
 					<div class="card-body">
-					<h5 class="card-title titoloCard">Olifante</h5>
-					<p class="card-text testoCard">Stai acquistando '.$sommaol.' Olifante alla modica cifra di: '.$prezzool.' euro</p>
-					<a href="elimina.php?ID=4&num='.$sommaol.'" class="btn btn-outline-dark">Elimina dal carrello</a>
+						<h5 class="card-title titoloCard">Olifante</h5>
+						<p class="card-text testoCard">Stai acquistando '.$sommaol.' Olifante alla modica cifra di: '.$prezzool.' euro</p>
+						<a href="elimina.php?ID=4&num='.$sommaol.'" class="btn btn-outline-dark">Elimina dal carrello</a>
 					</div>
 				</div>
 		</div>';
@@ -121,9 +121,9 @@
 				<div class="card border-dark h-100">
 				<img src="../Immagini/pomo.jpg" class="card-img-top immagini" alt="Pomo della discordia">
 					<div class="card-body">
-					<h5 class="card-title titoloCard">Pomo d oro</h5>
-					<p class="card-text testoCard">Stai acquistando '.$sommapom.' Pomo della discordia alla modica cifra di: '.$prezzopom.' euro</p>
-					<a href="elimina.php?ID=5&num='.$sommapom.'" class="btn btn-outline-dark">Elimina dal carrello</a>
+						<h5 class="card-title titoloCard">Pomo d oro</h5>
+						<p class="card-text testoCard">Stai acquistando '.$sommapom.' Pomo della discordia alla modica cifra di: '.$prezzopom.' euro</p>
+						<a href="elimina.php?ID=5&num='.$sommapom.'" class="btn btn-outline-dark">Elimina dal carrello</a>
 					</div>
 				</div>
 			</div>';
@@ -135,31 +135,31 @@
 				<div class="card border-dark h-100">
 				<img src="../Immagini/RuyiJinguBang3.jpg" class="card-img-top immagini" alt="RuyiJinguBang">
 					<div class="card-body">
-					<h5 class="card-title titoloCard">RuyiJinguBang</h5>
-					<p class="card-text testoCard">Stai acquistando '.$sommaruy.' Durlindana alla modica cifra di: '.$prezzoruy.' euro</p>
-					<a href="elimina.php?ID=6&num='.$sommaruy.'" class="btn btn-outline-dark">Elimina dal carrello</a>
+						<h5 class="card-title titoloCard">RuyiJinguBang</h5>
+						<p class="card-text testoCard">Stai acquistando '.$sommaruy.' Durlindana alla modica cifra di: '.$prezzoruy.' euro</p>
+						<a href="elimina.php?ID=6&num='.$sommaruy.'" class="btn btn-outline-dark">Elimina dal carrello</a>
 					</div>
 				</div>
 			</div>';
 			}
-		}
+	}
 	if($flag==0)
+	{
 		echo'
 			<div class="container py-5 my-5">
 				<div class="row align-items-md-stretch">
 					<div class="col"></div>
-					<div class="col-md-6">
-						<div class="h-100 p-5 bg-light border border-3 border-danger rounded-3">
-						<p class="testoBase"> Siamo spiacenti ma la ricerca non ha portato ad alcun risultato!</p>
+						<div class="col-md-6">
+							<div class="h-100 p-5 bg-light border border-3 border-danger rounded-3">
+								<p class="testoBase"> Siamo spiacenti ma la ricerca non ha portato ad alcun risultato!</p>
+							</div>
 						</div>
-					</div>
 					<div class="col"></div>
 				</div>
 			</div>';
+	}
 	else
 		{
-		echo'</div>
-		</div>';
 		echo ' per una spesa totale di: '.$prezzo;
 		echo'<a href="a href="concludi.php"" <button type="button" class="btn btn-outline-light me-2 ms-5">Vai al pagamento</button></a>';
 		}
@@ -167,6 +167,3 @@
 	mysqli_close($con);	
 	include('../Templates/Footer.php');
 ?>
-
-</body>
-</html>
