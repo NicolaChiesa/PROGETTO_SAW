@@ -46,10 +46,7 @@
 
       <div class="col">
           <?php
-            echo' <div class="mb-5">
-                    su '.$row['NumVoti'].' la media di voto è: '.$row['Voto']
-                  '</div>';
-
+            echo'su '.$row['NumVoti'].' la media di voto è: '.$row['Voto'];
           ?>
       </div>
 
