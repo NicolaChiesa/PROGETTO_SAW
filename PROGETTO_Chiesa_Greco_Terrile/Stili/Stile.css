@@ -161,9 +161,9 @@ input[type="submit"] {
 }
 
 .btn-outline-light:hover {
-  color: #000;
+  color: #e7bd70;
   background-color: #f8f9fa;
-  border-color: #f8f9fa;
+  border-color: #e7bd70;
 }
 
 /* --------------------------- CARD PRODOTTI --------------------------*/
