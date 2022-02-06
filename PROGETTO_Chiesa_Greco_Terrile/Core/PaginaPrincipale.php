@@ -28,6 +28,9 @@
 
       <fieldset class="descrizione">
         <a name="chisiamo"><legend class="scritta">Chi siamo</legend></a>
+        <br>
+        <br>
+        <br>
         <p class="testoBase">
                 Eccoci giunti a noi, ti starai chiedendo chi siamo, e qual é il nostro obbiettivo, beh siamo qui per dar
                 la risposta! Siamo una Start Up nata a Genova nel 2021 con l'obbiettivo di portare le meraviglie 
