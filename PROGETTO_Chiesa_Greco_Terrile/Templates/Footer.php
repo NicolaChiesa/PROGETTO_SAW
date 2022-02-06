@@ -11,8 +11,21 @@
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contatti</a></li>
         </ul>
       </div>
-  
-      <div class="col-4 offset-1 mt-3">
+      <?php    
+        if(isset($_SESSION['Registrated'])){
+      echo'<div class="col-4 offset-1 mt-3">
+            <form id="myform" action="../Newsletter/IscrivitiNewsletter.php" method="POST" >
+            <h5 class="text-light">Iscriviti alla nostra newsletter!</h5>
+            <p class="text-light">Tutti i mesi fantastiche novità!</p>
+            <div class="d-flex w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden"></label>
+              <input type="submit" placeholder="Iscriviti"></button>
+            </div>
+          </form>
+      </div>
+    ';}
+    else{     
+    echo'<div class="col-4 offset-1 mt-3">
             <form id="myform" action="../Newsletter/IscrivitiNewsletter.php" method="POST" >
             <h5 class="text-light">Iscriviti alla nostra newsletter!</h5>
             <p class="text-light">Tutti i mesi fantastiche novità!</p>
@@ -23,8 +36,11 @@
             </div>
           </form>
       </div>
-    </div>
-  
+    ';
+
+    }
+  ?>
+  </div>
     <div class="d-flex justify-content-between py-1 border-top text-light">
       <p>&copy; 2021 Company, Only Mytich, tutti i diritti sono riesrvati</p>
       <ul class="list-unstyled d-flex">
