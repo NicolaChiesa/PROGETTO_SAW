@@ -4,7 +4,7 @@
 	if(!isset($_SESSION['Registrated']))
 			$reg='Devi accedere prima di potere fare una recensione!!';
 	else if(!isset($_POST['star']))
-		$reg='Devidare uuna valutazione valida!!';
+		$reg='Devidare una valutazione valida!!';
 	else
 		{
 		$query = "SELECT IDutente, Votato FROM acquistato WHERE IDprodotto='".$_SESSION['IDprodotto']."' AND `IDutente` = '".$_SESSION['id']."'";
@@ -16,7 +16,7 @@
 				{
 				$row = mysqli_fetch_assoc($res);
 				if($row['Votato']==1)
-					$reg='Hai gi‡ votato questo prodotto';
+					$reg='Hai gi√† valutato questo prodotto';
 				else
 					{
 					$rate=$_POST['star'];
