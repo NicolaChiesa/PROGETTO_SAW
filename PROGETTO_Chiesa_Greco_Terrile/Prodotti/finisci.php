@@ -167,8 +167,14 @@
 		{
 		echo'</div>
 		</div>';
-		echo ' per una spesa totale di: '.$prezzo.' euro';
-		echo'<a href="concludi.php" <button type="button" class="btn btn-outline-light me-2 ms-5">Vai al pagamento</button></a>';
+		echo '
+			<div class="row align-items-end"> 
+				<div class="col">per una spesa totale di: '.$prezzo.' euro
+				</div>
+				<div class="col">
+				<a href="concludi.php" <button type="button" class="btn btn-outline-light me-2 ms-5">Vai al pagamento</button></a>
+				</div>
+			</div>';
 		}
 
 
