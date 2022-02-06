@@ -226,6 +226,9 @@ input[type="submit"]:hover {
   color:coral;
 }
 
+<<<<<<< HEAD
 .costellazione:checked:before, .costellazione:checked~.costellazione:before{
   color:yellow;
 }
+=======
+>>>>>>> 08e76cb9347196eb3148adbff8344399c6b3cbdc
