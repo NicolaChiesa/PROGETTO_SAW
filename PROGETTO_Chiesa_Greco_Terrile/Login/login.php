@@ -27,8 +27,9 @@
 			$reg="ERRORE";
 		}
 	echo "<script type='text/javascript'>alert('$reg');</script>";
-	header("refresh:0; ../Core/PaginaPrincipale.php");
+	header("refresh:0; url=../Core/PaginaPrincipale.php");
 	mysqli_close($con);
+	include('../Templates/Footer.php');
 ?>
 
 </body>
