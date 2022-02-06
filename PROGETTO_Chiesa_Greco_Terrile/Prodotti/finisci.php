@@ -167,17 +167,20 @@
 		{
 		echo'</div>
 		</div>';
-		echo '
-			<div class="row align-items-end"> 
-				<div class="col">per una spesa totale di: '.$prezzo.' euro
+		echo '    
+			<div class="row align-items-end mb-5 pb-5">
+
+			  <div class="col mt-5">
+			  <div class="col scritta">Per una spesa totale di: '.$prezzo.' euro</div>
+			  </div>
+
+			  <div class="col mt-5">
+				<div class="text-end me-5">
+				  <a href="concludi.php" <button type="button" class="btn btn-outline-light me-2 ms-5">Vai al pagamento</button></a>
 				</div>
-				<div class="col">
-				<a href="concludi.php" <button type="button" class="btn btn-outline-light me-2 ms-5">Vai al pagamento</button></a>
-				</div>
+			  </div>
 			</div>';
 		}
-
-
 	mysqli_close($con);	
 	include('../Templates/Footer.php');
 ?>
