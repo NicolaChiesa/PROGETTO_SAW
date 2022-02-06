@@ -225,7 +225,7 @@
 					<div class="col"></div>
 				</div>
 			</div>';
-}
+	}
 }
  include('../Templates/Footer.php');
 	mysqli_close($con);
