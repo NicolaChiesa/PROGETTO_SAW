@@ -36,11 +36,11 @@
       <div class="col mt-5">
         <div id="votazione">
           <form name="sent-rating" id="sent-rating" action="recensione.php" method="POST">
-            <input type="radio" value="10" name="star" id="stella1" title="eccellente" class="costellazione">
-            <input type="radio" value="8" name="star"  id="stella2" title="ottimo" class="costellazione">
-            <input type="radio" value="6" name="star"  id="stella3" title="discreto" class="costellazione">
-            <input type="radio" value="4" name="star"  id="stella4" title="basso" class="costellazione">
-            <input type="radio" value="2" name="star"  id="stella5" title="pessimo" class="costellazione">
+            <input type="radio" value="5" name="star" id="stella1" title="eccellente" class="costellazione">
+            <input type="radio" value="4" name="star"  id="stella2" title="ottimo" class="costellazione">
+            <input type="radio" value="3" name="star"  id="stella3" title="discreto" class="costellazione">
+            <input type="radio" value="2" name="star"  id="stella4" title="basso" class="costellazione">
+            <input type="radio" value="1" name="star"  id="stella5" title="pessimo" class="costellazione">
             <input type="submit" value="Invia recensione">
           </form>
         </div>
