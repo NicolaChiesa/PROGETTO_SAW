@@ -1,7 +1,8 @@
 <?php
 	include('../Templates/Header.php');
 	include('../connessione.php');
-	$cerca=mysqli_real_escape_string($con, $_POST['cerca']);
+	$cerca=htmlspecialchars($_POST['cerca']);
+	$cerca=mysqli_real_escape_string($con, $cerca);
 	$flag=0;
 	$query = "SELECT ID FROM prodotti WHERE Nome LIKE '%".$cerca."%' OR Nome LIKE '".$cerca."%' OR Nome LIKE'".$cerca."_'";
 	$res=mysqli_query($con,$query);
