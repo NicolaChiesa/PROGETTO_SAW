@@ -44,7 +44,6 @@
         $mail->Send();
 
         echo '<p>Sei stato iscritto alla nostra newsletter, ti abbiamo appena inviato una mail di conferma !</p>';
-        $_SESSION['newsletter']=1;
         } catch (Exception $e) {
             echo "<p>Il Messaggio non può essere inviato.</p>";
         }
