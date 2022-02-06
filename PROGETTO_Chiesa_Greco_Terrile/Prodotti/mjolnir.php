@@ -39,8 +39,19 @@
             <input type="radio" value="6" name="star"  id="stella3" title="discreto" class="costellazione">
             <input type="radio" value="4" name="star"  id="stella4" title="basso" class="costellazione">
             <input type="radio" value="2" name="star"  id="stella5" title="pessimo" class="costellazione">
-            <input type="submit" value="Invia recensione">
+          </form>
         </div>
+        <input type="submit" value="Invia recensione">
+      </div>
+
+      <div class="col mt-5">
+          <?php
+            echo'
+                <div class="bg-transparent">
+                  <p class="testoBase"> su '.$row['NumVoti'].' voti la media di voto è: '.$row['Voto'].'</p>
+                </div>
+                ';
+          ?>
       </div>
 
       <div class="col mt-5">
@@ -49,10 +60,10 @@
         </div>
       </div>
     </div>
+
   </div>
 </div>
 
 <?php
-echo'su '.$row['NumVoti'].' voti la media di voto è: '.$row['Voto'];
   include('../Templates/Footer.php');
 ?>

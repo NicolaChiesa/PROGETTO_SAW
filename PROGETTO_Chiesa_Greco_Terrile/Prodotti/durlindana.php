@@ -47,7 +47,7 @@
       <div class="col mt-5">
           <?php
             echo'
-                <div class="bg-light border">
+                <div class="bg-transparent">
                   <p class="testoBase"> su '.$row['NumVoti'].' voti la media di voto è: '.$row['Voto'].'</p>
                 </div>
                 ';

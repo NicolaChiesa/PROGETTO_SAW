@@ -110,41 +110,28 @@ input[type="Password"] {
 
 input[type="submit"] {
   width: 100%;
-  padding: 15px 15px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #e7bd70;
+  border: 1px solid;
   border-radius: 4px;
   box-sizing: border-box;
-  background-color: black;
   font-size: 15px;
   color: #e7bd70;
+  border-color: #e7bd70;
+  background-color: black;
 }
 
 input[type="text"]:hover,
 input[type="email"]:hover,
 input[type="Password"]:hover {
-  background-color: rgb(255, 234, 173);
+  background-color: rgb(247, 241, 224);
 }
 
 input[type="submit"]:hover {
   color: black;
   border-color: black;
   background-color: #e7bd70;
-  border: 2px solid
-}
-
-input[type="submit"] {
-  width: 100%;
-  background-color: white;
-  color: rgb(112, 111, 111);
-  padding: 8px 8px;
-  margin: 8px 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  float: right;
+  border: 2px solid;
 }
 
 /* --------------------------- ICONE --------------------------*/
