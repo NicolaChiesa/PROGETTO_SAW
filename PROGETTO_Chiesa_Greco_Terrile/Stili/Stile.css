@@ -65,7 +65,7 @@
 
 /* --------------------------- DIV --------------------------*/
 .DataDiv {
-  background-color: #e7bd70;
+  background-color: #cda881;
   text-align: center;
   padding: 10px;
   margin: 20px;
@@ -96,8 +96,7 @@ div.polaroid {
 /* --------------------------- INPUT --------------------------*/
 input[type="text"],
 input[type="email"],
-input[type="Password"],
-input[type="submit"] {
+input[type="Password"] {
   width: 100%;
   padding: 15px 15px;
   margin: 8px 0;
@@ -105,14 +104,32 @@ input[type="submit"] {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  background-color: #fffafa;
+  background-color: white;
   font-size: 15px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 15px 15px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #e7bd70;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: black;
+  font-size: 15px;
+  color: #e7bd70;
 }
 
 input[type="text"]:hover,
 input[type="email"]:hover,
-input[type="Password"]:hover,
+input[type="Password"]:hover {
+  background-color: rgb(255, 234, 173);
+}
+
 input[type="submit"]:hover {
+  color: black;
+  border-color: black;
   background-color: #e7bd70;
 }
 

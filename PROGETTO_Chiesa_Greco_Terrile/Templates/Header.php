@@ -54,7 +54,7 @@ session_start();
                     <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
 
                         <img src="../Immagini/OnlyMytich.png" alt="Logo del sito Only Mytich" class="logo">               
-+                
+            
                         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                             <li><a class="nav-link px-2 link-light" href="../Core/PaginaPrincipale.php">Home</a></li>
                             <li><a class="nav-link px-2 link-light" href="../Prodotti/prod.php">Articoli</a></li>
