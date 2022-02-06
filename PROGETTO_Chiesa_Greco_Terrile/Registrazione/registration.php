@@ -37,8 +37,11 @@
 		$res = mysqli_query($con,$query);
 		$query = "SELECT ID FROM utenti WHERE Mail='".$email."'";
 		$res=mysqli_query($con,$query);
-		$row = mysqli_fetch_assoc($res);
-		$_SESSION['id']=$row['ID'];
+		if($res!=false)
+			{
+			$row = mysqli_fetch_assoc($res);
+			$_SESSION['id']=$row['ID'];
+			}
 		if(isset($_SESSION['carrello']))
 			{
 			$quer="UPDATE `acquisto` SET `IDutente` = '".$_SESSION['id']."' WHERE `NumSessione` = '".session_id()."'";
