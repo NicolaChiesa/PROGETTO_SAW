@@ -17,16 +17,18 @@
 
 	$sommamart="SELECT SUM(Quantita) AS sommamart, Prezzo FROM acquisto WHERE NumSessione='".session_id()."' AND IDprodotto='3'";
 	$res=mysqli_query($con,$sommamart);
-	$row = mysqli_fetch_assoc($res);
-	$rowcount=mysqli_num_rows($res);
-	if($rowcount>0 && $row['sommamart']>0)
+	if($res!=false)
 		{
-		echo 'Stai acquistando dal nostro sito: '.$row['sommamart'].' Mjolnir alla modica cifra di: '.$row['Prezzo'];
-		echo'<a href="elimina.php?ID=3&num='.$row['sommamart'].'">Vuoi eliminare il prodotto?</a>';
-		$prezzo+=$row['Prezzo'];
-		$flag=1;
-		}
-
+		$row = mysqli_fetch_assoc($res);
+		$rowcount=mysqli_num_rows($res);
+		if($rowcount>0 && $row['sommamart']>0)
+			{
+			echo 'Stai acquistando dal nostro sito: '.$row['sommamart'].' Mjolnir alla modica cifra di: '.$row['Prezzo'];
+			echo'<a href="elimina.php?ID=3&num='.$row['sommamart'].'">Vuoi eliminare il prodotto?</a>';
+			$prezzo+=$row['Prezzo'];
+			$flag=1;
+			}
+	}
 	$sommaexc="SELECT SUM(Quantita) AS sommaexc, Prezzo FROM acquisto WHERE NumSessione='".session_id()."' AND IDprodotto='2'";
 	$res=mysqli_query($con,$sommaexc);
 	$row = mysqli_fetch_assoc($res);
