@@ -28,8 +28,19 @@
 			$inserimento='Il prodotto selezionato non è disponibile!';
 			}
 		}
-	echo "<script type='text/javascript'>alert('$inserimento');</script>";
-	header("refresh:0; url=prod.php");
+		echo'
+			<div class="container py-5 my-5">
+				<div class="row align-items-md-stretch">
+					<div class="col"></div>
+					<div class="col-md-6">
+						<div class="h-100 p-5 bg-light border border-3 border-danger rounded-3">
+						<p class="testoBase text-center"> '.$inserimento.'</p>
+						</div>
+					</div>
+					<div class="col"></div>
+				</div>
+			</div>';
+	header("refresh:4; url=prod.php");
 	mysqli_close($con);	
 ?>
 
