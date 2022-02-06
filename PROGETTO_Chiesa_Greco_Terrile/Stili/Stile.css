@@ -155,7 +155,9 @@ input[type="submit"] {
 }
 
 /* --------------------------- BOTTONI --------------------------*/
-
+.btn-otline-light{
+  background-color: #e7bd70;
+}
 
 /* --------------------------- CARD PRODOTTI --------------------------*/
 .titoloCard{
