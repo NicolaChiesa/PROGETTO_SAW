@@ -14,7 +14,7 @@
     <i class="fa fa-user" style="font-size:13px;color:rgba(65, 65, 65, 1.0)"></i>
     <input type="text" class="no-outline" id="lastname" name="lastname" placeholder="Cognome"><br>
 
-    <i class="fa fa-envelope" style="font-size:9px;color:rgba(65, 65, 65, 1.0)"></i>
+    <i class="fa fa-envelope" style="font-size:13px;color:rgba(65, 65, 65, 1.0)"></i>
     <input type="email" id="email" class="no-outline"  name="email" placeholder="E-mail"><br>
   
 
@@ -43,12 +43,12 @@
 
   function controlla_doppioni_email(){
     if(!this.checkValidity()){
-      invalida_email("Formato mail non valido");
+      invalida_email("Attenzione: formato mail non valido!");
     }
       else{
         let email_inserita = $("#email").val();
         if(email_inserita==""){
-          invalida_email("Devi inserire una email");
+          invalida_email("Attenzione: devi inserire una email!");
         } 
         else{
           $.get("controlloEmail.php", {email: email_inserita}, gestisci_risposta_server);
@@ -64,7 +64,7 @@
 
   function gestisci_risposta_server(risposta_server){
     if(risposta_server == "trovata")
-      invalida_email("Email giá in uso, cambiala");
+      invalida_email("Attenzione: e-mail giá in uso, è necessario cambiarla!");
     else{
       $("#email").attr("class","form-control is-valid");
     }
