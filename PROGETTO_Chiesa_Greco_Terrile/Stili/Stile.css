@@ -65,7 +65,7 @@
 
 /* --------------------------- DIV --------------------------*/
 .DataDiv {
-  background-color: #cda881;
+  background-color: #e7bd70;
   text-align: center;
   padding: 10px;
   margin: 20px;
@@ -113,7 +113,7 @@ input[type="text"]:hover,
 input[type="email"]:hover,
 input[type="Password"]:hover,
 input[type="submit"]:hover {
-  background-color: #ebdfdf;
+  background-color: #e7bd70;
 }
 
 input[type="submit"] {
