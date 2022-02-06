@@ -154,7 +154,7 @@
 					<div class="col"></div>
 						<div class="col-md-6">
 							<div class="h-100 p-5 bg-light border border-3 border-danger rounded-3">
-								<p class="testoBase"> Siamo spiacenti ma la ricerca non ha portato ad alcun risultato!</p>
+								<p class="testoBase"> Il tuo carrello è vuoto!</p>
 							</div>
 						</div>
 					<div class="col">
