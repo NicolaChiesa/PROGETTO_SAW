@@ -11,7 +11,7 @@
 		$re = mysqli_query($con,$quer);
 		$query="DELETE FROM `acquisto` WHERE `acquisto`.`NumSessione` = '".session_id()."' AND IDprodotto='".$_GET['ID']."'";
 		$res=mysqli_query($con,$query);
-		$inserimento='Prodotto eliminato con successo :)';
+		$inserimento='Prodotto eliminato con successo!';
 		}
 	echo "<script type='text/javascript'>alert('$inserimento');</script>";
 	header("refresh:0; url=finisci.php");

@@ -33,7 +33,7 @@
 			$reg='Acquisto andato a buon fine!!';
 			}
 		else 
-			$reg='Il carrello è vuoto!!!!';
+			$reg='Il carrello Ã¨ vuoto!!!!';
 		}
 	echo "<script type='text/javascript'>alert('$reg');</script>";
 	header("refresh:0; url=prod.php");	
