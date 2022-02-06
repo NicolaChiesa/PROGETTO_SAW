@@ -12,6 +12,6 @@
             <div class="col"></div>
         </div>
     </div>';
-    header("refresh:4; url=prod.php")
+    header("refresh:4; url=prod.php");
     include('../Templates/Footer.php');
 ?>
