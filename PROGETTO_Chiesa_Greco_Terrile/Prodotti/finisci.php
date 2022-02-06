@@ -1,102 +1,158 @@
 <?php
 	include('../Templates/Header.php');
 	include('../connessione.php');
+	$query="SELECT * FROM acquisto WHERE NumSessione='".session_id()."'";
+	$res=mysqli_query($con,$query);
+	$sommadur=0;
+	$sommamart=0;
+	$sommaol=0;
+	$sommaexc=0;
+	$sommaruy=0;
+	$sommapom=0;
+	$prezzodur=0;
+	$prezzomart=0;
+	$prezzool=0;
+	$prezzoexc=0;
+	$prezzoruy=0;
+	$prezzopom=0;
 	$flag=0;
 	$prezzo=0;
-	$sommadur="SELECT SUM(Quantita) AS sommadur, Prezzo FROM acquisto WHERE NumSessione='".session_id()."' AND IDprodotto='1'";
-	$res=mysqli_query($con,$sommadur);
 	if($res!=false)
 		{
-		$row = mysqli_fetch_assoc($res);
-		$rowcount=mysqli_num_rows($res);
-		if($rowcount>0 && $row['sommadur']>0)
+		echo'  
+		<div class="container py-5">
+		<h1 class="titolo"> Ecco Gli articoli che hai selezionato </h1>
+		<div class="row row-cols-1 row-cols-md-3 g-4">';
+		while($row = mysqli_fetch_assoc($res))
 			{
-			echo 'Stai acquistando dal nostro sito: '.$row['sommadur'].' Durlindana alla modica cifra di: '.$row['Prezzo'];
-			echo'<a href="elimina.php?ID=1&num='.$row['sommadur'].'">Vuoi eliminare il prodotto?</a>';
-			$prezzo+=$row['Prezzo'];
-			$flag=1;
+				$prezzo+=$row['Prezzo'];
+				$flag=1;
+				if($row['IDprodotto']==1)
+					{
+					$sommadur+=1;
+					$prezzodur+=$row['Prezzo'];
+					}
+				else if($row['IDprodotto']==2)
+					{	
+					$sommaexc+=1;
+					$prezzoexc+=$row['Prezzo'];
+					}
+				else if($row['IDprodotto']==3)
+					{
+					$sommamart+=1;
+					$prezzomart+=$row['Prezzo'];
+					}
+				else if($row['IDprodotto']==4)
+					{
+					$sommaol+=1;
+					$prezzool+=$row['Prezzo'];
+					}
+				else if($row['IDprodotto']==5)
+					{
+					$sommapom+=1;
+					$prezzopom+=$row['Prezzo'];
+					}
+				else if($row['IDprodotto']==6)
+					{
+					$sommaruy+=1;
+					$prezzoruy+=$row['Prezzo'];
+					}
 			}
-		}
-	$sommamart="SELECT SUM(Quantita) AS sommamart, Prezzo FROM acquisto WHERE NumSessione='".session_id()."' AND IDprodotto='3'";
-	$res=mysqli_query($con,$sommamart);
-	if($res!=false)
-		{
-		$row = mysqli_fetch_assoc($res);
-		$rowcount=mysqli_num_rows($res);
-		if($rowcount>0 && $row['sommamart']>0)
+		if($sommadur>0)
 			{
-			echo 'Stai acquistando dal nostro sito: '.$row['sommamart'].' Mjolnir alla modica cifra di: '.$row['Prezzo'];
-			echo'<a href="elimina.php?ID=3&num='.$row['sommamart'].'">Vuoi eliminare il prodotto?</a>';
-			$prezzo+=$row['Prezzo'];
-			$flag=1;
+			echo'
+			<div class="col">
+				<div class="card border-dark h-100">
+				<img src="../Immagini/durlindana.jpg" class="card-img-top immagini" alt="Durlindana">
+					<div class="card-body">
+					<h5 class="card-title titoloCard">Durlindana</h5>
+					<p class="card-text testoCard"> Stai acquistando '.$sommadur.' Durlindana alla modica cifra di: '.$prezzodur.' euro</p>
+					<a href="elimina.php?ID=1&num='.$sommadur.'" class="btn btn-outline-dark">Elimina dal carrello</a>
+					</div>
+				</div>
+			</div>';
 			}
-	}
-	$sommaexc="SELECT SUM(Quantita) AS sommaexc, Prezzo FROM acquisto WHERE NumSessione='".session_id()."' AND IDprodotto='2'";
-	$res=mysqli_query($con,$sommaexc);
-	if($res!=false)
-		{
-		$row = mysqli_fetch_assoc($res);
-		$rowcount=mysqli_num_rows($res);
-		if($rowcount>0 && $row['sommaexc']>0)
+		if($sommaexc>0)
 			{
-			echo 'Stai acquistando dal nostro sito: '.$row['sommaexc'].' Excalibur alla modica cifra di: '.$row['Prezzo'];
-			echo'<a href="elimina.php?ID=2&num='.$row['sommaexc'].'">Vuoi eliminare il prodotto?</a>';
-			$prezzo+=$row['Prezzo'];
-			$flag=1;
+			echo'
+			<div class="col">
+				<div class="card border-dark h-100">
+				<img src="../Immagini/excalibur.png" class="card-img-top immagini" alt="Excalibur">
+					<div class="card-body">
+					<h5 class="card-title titoloCard">Excalibur</h5>
+					<p class="card-text testoCard">Stai acquistando '.$sommaexc.' Excalibur alla modica cifra di: '.$prezzoexc.' euro</p>
+					<a href="elimina.php?ID=2&num='.$sommaexc.'" class="btn btn-outline-dark">elimina dal carrello</a>
+					</div>
+				</div>
+			</div>';
 			}
-		}
-
-	$sommaol="SELECT SUM(Quantita) AS sommaol, Prezzo FROM acquisto WHERE NumSessione='".session_id()."' AND IDprodotto='4'";
-	$res=mysqli_query($con,$sommaol);
-	if($res!=false)
-		{
-		$row = mysqli_fetch_assoc($res);
-		$rowcount=mysqli_num_rows($res);
-		if($rowcount>0 && $row['sommaol']>0)
+		if($sommamart>0)
 			{
-			echo 'Stai acquistando dal nostro sito: '.$row['sommaol'].' Olifante alla modica cifra di: '.$row['Prezzo'];
-			echo'<a href="elimina.php?ID=4&num='.$row['sommaol'].'">Vuoi eliminare il prodotto?</a>';
-			$prezzo+=$row['Prezzo'];
-			$flag=1;
+			echo'
+			<div class="col">
+				<div class="card border-dark h-100">
+				<img src="../Immagini/mjolnir.png" class="card-img-top immagini" alt="Mjolnir">
+					<div class="card-body">
+					<h5 class="card-title titoloCard">Mjolnir</h5>
+					<p class="card-text testoCard">Stai acquistando '.$sommamart.' Mjolnir alla modica cifra di: '.$prezzomart.' euro</p>
+					<a href="elimina.php?ID=3&num='.$sommamart.'" class="btn btn-outline-dark">Elimina dal carrello</a>
+					</div>
+				</div>
+			</div>';
 			}
-		}
-
-	$sommapom="SELECT SUM(Quantita) AS sommapom, Prezzo FROM acquisto WHERE NumSessione='".session_id()."' AND IDprodotto='5'";
-	$res=mysqli_query($con,$sommapom);
-	if($res!=false)
-		{
-		$row = mysqli_fetch_assoc($res);
-		$rowcount=mysqli_num_rows($res);
-		if($rowcount>0 && $row['sommapom']>0)
+		if($sommaol>0)
 			{
-			echo 'Stai acquistando dal nostro sito: '.$row['sommapom'].' Pomo della Discordia alla modica cifra di: '.$row['Prezzo'];
-			echo'<a href="elimina.php?ID=5&num='.$row['sommapom'].'">Vuoi eliminare il prodotto?</a>';
-			$prezzo+=$row['Prezzo'];
-			$flag=1;
+			echo'
+			<div class="col">
+				<div class="card border-dark h-100">
+				<img src="../Immagini/olifante.jpg" class="card-img-top immagini" alt="Olifante">
+					<div class="card-body">
+					<h5 class="card-title titoloCard">Olifante</h5>
+					<p class="card-text testoCard">Stai acquistando '.$sommaol.' Olifante alla modica cifra di: '.$prezzool.' euro</p>
+					<a href="elimina.php?ID=4&num='.$sommaol.'" class="btn btn-outline-dark">Elimina dal carrello</a>
+					</div>
+				</div>
+		</div>';
 			}
-		}
-
-	$sommaruy="SELECT SUM(Quantita) AS sommaruy, Prezzo FROM acquisto WHERE NumSessione='".session_id()."' AND IDprodotto='6'";
-	$res=mysqli_query($con,$sommaruy);
-	if($res!=false)
-		{
-		$row = mysqli_fetch_assoc($res);
-		$rowcount=mysqli_num_rows($res);
-		if($rowcount>0 && $row['sommaruy']>0)
+		if($sommapom>0)
 			{
-			echo 'Stai acquistando dal nostro sito: '.$row['sommaruy'].' Ruyi Jingu Bang alla modica cifra di: '.$row['Prezzo'];
-			echo'<a href="elimina.php?ID=6&num='.$row['sommaruy'].'">Vuoi eliminare il prodotto?</a>';
-			$prezzo+=$row['Prezzo'];
-			$flag=1;
+			echo'
+			<div class="col">
+				<div class="card border-dark h-100">
+				<img src="../Immagini/pomo.jpg" class="card-img-top immagini" alt="Pomo della discordia">
+					<div class="card-body">
+					<h5 class="card-title titoloCard">Pomo d oro</h5>
+					<p class="card-text testoCard">Stai acquistando '.$sommapom.' Pomo della discordia alla modica cifra di: '.$prezzopom.' euro</p>
+					<a href="elimina.php?ID=5&num='.$sommapom.'" class="btn btn-outline-dark">Elimina dal carrello</a>
+					</div>
+				</div>
+			</div>';
+			}
+		if($sommaruy>0)
+			{
+			echo'
+			<div class="col">
+				<div class="card border-dark h-100">
+				<img src="../Immagini/RuyiJinguBang3.jpg" class="card-img-top immagini" alt="RuyiJinguBang">
+					<div class="card-body">
+					<h5 class="card-title titoloCard">RuyiJinguBang</h5>
+					<p class="card-text testoCard">Stai acquistando '.$sommaruy.' Durlindana alla modica cifra di: '.$prezzoruy.' euro</p>
+					<a href="elimina.php?ID=6&num='.$sommaruy.'" class="btn btn-outline-dark">Elimina dal carrello</a>
+					</div>
+				</div>
+			</div>';
 			}
 		}
 	if($flag==0)
 		echo'Carrello vuoto';
 	else
 		{
+		echo'</div>
+		</div>';
 		echo ' per una spesa totale di: '.$prezzo;
-		echo'<a href="concludi.php"<button id="pulsante"><i class="icon-shopping-cart"></i> Vai al pagamento</button></a>';
+		echo'<a href="a href="concludi.php"" <button type="button" class="btn btn-outline-light me-2 ms-5">Vai al pagamento</button></a>';
 		}
+
 	mysqli_close($con);	
 	include('../Templates/Footer.php');
 ?>

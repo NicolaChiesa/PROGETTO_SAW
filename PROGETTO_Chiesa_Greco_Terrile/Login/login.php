@@ -3,7 +3,7 @@
 	include('../connessione.php');
 	$pass=trim($_POST['pass']);
 	$email=htmlspecialchars($_POST['email']);
-	$email=mysqli_real_escape_string($con, $_POST['email']);
+	$email=mysqli_real_escape_string($con, $email);
 	$query = "SELECT Password, Nome, Cognome, ID FROM utenti WHERE Mail='".$email."'";
 	$res=mysqli_query($con,$query);
 	$row = mysqli_fetch_assoc($res);
