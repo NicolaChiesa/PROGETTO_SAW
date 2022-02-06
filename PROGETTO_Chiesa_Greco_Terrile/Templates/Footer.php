@@ -25,7 +25,7 @@
             </div>
           </form>
       </div>
-    </div>';
+    </div>';}
     else{
         echo'           
         <form id="myform" action="../Newsletter/IscrivitiNewsletter.php" method="POST" >
