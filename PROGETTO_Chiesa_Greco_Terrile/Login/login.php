@@ -32,5 +32,3 @@
 	include('../Templates/Footer.php');
 ?>
 
-</body>
-</html>
