@@ -44,8 +44,9 @@
         $mail->Send();
 
         echo '<p>Sei stato iscritto alla nostra newsletter, ti abbiamo appena inviato una mail di conferma !</p>';
+        $_SESSION['newsletter']=1;
         } catch (Exception $e) {
-            echo "<p>Message could not be sent. Mailer Error: {$mail->ErrorInfo}</p>";
+            echo "<p>Il Messaggio non può essere inviata.</p>";
         }
 	header("refresh:4; url=../Core/PaginaPrincipale.php");
 

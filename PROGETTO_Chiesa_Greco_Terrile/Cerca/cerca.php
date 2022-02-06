@@ -219,7 +219,7 @@
 					<div class="col"></div>
 					<div class="col-md-6">
 						<div class="h-100 p-5 bg-light border border-3 border-danger rounded-3">
-						<p class="testoBase"> Siamo spiacenti ma la ricerca non ha portato ad alcun risultato!</p>
+						<p class="testoBase text-center"> Siamo spiacenti ma la ricerca non ha portato ad alcun risultato!</p>
 						</div>
 					</div>
 					<div class="col"></div>
