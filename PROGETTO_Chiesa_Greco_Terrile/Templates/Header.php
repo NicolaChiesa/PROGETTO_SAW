@@ -38,7 +38,7 @@ session_start();
                         </form>
                 
                         <div class="text-end">
-                            <a href="../Prodotti/finisci.php" <button type="button" class="btn btn-outline-#e7bd70 me-2 ms-5">Carrello</button></a>
+                            <a href="../Prodotti/finisci.php" <button type="button" class="btn btn-outline-light me-2 ms-5">Carrello</button></a>
                             <a href="../ModificaUtente/modifica.php" <button type="button" class="btn btn-outline-light me-2">Modifica Profilo</button></a>
                             <a href="../esci.php" <button type="button" class="btn btn-outline-light">Esci</button></a>
                         </div>
