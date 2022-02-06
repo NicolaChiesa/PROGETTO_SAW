@@ -44,6 +44,15 @@
         </div>
       </div>
 
+      <div class="col">
+          <?php
+            echo' <div class="mb-5">
+                    su '.$row['NumVoti'].' la media di voto è: '.$row['Voto']
+                  '</div>';
+
+          ?>
+      </div>
+
       <div class="col mt-5">
         <div class="text-end">
           <a href="carrello.php" <button type="button" class="btn btn-outline-light me-2">Aggiungi al carrello</button></a>
@@ -53,10 +62,7 @@
   </div>
 </div>
 
-
-
 <?php
-echo'su '.$row['NumVoti'].' la media di voto è: '.$row['Voto'];
   include('../Templates/Footer.php');
 ?>
    
