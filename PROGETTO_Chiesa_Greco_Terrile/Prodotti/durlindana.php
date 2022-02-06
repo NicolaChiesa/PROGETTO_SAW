@@ -40,13 +40,14 @@
             <input type="radio" value="4" name="star"  id="stella4" title="basso" class="costellazione">
             <input type="radio" value="2" name="star"  id="stella5" title="pessimo" class="costellazione">
           </form>
-          <input type="submit" value="Invia recensione">
         </div>
+        <input type="submit" value="Invia recensione">
       </div>
 
       <div class="col mt-5">
           <?php
             echo'
+<<<<<<< HEAD
             <div class="container py-5 my-5">
               <div class="row align-items-md-stretch">
                 <div class="col"></div>
@@ -54,10 +55,12 @@
                   <div class="h-100 p-5 bg-light border border-3 border-danger rounded-3">
                     <p class="testoBase"> su '.$row['NumVoti'].' voti la media di voto è: '.$row['Voto'].'</p>
                   </div>
+=======
+                <div class="bg-light border">
+                  <p class="testoBase"> su '.$row['NumVoti'].' la media di voto è: '.$row['Voto'].'</p>
+>>>>>>> 98ed272cece0384ebedf8d8ad9e8f0275112f79b
                 </div>
-                <div class="col"></div>
-              </div>
-            </div>';
+                ';
           ?>
       </div>
 
