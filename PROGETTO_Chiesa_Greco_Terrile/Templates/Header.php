@@ -31,7 +31,7 @@ session_start();
                             <li><a class="nav-link px-2 link-light" href="../Core/PaginaPrincipale.php">Home</a></li>
                             <li><a class="nav-link px-2 link-light" href="../Prodotti/prod.php">Articoli</a></li>
                             <li><a class="nav-link px-2 link-light" href="#">Novità</a></li>
-                            <li><a class="nav-link px-2 link-light" href="#">Chi siamo</a></li>
+                            <li><a class="nav-link px-2 link-light" name="chisiamo">Chi siamo</a></li>
                         </ul>
                 
                         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" action="../Cerca/cerca.php" method="POST">
