@@ -136,13 +136,15 @@ input[type="submit"] {
 }
 
 .icone:hover {
-  color: white;
+  color: #e7bd70;
 }
 
 /* --------------------------- NAVBAR --------------------------*/
 .logo{
   width: 150px;
   height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
   padding-right: 0;
   margin-right: 0;
   border-right: 0;
@@ -153,9 +155,7 @@ input[type="submit"] {
 }
 
 /* --------------------------- BOTTONI --------------------------*/
-button:hover {
-  color: goldenrod;
-}
+
 
 /* --------------------------- CARD PRODOTTI --------------------------*/
 .titoloCard{
