@@ -21,11 +21,11 @@
 				$querys="INSERT INTO acquisto (NomeProdotto, NumSessione, Quantita, Prezzo, IDprodotto ) VALUES ('".$_SESSION['prodotto']."', '".$session_id."', 1,'".$row['prezzo']."','".$_SESSION['IDprodotto']."')";
 				}
 			$ress = mysqli_query($con,$querys);
-			$inserimento='Prodotto inserito nel carrello con successo :)';
+			$inserimento='Prodotto inserito nel carrello con successo!';
 			}
 		else
 			{
-			$inserimento='Prodotto finito :(';
+			$inserimento='Il prodotto selezionato non è disponibile!';
 			}
 		}
 	echo "<script type='text/javascript'>alert('$inserimento');</script>";
