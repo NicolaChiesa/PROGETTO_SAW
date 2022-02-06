@@ -52,7 +52,7 @@
                 <div class="col"></div>
                 <div class="col-md-6">
                   <div class="h-100 p-5 bg-light border border-3 border-danger rounded-3">
-                    <p class="testoBase"> su '.$row['NumVoti'].' la media di voto è: '.$row['Voto'].'</p>
+                    <p class="testoBase"> su '.$row['NumVoti'].' voti la media di voto è: '.$row['Voto'].'</p>
                   </div>
                 </div>
                 <div class="col"></div>
