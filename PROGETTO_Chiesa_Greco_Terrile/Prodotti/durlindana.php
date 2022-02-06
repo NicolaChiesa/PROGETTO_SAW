@@ -33,7 +33,7 @@
     <div class="row align-items-end ">
       <div class="col mt-5">
         <div id="votazione">
-          <form name="sent-rating" id="sent-rating" action="recensione.php" method="POST">
+          <form name="sent-rating" id="sent-rating" action="../Prodotti/recensione.php" method="POST">
             <input type="radio" value="10" name="star" id="stella1" title="eccellente" class="costellazione">
             <input type="radio" value="8" name="star"  id="stella2" title="ottimo" class="costellazione">
             <input type="radio" value="6" name="star"  id="stella3" title="discreto" class="costellazione">
