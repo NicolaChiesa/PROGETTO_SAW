@@ -9,7 +9,9 @@
 	if($res!=false)
 	{
 		$row = mysqli_fetch_assoc($res);
-		if(password_verify($pass,$row['Password'])){
+		if(password_verify($pass,$row['Password']))
+			{
+			$reg="Login effettuato con successo";
 			$_SESSION['nome']=$row['Nome'];
 			$_SESSION['cognome']=$row['Cognome'];
 			$_SESSION['id']=$row['ID'];
@@ -20,11 +22,12 @@
 				$quer="UPDATE `acquisto` SET `IDutente` = '".$_SESSION['id']."' WHERE `NumSessione` = '".session_id()."'";
 				$re = mysqli_query($con,$quer);
 				}
-			header("Location: ../Core/PaginaPrincipale.php");
 			}
 		else
-			echo"ERRORE";
-			}
+			$reg="ERRORE";
+		}
+	echo "<script type='text/javascript'>alert('$reg');</script>";
+	header("refresh:0; ../Core/PaginaPrincipale.php");
 	mysqli_close($con);
 ?>
 
