@@ -49,13 +49,13 @@
 			$num = mysqli_affected_rows($con);
 			echo $num;
 			}
-		mysqli_close($con);
 		if(isset($_POST['Subscription'])){
 			header("Location: ../Newsletter/IscrivitiNewsletter.php");
 		}
 		else{
 			header("Location: ../Core/PaginaPrincipale.php");
 		}
+		mysqli_close($con);
 	}
 
 	
