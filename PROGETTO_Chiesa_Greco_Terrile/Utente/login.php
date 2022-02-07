@@ -5,6 +5,7 @@
 	$pass=trim($_POST['pass']);
 	$email=mysqli_real_escape_string($con, $_POST['email']);
 	$query = "SELECT Password, Nome, Cognome, ID FROM utenti WHERE Mail='".$email."'";
+	echo $email.$pass;
 	$res=mysqli_query($con,$query);
 	if($res!=false)
 	{

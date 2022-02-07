@@ -38,7 +38,7 @@
 			$lastname=htmlspecialchars($_POST['lastname']);
 			$firstname=htmlspecialchars($_POST['firstname']);
 			$email=htmlspecialchars($_POST['email']);
-			echo $email.$password;
+			echo $email.$pass;
 			$pass=mysqli_real_escape_string($con, $pass);
 			$lastname=mysqli_real_escape_string($con, $lastname);
 			$firstname=mysqli_real_escape_string($con, $firstname);
