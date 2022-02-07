@@ -30,7 +30,7 @@
       </div>
     </div>
     
-    <div class="row align-items-end ">
+    <div class="row align-items-end">
       <div class="col mt-5">
         <div id="votazione">
           <form name="sent-rating" id="sent-rating" action="../Prodotti/recensione.php" method="POST">
