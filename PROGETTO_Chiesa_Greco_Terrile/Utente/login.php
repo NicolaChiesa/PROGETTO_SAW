@@ -48,8 +48,13 @@
 			<div class="col"></div>
 		</div>
 	</div>';
-	//header("refresh:3; url=../Core/PaginaPrincipale.php");
+	header("refresh:3; url=../Core/PaginaPrincipale.php");
 	mysqli_close($con);
 	include('../Templates/Footer.php');
 ?>
+
+
+
+
+
 
