@@ -7,13 +7,13 @@
           <p class="scritta">Vuoi aggiungere un tocco<br> di stile alla tua casa ? <br>
                             In modo da stupire <br> i tuoi ospiti ?</p>
           <div class="polaroid">
-            <img src="../Immagini/ImmagineHome1.jpg"  alt="..." height="600"/>
+            <img src="../Immagini/ImmagineHome1.jpg"  alt="Statua greca" height="600"/>
           </div>
       </div>
 
       <div class = "mydiv1">
           <div class="polaroid">
-            <img src="../Immagini/vikings.png"  alt="..." height="380" />
+            <img src="../Immagini/vikings.png"  alt="Vichinghisu una nave in mare" height="380" />
           </div>    
           <p class="scritta">Riporta un po' <br> della magnifica storia <br> a casa tua. </p>
       </div>
@@ -22,7 +22,7 @@
           <p class="scritta">Da noi puoi trovare <br> una grandissima raccolta<br>
           di articoli  mitologici.</p>
           <div class="polaroid">
-            <img src="../Immagini/tuono.jpg"  alt="..." height="600" />
+            <img src="../Immagini/tuono.jpg"  alt="Fulmini e saette" height="600" />
           </div>
       </div>  
 </div>

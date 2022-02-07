@@ -12,7 +12,7 @@
   <div class="container">
     <div class="row align-items-start ">
       <div class="col mt-5 pt-4">
-        <img src="../Immagini/pomo.jpg"  alt="Pomo della Discordia" class="dimensioni"/>
+        <img src="../Immagini/pomo.jpg" class="dimensioni" alt="Pomo della Discordia"/>
       </div>
       <div class="col">
         <h1 class="titoloCard"> Pomo d'oro </h1>

@@ -12,7 +12,7 @@
   <div class="container">
     <div class="row align-items-start">
       <div class="col mt-5 pt-4">
-        <img src="../Immagini/mjolnir.png"  alt="Mjolnir" class="dimensioni"/>
+        <img src="../Immagini/mjolnir.png"  class="dimensioni" alt="Mjolnir"/>
       </div>
       <div class="col">
         <h1 class="titoloCard"> Mjolnir </h1>
