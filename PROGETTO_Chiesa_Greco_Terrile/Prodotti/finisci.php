@@ -172,8 +172,7 @@
 		</div>';
 		echo '   
 			<div class="container"> 
-				<div class="row align-items-end mb-3">
-
+				<div class="row align-items-start mb-3">
 				<div class="col">
 					<div class="col scritta">
 						<span> Per una spesa totale di: '.$prezzo.' euro </span>
