@@ -23,13 +23,13 @@
 			$flag=1;
 		}
 		else if($num==1){
-			$reg='Email già usata!';
+			$reg='E-mail già usata!';
 			$flag=1;
 		}
 	
 	// se tutto è andato a buon fine 
 		else{
-			$reg='Utente inserito con successo!';
+			$reg='Registrazione effettuata con successo!';
 			$_SESSION['Registrated'] = "true";
 			$_SESSION['nome']=$_POST['firstname'];
 			$_SESSION['cognome']=$_POST['lastname'];
