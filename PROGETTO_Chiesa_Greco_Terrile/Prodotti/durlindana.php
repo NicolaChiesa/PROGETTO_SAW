@@ -56,7 +56,9 @@
 
       <div class="col mt-5">
         <div class="text-end">
-          <a href="carrello.php" <button type="button" class="btn btn-outline-light me-2">Aggiungi al carrello</button></a>
+          <form style="display: inline" action="carrello.php" method="POST">
+            <input type="submit" class="btn btn-outline-light me-2">Aggiungi al carrello</button>
+          </form>
         </div>
       </div>
     </div>
