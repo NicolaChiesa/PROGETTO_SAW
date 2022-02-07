@@ -17,8 +17,8 @@
             <h5 class="text-light">Iscriviti alla nostra newsletter!</h5>
             <p class="text-light">Tutti i mesi fantastiche novità!</p>
             <div class="d-flex w-100 gap-2">
-              <label for="newsletter1" class="visually-hidden"></label>
-              <input type="submit" value="Iscriviti"></button>
+              <label for="myform" class="visually-hidden"></label>
+              <input type="submit" value="Iscriviti">
             </div>
           </form>
       </div>
@@ -30,7 +30,7 @@
             <p class="text-light">Tutti i mesi fantastiche novità!</p>
             <div class="d-flex w-100 gap-2">
             <input type="email" id="email" class="no-outline"  name="email" placeholder="E-mail"><br>
-              <label for="newsletter1" class="visually-hidden"></label>
+              <label for="myform" class="visually-hidden"></label>
               <input type="submit" value="Iscriviti">
             </div>
           </form>
