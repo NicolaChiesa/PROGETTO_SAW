@@ -42,7 +42,7 @@
         <img src="../Immagini/olifante.jpg" class="card-img-top immagini" alt="Olifante">
         <div class="card-body">
           <h5 class="card-title titoloCard">Olifante</h5>
-          <p class="card-text testoCard">Un corno da caccia leggendario</p>
+          <p class="card-text testoCard">Il leggendario corno da caccia di cui narra la Chanson de Roland </p>
           <a href="./olifante.php" class="btn btn-outline-light">Scopri...</a>
         </div>
       </div>
@@ -62,7 +62,7 @@
         <img src="../Immagini/RuyiJinguBang3.jpg" class="card-img-top immagini" alt="RuyiJinguBang">
         <div class="card-body">
           <h5 class="card-title titoloCard">RuyiJinguBang</h5>
-          <p class="card-text testoCard">Secondo la leggende è un bastone magico brandito dalla scimmia immortale Sun Wukong</p>
+          <p class="card-text testoCard">Il leggendario bastone magico brandito dalla scimmia immortale Sun Wukong</p>
           <a href="./ruyijingubang.php" class="btn btn-outline-light">Scopri...</a>
         </div>
       </div>

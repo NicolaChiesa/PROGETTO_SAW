@@ -160,7 +160,9 @@
 								<p class="testoBase text-center"> Il tuo carrello è vuoto!</p>
 							</div>
 						</div>
-					<div class="col"></div>
+					<div class="col">
+					</div>
+					</div>
 				</div>
 			</div>';
 	}
