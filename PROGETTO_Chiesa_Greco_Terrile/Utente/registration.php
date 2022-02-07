@@ -19,12 +19,19 @@
 		else if($_POST['pass']!=$_POST['confirm'])
 			$reg='Le due password non coincidono!';
 
+
 		else if($num==1)
 			$reg='Email già usata!';
+			$flag=1;
+		}
+		else if($num==1){
+			$reg='E-mail già usata!';
+			$flag=1;
+		}
 	
 	// se tutto è andato a buon fine 
 		else{
-			$reg='Utente inserito con successo!';
+			$reg='Registrazione effettuata con successo!';
 			$_SESSION['Registrated'] = "true";
 			$_SESSION['nome']=$_POST['firstname'];
 			$_SESSION['cognome']=$_POST['lastname'];
