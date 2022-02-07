@@ -35,7 +35,9 @@
 			$_SESSION['cognome']=$_POST['lastname'];
 			$_SESSION['email']=$_POST['email'];
 			$pass=trim($_POST['pass']);
-			$pass=htmlspecialchars($_POST['pass']);
+			//echo $pass;
+			$pass=htmlspecialchars($pass);
+			echo $pass;
 			$lastname=htmlspecialchars($_POST['lastname']);
 			$firstname=htmlspecialchars($_POST['firstname']);
 			$email=htmlspecialchars($_POST['email']);
