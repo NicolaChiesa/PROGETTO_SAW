@@ -35,12 +35,10 @@
 			$_SESSION['cognome']=$_POST['lastname'];
 			$_SESSION['email']=$_POST['email'];
 			$pass=trim($_POST['pass']);
-			//echo $pass;
-			$pass=htmlspecialchars($pass);
-			echo $pass;
 			$lastname=htmlspecialchars($_POST['lastname']);
 			$firstname=htmlspecialchars($_POST['firstname']);
 			$email=htmlspecialchars($_POST['email']);
+			echo $email.$password;
 			$pass=mysqli_real_escape_string($con, $pass);
 			$lastname=mysqli_real_escape_string($con, $lastname);
 			$firstname=mysqli_real_escape_string($con, $firstname);
@@ -84,7 +82,7 @@
 							<div class="col"></div>
 						</div>
 					</div>';
-				header("refresh:3; url=../Newsletter/IscrivitiNewsletter.php");
+				//header("refresh:3; url=../Newsletter/IscrivitiNewsletter.php");
 			}
 			else{
 				echo'
@@ -106,7 +104,7 @@
 							<div class="col"></div>
 						</div>
 					</div>';
-			header("refresh:3; url=../Core/PaginaPrincipale.php");
+			//header("refresh:3; url=../Core/PaginaPrincipale.php");
 			}
 		mysqli_close($con);
 		include('../Templates/Footer.php');

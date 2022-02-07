@@ -3,9 +3,7 @@
 	include('../connessione.php');
 	$flag=0;
 	$pass=trim($_POST['pass']);
-	$email=htmlspecialchars($_POST['email']);
-	$email=mysqli_real_escape_string($con, $email);
-	echo $pass=htmlspecialchars($pass);
+	$email=mysqli_real_escape_string($con, $_POST['email']);
 	$query = "SELECT Password, Nome, Cognome, ID FROM utenti WHERE Mail='".$email."'";
 	$res=mysqli_query($con,$query);
 	if($res!=false)
@@ -50,7 +48,7 @@
 			<div class="col"></div>
 		</div>
 	</div>';
-	header("refresh:3; url=../Core/PaginaPrincipale.php");
+	//header("refresh:3; url=../Core/PaginaPrincipale.php");
 	mysqli_close($con);
 	include('../Templates/Footer.php');
 ?>
