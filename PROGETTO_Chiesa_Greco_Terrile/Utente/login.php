@@ -9,7 +9,7 @@
 	if($res!=false)
 	{
 		$row = mysqli_fetch_assoc($res);
-		if(isset($_POST['Password']) && password_verify($pass,$row['Password']))
+		if(isset($_POST['pass']) && password_verify($pass,$row['Password']))
 			{
 			$reg="Login effettuato con successo";
 			$_SESSION['nome']=$row['Nome'];
