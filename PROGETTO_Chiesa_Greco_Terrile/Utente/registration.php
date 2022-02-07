@@ -24,7 +24,7 @@
 		}
 		else if($num==1){
 			$reg='Email già usata!';
-			$flag=1
+			$flag=1;
 		}
 	
 	// se tutto è andato a buon fine 
