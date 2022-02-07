@@ -142,7 +142,7 @@
 				<img src="../Immagini/RuyiJinguBang2.jpg" class="card-img-top immagini" alt="Pomo della discordia">
 					<div class="card-body">
 						<h5 class="card-title titoloCard">Pomo d oro</h5>
-						<p class="card-text testoCard">Stai acquistando '.$sommaruy.' Pomo della discordia alla modica cifra di: '.$prezzoruy.' euro</p>
+						<p class="card-text testoCard">Stai acquistando '.$sommaruy.' RuyiJinguBang alla modica cifra di: '.$prezzoruy.' euro</p>
 						<a href="elimina.php?ID=6&num='.$sommaruy.'" class="btn btn-outline-light">Elimina dal carrello</a>
 					</div>
 				</div>
