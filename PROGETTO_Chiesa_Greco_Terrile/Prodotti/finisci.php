@@ -139,7 +139,7 @@
 				<img src="../Immagini/RuyiJinguBang3.jpg" class="card-img-top immagini" alt="RuyiJinguBang">
 					<div class="card-body">
 						<h5 class="card-title titoloCard">RuyiJinguBang</h5>
-						<p class="card-text testoCard">Stai acquistando '.$sommaruy.' Durlindana alla modica cifra di: '.$prezzoruy.' euro</p>
+						<p class="card-text testoCard">Stai acquistando '.$sommaruy.' Durlindana alla modica cifra di:'.$prezzoruy.' euro</p>
 						<a href="elimina.php?ID=6&num='.$sommaruy.'" class="btn btn-outline-light">Elimina dal carrello</a>
 					</div>
 				</div>
@@ -169,9 +169,9 @@
 		</div>';
 		echo '   
 			<div class="container"> 
-				<div class="row align-items-end mb-5 pb-5">
+				<div class="row align-items-end mb-3">
 
-				<div class="col mt-5">
+				<div class="col">
 					<div class="col scritta">
 						<span> Per una spesa totale di: '.$prezzo.' euro </span>
 						<a href="concludi.php" <button type="button" class="btn btn-outline-light btn-lg me-2 ms-5">Vai al pagamento</button></a>
