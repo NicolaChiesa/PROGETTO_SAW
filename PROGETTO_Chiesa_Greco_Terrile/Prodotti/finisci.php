@@ -4,7 +4,7 @@
 	if(isset($_SESSION['id']))
 		$query="SELECT * FROM acquisto WHERE IDutente='".$_SESSION['id']."'";
 	else
-		$query="SELECT * FROM acquisto WHERE NumSessione='".session_id()."'";
+		$query="SELECT * FROM acquisto WHERE NumSessione='".session_id()."' AND IDutente='0'";
 	$res=mysqli_query($con,$query);
 	$sommadur=0;
 	$sommamart=0;
