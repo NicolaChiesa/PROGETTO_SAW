@@ -16,10 +16,7 @@
             <form id="myform" action="../Newsletter/IscrivitiNewsletter.php" method="POST" >
             <h5 class="text-light">Iscriviti alla nostra newsletter!</h5>
             <p class="text-light">Tutti i mesi fantastiche novità!</p>
-            <div class="d-flex w-100 gap-2">
-              <label for="newsletter1" class="visually-hidden"></label>
               <input type="submit" placeholder="Iscriviti"></button>
-            </div>
           </form>
       </div>
     ';}
@@ -31,7 +28,7 @@
             <div class="d-flex w-100 gap-2">
             <input type="email" id="email" class="no-outline"  name="email" placeholder="E-mail"><br>
               <label for="newsletter1" class="visually-hidden"></label>
-              <input type="submit" placeholder="Iscriviti"></button>
+              <input type="submit" placeholder="Iscriviti">Iscriviti</button>
             </div>
           </form>
       </div>
