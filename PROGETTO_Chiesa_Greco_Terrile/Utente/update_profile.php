@@ -9,7 +9,7 @@
 	$_SESSION['nome']=$_POST['firstname'];
 	$_SESSION['cognome']=$_POST['lastname'];
 	$_SESSION['email']=$_POST['email'];
-	header("Location: modifica.php");
+	header("Location: show_profile.php");
 	mysqli_close($con);
 ?>
 
