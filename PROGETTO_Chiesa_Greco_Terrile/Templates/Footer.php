@@ -13,7 +13,7 @@
       <?php    
         if(isset($_SESSION['Registrated'])){
       echo'<div class="col-4 offset-1 mt-3">
-            <form id="myform" action="../Newsletter/IscrivitiNewsletter.php" method="POST" >
+            <form id="myform2" action="../Newsletter/IscrivitiNewsletter.php" method="POST" >
             <h5 class="text-light">Iscriviti alla nostra newsletter!</h5>
             <p class="text-light">Tutti i mesi fantastiche novità!</p>
             <div class="d-flex w-100 gap-2">
@@ -24,11 +24,11 @@
     ';}
     else{     
     echo'<div class="col-4 offset-1 mt-3">
-            <form id="myform" action="../Newsletter/IscrivitiNewsletter.php" method="POST" >
+            <form id="myform2" action="../Newsletter/IscrivitiNewsletter.php" method="POST" >
             <h5 class="text-light">Iscriviti alla nostra newsletter!</h5>
             <p class="text-light">Tutti i mesi fantastiche novità!</p>
             <div class="d-flex w-100 gap-2">
-            <input type="email" id="email" class="no-outline"  name="email" placeholder="E-mail"><br>
+            <input type="email" id="email2" class="no-outline"  name="email" placeholder="E-mail"><br>
               <label class="visually-hidden"></label>
               <input type="submit" value="Iscriviti">
             </div>
