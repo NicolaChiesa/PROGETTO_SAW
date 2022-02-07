@@ -127,7 +127,7 @@
 				<div class="card border-dark h-100">
 				<img src="../Immagini/pomo.jpg" class="card-img-top immagini" alt="Pomo della discordia">
 					<div class="card-body">
-						<h5 class="card-title titoloCard">Pomo d oro</h5>
+						<h5 class="card-title titoloCard">Pomo d\'oro</h5>
 						<p class="card-text testoCard">Stai acquistando '.$sommapom.' Pomo della discordia alla modica cifra di: '.$prezzopom.' euro</p>
 						<a href="elimina.php?ID=5&num='.$sommapom.'" class="btn btn-outline-light">Elimina dal carrello</a>
 					</div>

@@ -33,6 +33,10 @@
 			}
 		}
 	}
+	else{
+		$flag=1;
+		$reg="E-mail e/o password sbagliate!";
+	}
 	echo'
 	<div class="container py-5 my-5">
 		<div class="row align-items-md-stretch">
