@@ -20,7 +20,7 @@
 
       <div class = "mydiv1">
           <p class="scritta">Da noi puoi trovare <br> una grandissima raccolta<br>
-          di articoli  mitologigi.</p>
+          di articoli  mitologici.</p>
           <div class="polaroid">
             <img class="flex" src="../Immagini/tuono.jpg"  alt="..." height="600" />
           </div>
