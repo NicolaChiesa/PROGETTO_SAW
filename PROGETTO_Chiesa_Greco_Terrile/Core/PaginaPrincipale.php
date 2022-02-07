@@ -13,7 +13,7 @@
 
       <div class = "mydiv1">
           <div class="polaroid">
-            <img src="../Immagini/vikings.jpg"  alt="..." height="380" />
+            <img src="../Immagini/vikings.png"  alt="..." height="380" />
           </div>    
           <p class="scritta">Riporta un po' <br> della magnifica storia <br> a casa tua. </p>
       </div>
