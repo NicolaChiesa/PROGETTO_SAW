@@ -11,7 +11,13 @@ require 'utils.php';
 /****************************************/
 
 // local URL
+<<<<<<< HEAD
+$baseurl =  'http://localhost/SAW/PROGETTO/PROGETTO_Chiesa_Greco_Terrile/Utente/';
+||||||| d931b8a
+$baseurl =  'http://localhost/....';
+=======
 $baseurl =  'https://saw21.dibris.unige.it/~S4825218/PROGETTO_Chiesa_Greco_Terrile/Utente';
+>>>>>>> afd7cd7eabda97fb07673a1511bf9742cce68279
 
 // remote URL
 // $baseurl =  'https://saw21.dibris.unige.it/~S1234567/...';

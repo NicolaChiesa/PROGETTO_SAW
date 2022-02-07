@@ -39,14 +39,14 @@ session_start();
                         </form>
                 
                         <div class="text-end">
-                        <form style="display: inline" action="../Prodotti/finisci.php" method="POST">
-                            <button type="button" class="btn btn-outline-light me-2 ms-5">Carrello</button>
+                        <form style="display: inline" action="../Prodotti/finisci.php">
+                            <button type="submit" class="btn btn-outline-light me-2 ms-5">Carrello</button>
                         </form>
-                        <form style="display: inline" action="../Prodotti/finisci.php" method="POST">
-                            <button type="button" class="btn btn-outline-light me-2">Modifica Profilo</button>
+                        <form style="display: inline" action="../Utente/show_profile.php">
+                            <button type="submit" class="btn btn-outline-light me-2">Modifica Profilo</button>
                         </form>
-                        <form style="display: inline" action="../esci.php" method="POST">
-                            <button type="button" class="btn btn-outline-light">Esci</button>
+                        <form style="display: inline" action="../esci.php">
+                            <button type="submit" class="btn btn-outline-light me-2">Esci</button>
                         </form>
                         </div>
                     </div>
@@ -74,9 +74,15 @@ session_start();
                         </form>
                 
                         <div class="text-end">
-                            <a href="../Prodotti/finisci.php"> <button type="button" class="btn btn-outline-light me-2 ms-5">Carrello</button></a>
-                            <a href="../Utente/FormLogin.php"> <button type="button" class="btn btn-outline-light me-2">Accedi</button> </a>
-                            <a href="../Utente/RegistrazioneForm.php"> <button type="button" class="btn btn-outline-light">Registrati</button> </a>
+                            <form style="display: inline" action="../Prodotti/finisci.php">
+                                <button type="submit" class="btn btn-outline-light me-2 ms-5">Carrello</button>
+                            </form>
+                            <form style="display: inline" action="../Utente/FormLogin.php">
+                                <button type="submit" class="btn btn-outline-light me-2">Accedi</button>
+                            </form>
+                            <form style="display: inline" action="../Utente/RegistrazioneForm.php"
+                                <button type="submit" class="btn btn-outline-light">Registrati</button>
+                            </form
                         </div>
                     </div>
                 </div>
