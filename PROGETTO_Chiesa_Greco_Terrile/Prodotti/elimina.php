@@ -27,6 +27,7 @@
 			</div>';
 	header("refresh:3; url=finisci.php");
 	mysqli_close($con);	
+	include('../Templates/Footer.php');
 ?>
 
 </body>
