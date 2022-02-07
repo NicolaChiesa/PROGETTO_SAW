@@ -204,8 +204,7 @@
 							<a href="../Prodotti/ruyijingubang.php" class="btn btn-outline-dark">Scopri...</a>
 						</div>
 					</div>
-				</div>
-			</div>';
+				</div>';
 			}
 		}
 	if($flag==1)
@@ -231,5 +230,3 @@
 	mysqli_close($con);
 ?>
 
-</body>
-</html>
