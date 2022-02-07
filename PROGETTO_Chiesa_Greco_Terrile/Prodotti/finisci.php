@@ -1,7 +1,10 @@
 <?php
 	include('../Templates/Header.php');
 	include('../connessione.php');
-	$query="SELECT * FROM acquisto WHERE NumSessione='".session_id()."'";
+	if(isset($_SESSION['id']))
+		$query="SELECT * FROM acquisto WHERE IDutente='".$_SESSION['id']."'";
+	else
+		$query="SELECT * FROM acquisto WHERE NumSessione='".session_id()."'";
 	$res=mysqli_query($con,$query);
 	$sommadur=0;
 	$sommamart=0;
