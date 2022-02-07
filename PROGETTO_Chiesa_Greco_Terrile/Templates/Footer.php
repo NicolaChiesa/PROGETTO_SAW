@@ -6,9 +6,8 @@
         <ul class="nav flex-column mb-2">
           <li class="nav-item mb-2"><a href="../Core/PaginaPrincipale.php" class="nav-link p-0 text-muted">Home</a></li>
           <li class="nav-item mb-2"><a href="../Prodotti/prod.php" class="nav-link p-0 text-muted">Articoli</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Novità</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Chi siamo</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contatti</a></li>
+          <li class="nav-item mb-2"><a href="../Core/novità.php" class="nav-link p-0 text-muted">Novità</a></li>
+          <li class="nav-item mb-2"><a href="../Core/chisiamo.php" class="nav-link p-0 text-muted">Chi siamo</a></li>
         </ul>
       </div>
       <?php    
