@@ -13,7 +13,7 @@
 
       <div class = "mydiv1">
           <div class="polaroid">
-            <img src="../Immagini/Sfondo.jpg"  alt="..." height="380" />
+            <img src="../Immagini/vikings.jpg"  alt="..." height="380" />
           </div>    
           <p class="scritta">Riporta un po' <br> della magnifica storia <br> a casa tua. </p>
       </div>
@@ -22,7 +22,7 @@
           <p class="scritta">Da noi puoi trovare <br> una grandissima raccolta<br>
           di articoli  mitologigi.</p>
           <div class="polaroid">
-            <img src="../Immagini/ImmagineHome3.jpg"  alt="..." height="600" />
+            <img src="../Immagini/tuono.jpg"  alt="..." height="600" />
           </div>
       </div>  
 </div>
