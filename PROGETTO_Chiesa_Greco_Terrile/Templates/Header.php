@@ -80,9 +80,9 @@ session_start();
                             <form style="display: inline" action="../Utente/FormLogin.php">
                                 <button type="submit" class="btn btn-outline-light me-2">Accedi</button>
                             </form>
-                            <form style="display: inline" action="../Utente/RegistrazioneForm.php"
+                            <form style="display: inline" action="../Utente/RegistrazioneForm.php">
                                 <button type="submit" class="btn btn-outline-light">Registrati</button>
-                            </form
+                            </form>
                         </div>
                     </div>
                 </div>
