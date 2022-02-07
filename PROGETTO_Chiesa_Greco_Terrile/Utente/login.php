@@ -6,27 +6,31 @@
 	$email=mysqli_real_escape_string($con, $_POST['email']);
 	$query = "SELECT Password, Nome, Cognome, ID FROM utenti WHERE Mail='".$email."'";
 	$res=mysqli_query($con,$query);
-	if($res!=false)
-	{
-		$row = mysqli_fetch_assoc($res);
-		if(isset($_POST['pass']) && password_verify($pass,$row['Password']))
-			{
-			$reg="Login effettuato con successo";
-			$_SESSION['nome']=$row['Nome'];
-			$_SESSION['cognome']=$row['Cognome'];
-			$_SESSION['id']=$row['ID'];
-			$_SESSION['Registrated'] = "true";
-			$_SESSION['email']= $_POST['email'];
-			if(isset($_SESSION['carrello']))
-				{
-				$quer="UPDATE `acquisto` SET `IDutente` = '".$_SESSION['id']."' WHERE `NumSessione` = '".session_id()."'";
-				$re = mysqli_query($con,$quer);
-				}
-			}
-		else
+	$result = mysqli_query($con, $query);
+	if ( mysqli_num_rows($result)>0)
+    {
+		if($res!=false)
 		{
-			$reg="E-mail e/o password sbagliate!";
-			$flag=1;
+			$row = mysqli_fetch_assoc($res);
+			if(isset($_POST['pass']) && password_verify($pass,$row['Password']))
+				{
+				$reg="Login effettuato con successo";
+				$_SESSION['nome']=$row['Nome'];
+				$_SESSION['cognome']=$row['Cognome'];
+				$_SESSION['id']=$row['ID'];
+				$_SESSION['Registrated'] = "true";
+				$_SESSION['email']= $_POST['email'];
+				if(isset($_SESSION['carrello']))
+					{
+					$quer="UPDATE `acquisto` SET `IDutente` = '".$_SESSION['id']."' WHERE `NumSessione` = '".session_id()."'";
+					$re = mysqli_query($con,$quer);
+					}
+				}
+			else
+			{
+				$reg="E-mail e/o password sbagliate!";
+				$flag=1;
+			}
 		}
 	}
 	echo'
