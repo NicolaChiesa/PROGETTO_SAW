@@ -140,7 +140,7 @@
 					<div class="card-body">
 						<h5 class="card-title titoloCard">RuyiJinguBang</h5>
 						<p class="card-text testoCard">Stai acquistando '.$sommaruy.' Durlindana alla modica cifra di:'.$prezzoruy.' euro</p>
-						<a href="elimina.php?ID=6&num='.$sommaruy.'" class="btn btn-outline-light">Elimina dal carrello</a>
+						<a href="elimina.php?ID=6&num='.$sommaruy.' class="btn btn-outline-light">Elimina dal carrello</a>
 					</div>
 				</div>
 			</div>';
