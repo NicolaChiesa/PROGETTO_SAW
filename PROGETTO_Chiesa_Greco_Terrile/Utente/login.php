@@ -5,12 +5,11 @@
 	$pass=trim($_POST['pass']);
 	$email=mysqli_real_escape_string($con, $_POST['email']);
 	$query = "SELECT Password, Nome, Cognome, ID FROM utenti WHERE Mail='".$email."'";
-	echo $email.$pass;
 	$res=mysqli_query($con,$query);
 	if($res!=false)
 	{
 		$row = mysqli_fetch_assoc($res);
-		if(isset($_POST['Password']) && password_verify($pass,$row['Password']))
+		if(isset($_POST['pass']) && password_verify($pass,$row['Password']))
 			{
 			$reg="Login effettuato con successo";
 			$_SESSION['nome']=$row['Nome'];
@@ -49,8 +48,13 @@
 			<div class="col"></div>
 		</div>
 	</div>';
-	//header("refresh:3; url=../Core/PaginaPrincipale.php");
+	header("refresh:3; url=../Core/PaginaPrincipale.php");
 	mysqli_close($con);
 	include('../Templates/Footer.php');
 ?>
+
+
+
+
+
 
