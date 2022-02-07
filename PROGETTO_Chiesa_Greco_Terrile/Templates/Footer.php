@@ -31,7 +31,7 @@
             <div class="d-flex w-100 gap-2">
             <input type="email" id="email" class="no-outline"  name="email" placeholder="E-mail"><br>
               <label for="newsletter1" class="visually-hidden"></label>
-              <input type="submit" placeholder="Iscriviti"></button>
+              <input type="submit" value="Iscriviti"></button>
             </div>
           </form>
       </div>
