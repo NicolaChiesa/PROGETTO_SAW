@@ -51,6 +51,7 @@
 	</div>';
 	header("refresh:3; url=prod.php");
 	mysqli_close($con);	
+	include('../Templates/Footer.php');
 ?>
 
 </body>
