@@ -70,7 +70,7 @@
 					<div class="card-body">
 						<h5 class="card-title titoloCard">Durlindana</h5>
 						<p class="card-text testoCard"> Stai acquistando '.$sommadur.' Durlindana alla modica cifra di: '.$prezzodur.' euro</p>
-						<a href="elimina.php?ID=1&num='.$sommadur.'" class="btn btn-outline-dark">Elimina dal carrello</a>
+						<a href="elimina.php?ID=1&num='.$sommadur.'" class="btn btn-outline-light">Elimina dal carrello</a>
 					</div>
 				</div>
 			</div>';
@@ -84,7 +84,7 @@
 					<div class="card-body">
 						<h5 class="card-title titoloCard">Excalibur</h5>
 						<p class="card-text testoCard">Stai acquistando '.$sommaexc.' Excalibur alla modica cifra di: '.$prezzoexc.' euro</p>
-						<a href="elimina.php?ID=2&num='.$sommaexc.'" class="btn btn-outline-dark">elimina dal carrello</a>
+						<a href="elimina.php?ID=2&num='.$sommaexc.'" class="btn btn-outline-light">elimina dal carrello</a>
 					</div>
 				</div>
 			</div>';
@@ -98,7 +98,7 @@
 					<div class="card-body">
 						<h5 class="card-title titoloCard">Mjolnir</h5>
 						<p class="card-text testoCard">Stai acquistando '.$sommamart.' Mjolnir alla modica cifra di: '.$prezzomart.' euro</p>
-						<a href="elimina.php?ID=3&num='.$sommamart.'" class="btn btn-outline-dark">Elimina dal carrello</a>
+						<a href="elimina.php?ID=3&num='.$sommamart.'" class="btn btn-outline-light">Elimina dal carrello</a>
 					</div>
 				</div>
 			</div>';
@@ -112,7 +112,7 @@
 					<div class="card-body">
 						<h5 class="card-title titoloCard">Olifante</h5>
 						<p class="card-text testoCard">Stai acquistando '.$sommaol.' Olifante alla modica cifra di: '.$prezzool.' euro</p>
-						<a href="elimina.php?ID=4&num='.$sommaol.'" class="btn btn-outline-dark">Elimina dal carrello</a>
+						<a href="elimina.php?ID=4&num='.$sommaol.'" class="btn btn-outline-light">Elimina dal carrello</a>
 					</div>
 				</div>
 			</div>';
@@ -126,7 +126,7 @@
 					<div class="card-body">
 						<h5 class="card-title titoloCard">Pomo d oro</h5>
 						<p class="card-text testoCard">Stai acquistando '.$sommapom.' Pomo della discordia alla modica cifra di: '.$prezzopom.' euro</p>
-						<a href="elimina.php?ID=5&num='.$sommapom.'" class="btn btn-outline-dark">Elimina dal carrello</a>
+						<a href="elimina.php?ID=5&num='.$sommapom.'" class="btn btn-outline-light">Elimina dal carrello</a>
 					</div>
 				</div>
 			</div>';
@@ -140,7 +140,7 @@
 					<div class="card-body">
 						<h5 class="card-title titoloCard">RuyiJinguBang</h5>
 						<p class="card-text testoCard">Stai acquistando '.$sommaruy.' Durlindana alla modica cifra di: '.$prezzoruy.' euro</p>
-						<a href="elimina.php?ID=6&num='.$sommaruy.'" class="btn btn-outline-dark">Elimina dal carrello</a>
+						<a href="elimina.php?ID=6&num='.$sommaruy.'" class="btn btn-outline-light">Elimina dal carrello</a>
 					</div>
 				</div>
 			</div>';
@@ -167,18 +167,17 @@
 		{
 		echo'</div>
 		</div>';
-		echo '    
-			<div class="row align-items-end mb-5 pb-5">
+		echo '   
+			<div class="container"> 
+				<div class="row align-items-end mb-5 pb-5">
 
-			  <div class="col mt-5">
-			  <div class="col scritta">Per una spesa totale di: '.$prezzo.' euro</div>
-			  </div>
-
-			  <div class="col mt-5">
-				<div class="text-end me-5">
-				  <a href="concludi.php" <button type="button" class="btn btn-outline-light me-2 ms-5">Vai al pagamento</button></a>
+				<div class="col mt-5">
+					<div class="col scritta">
+						<span> Per una spesa totale di: '.$prezzo.' euro </span>
+						<a href="concludi.php" <button type="button" class="btn btn-outline-light btn-lg me-2 ms-5">Vai al pagamento</button></a>
+					</div>
 				</div>
-			  </div>
+				</div>
 			</div>';
 		}
 	mysqli_close($con);	

@@ -45,7 +45,7 @@
 			<div class="row align-items-md-stretch">
 				<div class="col"></div>
 					<div class="col-md-6">';
-					if($flag==1){
+					if($bandiera==1){
 						echo'<div class="h-100 p-5 bg-light border border-3 border-danger rounded-3">
 							<p class="testoBase text-center"> '.$reg.'</p>';
 					}
