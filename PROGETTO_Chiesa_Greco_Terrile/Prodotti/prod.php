@@ -13,7 +13,7 @@
         <div class="card-body">
           <h5 class="card-title titoloCard">Durlindana</h5>
           <p class="card-text testoCard">Una delle spade più ricercate nella storia dell'umanità!</p>
-          <a href="./durlindana.php" class="btn btn-outline-dark">Scopri...</a>
+          <a href="./durlindana.php" class="btn btn-outline-light">Scopri...</a>
         </div>
       </div>
     </div>
@@ -23,7 +23,7 @@
         <div class="card-body">
           <h5 class="card-title titoloCard">Mjolnir</h5>
           <p class="card-text testoCard">Sarai degno di sollevare il martello del dio del tuono?</p>
-          <a href="./mjolnir.php" class="btn btn-outline-dark">Scopri...</a>
+          <a href="./mjolnir.php" class="btn btn-outline-light">Scopri...</a>
         </div>
       </div>
     </div>
@@ -33,7 +33,7 @@
         <div class="card-body">
           <h5 class="card-title titoloCard">Excalibur</h5>
           <p class="card-text testoCard">Riuscirai a estrarre la spada e a governare sull'Inghilterra?</p>
-          <a href="./excalibur.php" class="btn btn-outline-dark">Scopri...</a>
+          <a href="./excalibur.php" class="btn btn-outline-light">Scopri...</a>
         </div>
       </div>
     </div>
@@ -43,7 +43,7 @@
         <div class="card-body">
           <h5 class="card-title titoloCard">Olifante</h5>
           <p class="card-text testoCard">Un corno da caccia leggendario</p>
-          <a href="./olifante.php" class="btn btn-outline-dark">Scopri...</a>
+          <a href="./olifante.php" class="btn btn-outline-light">Scopri...</a>
         </div>
       </div>
     </div>
@@ -53,7 +53,7 @@
         <div class="card-body">
           <h5 class="card-title titoloCard">Pomo d'oro</h5>
           <p class="card-text testoCard">Non un gioco di parole, ma quello della discordia!</p>
-          <a href="./pomo.php" class="btn btn-outline-dark">Scopri...</a>
+          <a href="./pomo.php" class="btn btn-outline-light">Scopri...</a>
         </div>
       </div>
     </div>
@@ -63,7 +63,7 @@
         <div class="card-body">
           <h5 class="card-title titoloCard">RuyiJinguBang</h5>
           <p class="card-text testoCard">Secondo la leggende è un bastone magico brandito dalla scimmia immortale Sun Wukong</p>
-          <a href="./ruyijingubang.php" class="btn btn-outline-dark">Scopri...</a>
+          <a href="./ruyijingubang.php" class="btn btn-outline-light">Scopri...</a>
         </div>
       </div>
     </div>
