@@ -4,7 +4,7 @@
 	if(isset($_SESSION['id']))
 		$query="SELECT * FROM acquisto WHERE IDutente='".$_SESSION['id']."'";
 	else
-		$query="SELECT * FROM acquisto WHERE NumSessione='".session_id()."'";
+		$query="SELECT * FROM acquisto WHERE NumSessione='".session_id()."' AND IDutente='0'";
 	$res=mysqli_query($con,$query);
 	$sommadur=0;
 	$sommamart=0;
@@ -172,8 +172,7 @@
 		</div>';
 		echo '   
 			<div class="container"> 
-				<div class="row align-items-end mb-3">
-
+				<div class="row align-items-start mb-3">
 				<div class="col">
 					<div class="col scritta">
 						<span> Per una spesa totale di: '.$prezzo.' euro </span>
