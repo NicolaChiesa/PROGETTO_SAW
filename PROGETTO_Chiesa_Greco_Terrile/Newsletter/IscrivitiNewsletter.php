@@ -17,7 +17,6 @@
 	mysqli_close($con);
 	
 	header("Location: SendEmailConfirm.php");
-?>
+	include('../Templates/Footer.php');
 
-</body>
-</html>
+?>

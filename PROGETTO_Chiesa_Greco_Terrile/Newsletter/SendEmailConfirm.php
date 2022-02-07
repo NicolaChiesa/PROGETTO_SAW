@@ -31,7 +31,7 @@
         $mail->SMTPSecure = 'tls';                                  //Enable implicit TLS encryption
 
         //Destinatario
-        $mail->setFrom('onlymythmyth@gmail.com', 'Nicola');
+        $mail->setFrom('onlymythmyth@gmail.com', 'OnlyMyth');
         $mail->addCC($_SESSION['email']);               //Name is optional
         $mail->addReplyTo('onlymythmyth@gmail.com', 'OnlyMyth');
 
