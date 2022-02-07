@@ -40,7 +40,7 @@ session_start();
                 
                         <div class="text-end">
                             <a href="../Prodotti/finisci.php" <button type="button" class="btn btn-outline-light me-2 ms-5">Carrello</button></a>
-                            <a href="../ModificaUtente/modifica.php" <button type="button" class="btn btn-outline-light me-2">Modifica Profilo</button></a>
+                            <a href="../Utente/show_profile.php" <button type="button" class="btn btn-outline-light me-2">Modifica Profilo</button></a>
                             <a href="../esci.php" <button type="button" class="btn btn-outline-light">Esci</button></a>
                         </div>
                     </div>
@@ -69,26 +69,11 @@ session_start();
                 
                         <div class="text-end">
                             <a href="../Prodotti/finisci.php" <button type="button" class="btn btn-outline-light me-2 ms-5">Carrello</button></a>
-                            <a href="../Login/FormLogin.php" <button type="button" class="btn btn-outline-light me-2">Accedi</button> </a>
-                            <a href="../Registrazione/RegistrazioneForm.php" <button type="button" class="btn btn-outline-light">Registrati</button> </a>
+                            <a href="../Utente/FormLogin.php" <button type="button" class="btn btn-outline-light me-2">Accedi</button> </a>
+                            <a href="../Utente/RegistrazioneForm.php" <button type="button" class="btn btn-outline-light">Registrati</button> </a>
                         </div>
                     </div>
                 </div>
             </header>';
         }
     ?> 
-
-<!--    QUESTO E' IL CODICE PER FAR DIVENTARE IL PULSANTE ARTICOLI UN MENU' A TENDINA CON 
-        I CAMPI EPICI, MITOLOGICI E FANTASY
-        NON SO SE LO VOGLIAMO METTERE, DIPENDE DA COME STRUTTURIAMO LE PAGINE DEI PRODOTTI
-        NEL CASO PERò LO LASCIO QUI COSI' E' GIA' PRONTO
-
-<li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle px-2 link-light" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Articoli</a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Epici</a></li>
-            <li><a class="dropdown-item" href="#">Mitologici</a></li>
-            <li><a class="dropdown-item" href="#">Fantasy</a></li>
-          </ul>
-        </li>
--->

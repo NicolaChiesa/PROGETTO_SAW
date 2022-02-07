@@ -17,7 +17,7 @@ $mail=$_SESSION['email'];
 <?php
 $form=' <center>
             <div class="DataDiv"> 
-                <form id="myform" action="mod.php" method="POST"> 
+                <form id="myform" action="update_profile.php" method="POST"> 
                     <p> <i class="fas fa-envelope" style="font-size:13px;color:rgba(65, 65, 65, 1.0)"></i> E-mail </p>
                     <input type="email" id="email" class="no-outline" placeholder="E-mail" name="email" value='.$mail.'><br>
 
