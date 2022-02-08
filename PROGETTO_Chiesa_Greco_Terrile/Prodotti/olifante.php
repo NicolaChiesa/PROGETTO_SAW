@@ -12,7 +12,7 @@
   <div class="container">
     <div class="row align-items-start ">
       <div class="col mt-5 pt-4">
-        <img src="../Immagini/olifante.jpg"  alt="Olifante" class="dimensioni"/>
+        <img src="../Immagini/olifante.jpg" class="dimensioni" alt="Olifante"/>
       </div>
       <div class="col">
         <h1 class="titoloCard"> Olifante </h1>
