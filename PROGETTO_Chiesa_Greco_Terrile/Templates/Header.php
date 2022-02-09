@@ -18,7 +18,7 @@ session_start();
 </head>
 <body>
     <?php    
-        if(isset($_SESSION['Registrated']) && $_SESSION['Registrated'] == "true"){
+        
             echo'
             <header class="p-3 bg-dark text-white sticky-top">
                 <div class="container">
@@ -33,7 +33,7 @@ session_start();
                             <li><a class="nav-link px-2 link-light" href="../Core/chisiamo.php">Chi siamo</a></li>
                         </ul>
                 
-                        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" action="../Cerca/cerca.php" method="POST">
+                        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" action="../Prodotti/prodotti.php" method="POST">
                             <input type="search" class="form-control form-control-dark" placeholder="Cerca..." aria-label="Search" id="cerca" name="cerca">
                             <input type="submit" value="Cerca">
                         </form>
@@ -41,51 +41,27 @@ session_start();
                         <div class="text-end">
                         <form style="display: inline" action="../Prodotti/finisci.php">
                             <button type="submit" class="btn btn-outline-light me-2 ms-5">Carrello</button>
-                        </form>
+                        </form>';
+                      if(isset($_SESSION['Registrated']) && $_SESSION['Registrated'] == "true")
+                        echo'
                         <form style="display: inline" action="../Utente/show_profile.php">
                             <button type="submit" class="btn btn-outline-light me-2">Modifica Profilo</button>
                         </form>
                         <form style="display: inline" action="../esci.php">
                             <button type="submit" class="btn btn-outline-light me-2">Esci</button>
+                        </form>';
+                      else
+                        echo'
+                        <form style="display: inline" action="../Utente/FormLogin.php">
+                           <button type="submit" class="btn btn-outline-light me-2">Accedi</button>
                         </form>
-                        </div>
-                    </div>
-                </div>
+                        <form style="display: inline" action="../Utente/RegistrazioneForm.php">
+                           <button type="submit" class="btn btn-outline-light">Registrati</button>
+                        </form>';
+                    echo'
+                       </div>
+                   </div>
+               </div>
             </header>';
-        }
-        else{
-            echo'
-            <header class="p-3 bg-dark text-white sticky-top">
-                <div class="container">
-                    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-
-                        <img src="../Immagini/OnlyMytich.png" alt="Logo del sito Only Mytich" class="logo">               
-            
-                        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                            <li><a class="nav-link px-2 link-light" href="../Core/PaginaPrincipale.php">Home</a></li>
-                            <li><a class="nav-link px-2 link-light" href="../Prodotti/prodotti.php">Articoli</a></li>
-                            <li><a class="nav-link px-2 link-light" href="../Core/novità.php">Novità</a></li>
-                            <li><a class="nav-link px-2 link-light" href="../Core/chisiamo.php">Chi siamo</a></li>
-                        </ul>
-                
-                        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" action="../Cerca/cerca.php" method="POST">
-                            <input type="search" class="form-control form-control-dark" placeholder="Cerca..." aria-label="Search" id="cerca" name="cerca">
-                            <input type="submit" value="Cerca">
-                        </form>
-                
-                        <div class="text-end">
-                            <form style="display: inline" action="../Prodotti/finisci.php">
-                                <button type="submit" class="btn btn-outline-light me-2 ms-5">Carrello</button>
-                            </form>
-                            <form style="display: inline" action="../Utente/FormLogin.php">
-                                <button type="submit" class="btn btn-outline-light me-2">Accedi</button>
-                            </form>
-                            <form style="display: inline" action="../Utente/RegistrazioneForm.php">
-                                <button type="submit" class="btn btn-outline-light">Registrati</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </header>';
-        }
+        
     ?> 
