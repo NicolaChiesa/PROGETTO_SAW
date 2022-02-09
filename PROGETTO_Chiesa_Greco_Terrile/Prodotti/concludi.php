@@ -12,7 +12,7 @@
 	{
 		$query = "SELECT * FROM acquisto WHERE NumSessione='".session_id()."'";
 		$res=mysqli_query($con,$query);
-		if($res!=false)
+		if($res)
 			$rowcount=mysqli_num_rows($res);
 		while($row=mysqli_fetch_assoc($res))
 			{

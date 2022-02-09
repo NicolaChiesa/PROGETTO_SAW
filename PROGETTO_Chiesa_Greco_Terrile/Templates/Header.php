@@ -28,7 +28,7 @@ session_start();
                 
                         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                             <li><a class="nav-link px-2 link-light" href="../Core/PaginaPrincipale.php">Home</a></li>
-                            <li><a class="nav-link px-2 link-light" href="../Prodotti/prod.php">Articoli</a></li>
+                            <li><a class="nav-link px-2 link-light" href="../Prodotti/prodotti.php">Articoli</a></li>
                             <li><a class="nav-link px-2 link-light" href="../Core/novità.php">Novità</a></li>
                             <li><a class="nav-link px-2 link-light" href="../Core/chisiamo.php">Chi siamo</a></li>
                         </ul>
@@ -63,7 +63,7 @@ session_start();
             
                         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                             <li><a class="nav-link px-2 link-light" href="../Core/PaginaPrincipale.php">Home</a></li>
-                            <li><a class="nav-link px-2 link-light" href="../Prodotti/prod.php">Articoli</a></li>
+                            <li><a class="nav-link px-2 link-light" href="../Prodotti/prodotti.php">Articoli</a></li>
                             <li><a class="nav-link px-2 link-light" href="../Core/novità.php">Novità</a></li>
                             <li><a class="nav-link px-2 link-light" href="../Core/chisiamo.php">Chi siamo</a></li>
                         </ul>
