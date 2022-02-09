@@ -4,6 +4,7 @@
   $query="SELECT * FROM prodotti";
   $res=mysqli_query($con,$query);
   if($res)
+  {
   echo'
     <div class="container py-5">
       <h1 class="titolo">
@@ -19,7 +20,7 @@
                     <div class="card-body">
                       <h5 class="card-title titoloCard">'.$row['Nome'].'</h5>
                       <p class="card-text testoCard">'.$row['Descrizione Breve'].'</p>
-                      <a href="./ruyijingubang.php" class="btn btn-outline-light">Scopri...</a>
+                      <a href="./prodotto.php?ID='.$row['ID'].'" class="btn btn-outline-light">Scopri...</a>
                     </div>
                   </div>
                   </div>
@@ -32,6 +33,7 @@
                 Iscriviti alla nostra newsletter per non perderti nessuna novità!
              </p>
            </div>';
+    }
 
   include('../Templates/Footer.php');
 ?>

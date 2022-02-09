@@ -2,81 +2,39 @@
 	include('../Templates/Header.php');
 	include('../connessione.php');
 	if(isset($_SESSION['id']))
-		$query="SELECT * FROM acquisto WHERE IDutente='".$_SESSION['id']."'";
+		$query="SELECT IDprodotto, SUM(Quantita) AS Quantita FROM acquisto WHERE IDutente='".$_SESSION['id']."' GROUP BY IDprodotto";
 	else
-		$query="SELECT * FROM acquisto WHERE NumSessione='".session_id()."' AND IDutente='0'";
+		$query="SELECT IDprodotto, SUM(Quantita) FROM AS Quantita acquisto WHERE NumSessione='".session_id()."' AND IDutente='0' GROUP BY IDprodotto";
 	$res=mysqli_query($con,$query);
-	$sommadur=0;
-	$sommamart=0;
-	$sommaol=0;
-	$sommaexc=0;
-	$sommaruy=0;
-	$sommapom=0;
-	$prezzodur=0;
-	$prezzomart=0;
-	$prezzool=0;
-	$prezzoexc=0;
-	$prezzoruy=0;
-	$prezzopom=0;
-	$flag=0;
-	$prezzo=0;
-	if($res!=false)
+	if($res)
 		{
-		while($row = mysqli_fetch_assoc($res))
-			{
-				$prezzo+=$row['Prezzo'];
-				$flag=1;
-				if($row['IDprodotto']==1)
-					{
-					$sommadur+=1;
-					$prezzodur+=$row['Prezzo'];
-					}
-				else if($row['IDprodotto']==2)
-					{	
-					$sommaexc+=1;
-					$prezzoexc+=$row['Prezzo'];
-					}
-				else if($row['IDprodotto']==3)
-					{
-					$sommamart+=1;
-					$prezzomart+=$row['Prezzo'];
-					}
-				else if($row['IDprodotto']==4)
-					{
-					$sommaol+=1;
-					$prezzool+=$row['Prezzo'];
-					}
-				else if($row['IDprodotto']==5)
-					{
-					$sommapom+=1;
-					$prezzopom+=$row['Prezzo'];
-					}
-				else if($row['IDprodotto']==6)
-					{
-					$sommaruy+=1;
-					$prezzoruy+=$row['Prezzo'];
-					}
-			}
-			if($flag==1)
+		echo$rowcount=mysqli_num_rows($res);
+			if($rowcount=mysqli_num_rows($res)>0)
 			{
 				echo'  
 				<div class="container py-5">
 					<h1 class="titolo"> Ecco gli articoli che hai selezionato: </h1>
 				<div class="row row-cols-1 row-cols-md-3 g-4">';
 				}
-		if($sommadur>0)
+		while($row=mysqli_fetch_assoc($res))
 			{
-			echo'
-			<div class="col">
-				<div class="card border-dark h-100">
-				<img src="../Immagini/durlindana.jpg" class="card-img-top immagini" alt="Durlindana">
-					<div class="card-body">
-						<h5 class="card-title titoloCard">Durlindana</h5>
-						<p class="card-text testoCard"> Stai acquistando '.$sommadur.' Durlindana alla modica cifra di: '.$prezzodur.' euro</p>
-						<a href="elimina.php?ID=1&num='.$sommadur.'" class="btn btn-outline-light">Elimina dal carrello</a>
+			$select="SELECT * FROM prodotti WHERE ID='".$row['IDprodotto']."'";
+			$result=mysqli_query($con,$select);
+			if($result)
+				{
+				$rig=mysqli_fetch_assoc($result);
+				echo'
+				<div class="col">
+					<div class="card border-dark h-100">
+					<img src="../Immagini/'.$riga['ID'].'.jpg" class="card-img-top immagini" alt='.$riga['Nome'].'>
+						<div class="card-body">
+							<h5 class="card-title titoloCard">'.$riga['Nome'].'</h5>
+							<p class="card-text testoCard"> Stai acquistando '.$row['Quantita'].' Durlindana alla modica cifra di: '.$riga['prezzp'].'*'.riga['prezzo'].' euro</p>
+							<a href="elimina.php?ID='.$riga['ID'].'&num='.$row['Quantita'].'" class="btn btn-outline-light">Elimina dal carrello</a>
+						</div>
 					</div>
-				</div>
-			</div>';
+				</div>';
+				}
 			}
 		if($sommaexc>0)
 			{
@@ -149,7 +107,7 @@
 			</div>';
 			}
 	}
-	if($flag==0)
+	if(!$flag)
 	{
 		echo'
 			<div class="container py-5 my-5">
