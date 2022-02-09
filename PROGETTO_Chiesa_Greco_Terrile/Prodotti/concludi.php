@@ -2,11 +2,10 @@
 	include('../Templates/Header.php');
 	include('../connessione.php');
 	$flag=0;
-	$bandiera=0;
 	if(!isset($_SESSION['Registrated']))
 		{
+		$style='danger';
 		$reg='Devi accedere prima di potere acquistare!!';
-		$bandiera=1;
 		}
 	else
 	{
@@ -32,34 +31,27 @@
 			{
 			$query="DELETE FROM `acquisto` WHERE `acquisto`.`NumSessione` = '".session_id()."'";
 			$res=mysqli_query($con,$query);
-			$reg='Acquisto andato a buon fine!!';
+			if($res)
+				$reg='Acquisto andato a buon fine!!';
 			}
 		else
-		{
+			{
 			$reg='Il carrello è vuoto!!!!';
-			$bandiera=1;
-		}
+			$style='success';
+			}
 	}
 		echo'
 		<div class="container py-5 my-5">
 			<div class="row align-items-md-stretch">
 				<div class="col"></div>
-					<div class="col-md-6">';
-					if($bandiera==1){
-						echo'<div class="h-100 p-5 bg-light border border-3 border-danger rounded-3">
-							<p class="testoBase text-center"> '.$reg.'</p>';
-					}
-					else{
-						echo'<div class="h-100 p-5 bg-light border border-3 border-success rounded-3">
-							<p class="testoBase text-center"> '.$reg.'</p>';
-					}
-					echo'
+					<div class="col-md-6">
+						<div class="h-100 p-5 bg-light border border-3 border-'.$style.' rounded-3">
 						</div>
 					</div>
 				<div class="col"></div>
 			</div>
 		</div>';
-	header("refresh:4; url=prod.php");	
+	header("refresh:4; url=prodotti.php");	
 	mysqli_close($con);	
 	include('../Templates/Footer.php');
 ?>

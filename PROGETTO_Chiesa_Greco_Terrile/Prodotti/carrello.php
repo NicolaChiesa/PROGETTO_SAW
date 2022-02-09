@@ -6,7 +6,7 @@
 	if(isset($_GET['nome'])){
 		$query = "SELECT prezzo, quantita FROM prodotti WHERE Nome='".$_GET['nome']."'";
 		$res=mysqli_query($con,$query);
-		if($res!=false)
+		if($res)
 			{
 			$row = mysqli_fetch_assoc($res);
 			if($row['quantita']>0)
@@ -23,7 +23,10 @@
 					$querys="INSERT INTO acquisto (NomeProdotto, NumSessione, Quantita, Prezzo, IDutente, IDprodotto ) VALUES ('".$_GET['nome']."', '".$session_id."', 1,'".$row['prezzo']."',0,'".$_GET['ID']."')";
 					}
 				$ress = mysqli_query($con,$querys);
-				$inserimento='Prodotto inserito nel carrello con successo!';
+				if($ress)
+					$inserimento='Prodotto inserito nel carrello con successo!';
+				else 
+					$inserimento='Errore';
 				}
 			else
 				{
@@ -36,15 +39,12 @@
 			<div class="row align-items-md-stretch">
 				<div class="col"></div>
 					<div class="col-md-6">';
-					if($flag==1){
-						echo'<div class="h-100 p-5 bg-light border border-3 border-danger rounded-3">
-							<p class="testoBase text-center"> '.$inserimento.'</p>';
-					}
-					else{
-						echo'<div class="h-100 p-5 bg-light border border-3 border-success rounded-3">
-							<p class="testoBase text-center"> '.$inserimento.'</p>';
-					}
-					echo'
+					if($flag)
+						$style='danger';
+					else
+						$style='success';
+					echo'<div class="h-100 p-5 bg-light border border-3 border-'.$style.' rounded-3">
+						<p class="testoBase text-center"> '.$inserimento.'</p>
 						</div>
 					</div>
 				<div class="col"></div>
@@ -65,7 +65,7 @@
 				</div>
 			</div>';
 		}
-	header("refresh:3; url=prod.php");
+	header("refresh:3; url=prodotti.php");
 	mysqli_close($con);	
 	include('../Templates/Footer.php');
 
