@@ -1,9 +1,7 @@
 <?php
   include('../Templates/Header.php');
   include('../connessione.php');
-  $_SESSION['prodotto']='Mjolnir';
-  $_SESSION['IDprodotto']=3;
-   $select = "SELECT Voto, NumVoti FROM prodotti WHERE ID='".$_SESSION['IDprodotto']."'";
+   $select = "SELECT Voto, NumVoti FROM prodotti WHERE ID='3'";
   $result=mysqli_query($con,$select);
   $row = mysqli_fetch_assoc($result);
 ?>
@@ -12,7 +10,7 @@
   <div class="container">
     <div class="row align-items-start">
       <div class="col mt-5 pt-4">
-        <img src="../Immagini/mjolnir.png"  alt="Mjolnir" class="dimensioni"/>
+        <img src="../Immagini/mjolnir.png"  class="dimensioni" alt="Mjolnir"/>
       </div>
       <div class="col">
         <h1 class="titoloCard"> Mjolnir </h1>
@@ -57,7 +55,7 @@
 
       <div class="col mt-5">
         <div class="text-end">
-          <form style="display: inline" action="carrello.php" method="POST">
+          <form style="display: inline" action="carrello.php?ID=3&nome=Mjolnir" method="POST">
             <button type="submit" class="btn btn-outline-light me-2">Aggiungi al carrello</button>
           </form>
         </div>

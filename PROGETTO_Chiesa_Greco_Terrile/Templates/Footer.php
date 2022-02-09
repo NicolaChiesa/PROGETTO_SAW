@@ -1,5 +1,5 @@
 <div>
-  <footer class="py-1 px-5 bg-dark position-relative" >
+  <footer class="pt-5 pb-5 px-5 bg-dark position-relative" >
     <div class="row">
       <div class="col-7">
         <h5 class="text-light mt-3 mb-2">Sezioni</h5>
@@ -20,8 +20,8 @@
               <input type="submit" value="Iscriviti">
             </div>
           </form>
-      </div>
-    ';}
+      </div>';
+      }
     else{     
     echo'<div class="col-4 offset-1 mt-3">
             <form id="myform2" action="../Newsletter/IscrivitiNewsletter.php" method="POST" >

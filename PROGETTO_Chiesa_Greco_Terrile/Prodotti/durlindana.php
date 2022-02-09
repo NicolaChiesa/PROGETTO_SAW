@@ -1,9 +1,7 @@
 <?php
   include('../Templates/Header.php');
   include('../connessione.php');
-  $_SESSION['prodotto']='Durlindana';
-  $_SESSION['IDprodotto']=1;
-  $select = "SELECT Voto, NumVoti FROM prodotti WHERE ID='".$_SESSION['IDprodotto']."'";
+  $select = "SELECT Voto, NumVoti FROM prodotti WHERE ID='1'";
   $result=mysqli_query($con,$select);
   $row = mysqli_fetch_assoc($result);
 ?>
@@ -56,7 +54,7 @@
 
       <div class="col mt-5">
         <div class="text-end">
-          <form style="display: inline" action="carrello.php" method="POST">
+          <form style="display: inline" action="carrello.php?ID=1&nome=Durlindana" method="POST">
             <button type="submit" class="btn btn-outline-light me-2">Aggiungi al carrello</button>
           </form>
         </div>
