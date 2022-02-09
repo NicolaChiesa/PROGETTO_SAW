@@ -26,7 +26,7 @@
             <div class="row align-items-end">
               <div class="col mt-5">
                 <div id="votazione">
-                  <form name="sent-rating" id="sent-rating" action="../Prodotti/recensione.php" method="POST">
+                  <form name="sent-rating" id="sent-rating" action="../Prodotti/recensione.php?ID='.$_GET['ID'].'" method="POST">
                     <input type="radio" value="5" name="star" id="stella1" title="eccellente" class="costellazione">
                     <input type="radio" value="4" name="star"  id="stella2" title="ottimo" class="costellazione">
                     <input type="radio" value="3" name="star"  id="stella3" title="discreto" class="costellazione">

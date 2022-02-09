@@ -5,17 +5,17 @@
 	if(!isset($_SESSION['Registrated']))
 	{
 		$reg='Devi accedere prima di potere fare una recensione!!';
-		$flag=1;
+		$style='danger';
 	}
 	else if(!isset($_POST['star'])){
 		$reg='Devi dare una valutazione valida!';
-		$flag=1;
+		$style='danger';
 	}
 	else
 		{
-		$query = "SELECT IDutente, Votato FROM acquistato WHERE IDprodotto='".$_SESSION['IDprodotto']."' AND `IDutente` = '".$_SESSION['id']."'";
+		$query = "SELECT IDutente, Votato FROM acquistato WHERE IDprodotto='".$_GET['ID']."' AND `IDutente` = '".$_SESSION['id']."'";
 		$res = mysqli_query($con,$query);
-		if($res!=false)
+		if($res)
 			{
 			$rowcount = mysqli_num_rows($res);
 			if($rowcount>0)
@@ -24,26 +24,51 @@
 				if($row['Votato']==1)
 				{
 					$reg='Hai già valutato questo prodotto, non puoi valutarlo di nuovo!';
-					$flag=1;
+					$style='danger';
 				}
 				else
 					{
 					$rate=$_POST['star'];
-					$select = "SELECT Voto, NumVoti FROM prodotti WHERE ID='".$_SESSION['IDprodotto']."'";
+					$select = "SELECT Voto, NumVoti FROM prodotti WHERE ID='".$_GET['ID']."'";
 					$result=mysqli_query($con,$select);
-					$row = mysqli_fetch_assoc($result);
-					$voto=($row['Voto']*$row['NumVoti']+$rate)/($row['NumVoti']+1);
-					$reg= 'Recensione avvenuta con successo!';
-					$row['NumVoti']+=1;
-					$query="UPDATE `prodotti` SET `Voto` = '".$voto."', NumVoti='".$row['NumVoti']."' WHERE ID='".$_SESSION['IDprodotto']."'";
-					$res = mysqli_query($con,$query);
-					$query = "UPDATE acquistato SET Votato=1 WHERE IDprodotto='".$_SESSION['IDprodotto']."' AND `IDutente` = '".$_SESSION['id']."'";
-					$res = mysqli_query($con,$query);
+					if($result)
+						{
+						$row = mysqli_fetch_assoc($result);
+						$voto=($row['Voto']*$row['NumVoti']+$rate)/($row['NumVoti']+1);
+						$row['NumVoti']+=1;
+						$query="UPDATE `prodotti` SET `Voto` = '".$voto."', NumVoti='".$row['NumVoti']."' WHERE ID='".$_GET['ID']."'";
+						$res = mysqli_query($con,$query);
+						if($res)
+							{
+							$query = "UPDATE acquistato SET Votato=1 WHERE IDprodotto='".$_GET['ID']."' AND `IDutente` = '".$_SESSION['id']."'";
+							$res = mysqli_query($con,$query);
+							if($res)
+								{
+								$reg= 'Recensione avvenuta con successo!';
+								$style='success';
+								}
+								else
+									{
+									$style='danger';
+									$reg='ERRORE';
+									}	
+							}
+						else
+							{
+							$style='danger';
+							$reg='ERRORE';
+							}	
+						}
+					else
+						{
+						$style='danger';
+						$reg='ERRORE';
+						}	
 					}
 				}
 				else{
 					$reg='Non hai acquistato questo prodotto, quindi non puoi recensirlo!';
-					$flag=1;
+					$style='danger';
 				}
 			}
 		}
@@ -51,22 +76,15 @@
 		<div class="container py-5 my-5">
 			<div class="row align-items-md-stretch">
 				<div class="col"></div>
-					<div class="col-md-6">';
-					if($flag==1){
-						echo'<div class="h-100 p-5 bg-light border border-3 border-danger rounded-3">
-							<p class="testoBase text-center"> '.$reg.'</p>';
-					}
-					else{
-						echo'<div class="h-100 p-5 bg-light border border-3 border-success rounded-3">
-							<p class="testoBase text-center"> '.$reg.'</p>';
-					}
-					echo'
+					<div class="col-md-6">
+					<div class="h-100 p-5 bg-light border border-3 border-'.$style.' rounded-3">
+						<p class="testoBase text-center"> '.$reg.'</p>
 						</div>
 					</div>
 				<div class="col"></div>
 			</div>
 		</div>';
-	header("refresh:3; url=prod.php");
+	header("refresh:3; url=prodotti.php");
 	mysqli_close($con);	
 	include('../Templates/Footer.php');
 ?>
