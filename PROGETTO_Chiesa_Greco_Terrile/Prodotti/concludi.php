@@ -46,6 +46,7 @@
 				<div class="col"></div>
 					<div class="col-md-6">
 						<div class="h-100 p-5 bg-light border border-3 border-'.$style.' rounded-3">
+							<p class="testoBase text-center"> '.$reg.'</p>
 						</div>
 					</div>
 				<div class="col"></div>
